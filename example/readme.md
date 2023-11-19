@@ -1,6 +1,6 @@
 ## setup
 ```bash
-$conda create -n de python=3.10
-$conda activate de
+$conda create -n dsmde python=3.10
+$conda activate dsmde
 $pip install notebook
 ```

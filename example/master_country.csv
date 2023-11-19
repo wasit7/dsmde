@@ -1,0 +1,252 @@
+,global_code,global_name,region_code,region_name,sub_region_code,sub_region_name,intermediate_region_code,intermediate_region_name,country_en,country_th,m49_code,iso_alpha2_code,iso_alpha3_code,year,id
+0,001,World,142,Asia,034,Southern Asia,000,,Afghanistan,อัฟกานิสถาน,004,AF,AFG,2023,2023AFG
+1,001,World,150,Europe,039,Southern Europe,000,,Albania,แอลเบเนีย,008,AL,ALB,2023,2023ALB
+2,001,World,000,,000,,000,,Antarctica,แอนตาร์กติกา,010,AQ,ATA,2023,2023ATA
+3,001,World,002,Africa,015,Northern Africa,000,,Algeria,แอลจีเรีย,012,DZ,DZA,2023,2023DZA
+4,001,World,009,Oceania,061,Polynesia,000,,American Samoa,อเมริกันซามัว,016,AS,ASM,2023,2023ASM
+5,001,World,150,Europe,039,Southern Europe,000,,Andorra,อันดอร์รา,020,AD,AND,2023,2023AND
+6,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Angola,แองโกลา,024,AO,AGO,2023,2023AGO
+7,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Antigua and Barbuda,แอนทีกาและบาร์บิวดา,028,AG,ATG,2023,2023ATG
+8,001,World,142,Asia,145,Western Asia,000,,Azerbaijan,อาเซอร์ไบจาน,031,AZ,AZE,2023,2023AZE
+9,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Argentina,อาร์เจนตินา,032,AR,ARG,2023,2023ARG
+10,001,World,009,Oceania,053,Australia and New Zealand,000,,Australia,ออสเตรเลีย,036,AU,AUS,2023,2023AUS
+11,001,World,150,Europe,155,Western Europe,000,,Austria,ออสเตรีย,040,AT,AUT,2023,2023AUT
+12,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Bahamas,บาฮามาส,044,BS,BHS,2023,2023BHS
+13,001,World,142,Asia,145,Western Asia,000,,Bahrain,บาห์เรน,048,BH,BHR,2023,2023BHR
+14,001,World,142,Asia,034,Southern Asia,000,,Bangladesh,บังกลาเทศ,050,BD,BGD,2023,2023BGD
+15,001,World,142,Asia,145,Western Asia,000,,Armenia,อาร์มีเนีย,051,AM,ARM,2023,2023ARM
+16,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Barbados,บาร์เบโดส,052,BB,BRB,2023,2023BRB
+17,001,World,150,Europe,155,Western Europe,000,,Belgium,เบลเยียม,056,BE,BEL,2023,2023BEL
+18,001,World,019,Americas,021,Northern America,000,,Bermuda,เบอร์มิวดา,060,BM,BMU,2023,2023BMU
+19,001,World,142,Asia,034,Southern Asia,000,,Bhutan,ภูฏาน,064,BT,BTN,2023,2023BTN
+20,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Bolivia (Plurinational State of),โบลิเวีย,068,BO,BOL,2023,2023BOL
+21,001,World,150,Europe,039,Southern Europe,000,,Bosnia and Herzegovina,บอสเนียและเฮอร์เซโกวีนา,070,BA,BIH,2023,2023BIH
+22,001,World,002,Africa,202,Sub-Saharan Africa,018,Southern Africa,Botswana,บอตสวานา,072,BW,BWA,2023,2023BWA
+23,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Bouvet Island,เกาะบูเว,074,BV,BVT,2023,2023BVT
+24,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Brazil,บราซิล,076,BR,BRA,2023,2023BRA
+25,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,Belize,เบลีซ,084,BZ,BLZ,2023,2023BLZ
+26,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,British Indian Ocean Territory,บริติชอินเดียนโอเชียนเทร์ริทอรี,086,IO,IOT,2023,2023IOT
+27,001,World,009,Oceania,054,Melanesia,000,,Solomon Islands,เกาะโซโลมอน,090,SB,SLB,2023,2023SLB
+28,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,British Virgin Islands,เกาะบริติชเวอร์จิน,092,VG,VGB,2023,2023VGB
+29,001,World,142,Asia,035,South-eastern Asia,000,,Brunei Darussalam,บรูไน,096,BN,BRN,2023,2023BRN
+30,001,World,150,Europe,151,Eastern Europe,000,,Bulgaria,บัลแกเรีย,100,BG,BGR,2023,2023BGR
+31,001,World,142,Asia,035,South-eastern Asia,000,,Myanmar,พม่า,104,MM,MMR,2023,2023MMR
+32,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Burundi,บุรุนดี,108,BI,BDI,2023,2023BDI
+33,001,World,150,Europe,151,Eastern Europe,000,,Belarus,เบลารุส,112,BY,BLR,2023,2023BLR
+34,001,World,142,Asia,035,South-eastern Asia,000,,Cambodia,กัมพูชา,116,KH,KHM,2023,2023KHM
+35,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Cameroon,แคเมอรูน,120,CM,CMR,2023,2023CMR
+36,001,World,019,Americas,021,Northern America,000,,Canada,แคนาดา,124,CA,CAN,2023,2023CAN
+37,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Cabo Verde,กาบูเวร์ดี,132,CV,CPV,2023,2023CPV
+38,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Cayman Islands,เกาะเคย์แมน,136,KY,CYM,2023,2023CYM
+39,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Central African Republic,สาธารณรัฐแอฟริกากลาง,140,CF,CAF,2023,2023CAF
+40,001,World,142,Asia,034,Southern Asia,000,,Sri Lanka,ศรีลังกา,144,LK,LKA,2023,2023LKA
+41,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Chad,ชาด,148,TD,TCD,2023,2023TCD
+42,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Chile,ชิลี,152,CL,CHL,2023,2023CHL
+43,001,World,142,Asia,030,Eastern Asia,000,,China,จีน,156,CN,CHN,2023,2023CHN
+44,001,World,009,Oceania,053,Australia and New Zealand,000,,Christmas Island,เกาะคริสต์มาส,162,CX,CXR,2023,2023CXR
+45,001,World,009,Oceania,053,Australia and New Zealand,000,,Cocos (Keeling) Islands,หมู่เกาะโคโคส (คีลิง),166,CC,CCK,2023,2023CCK
+46,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Colombia,โคลอมเบีย,170,CO,COL,2023,2023COL
+47,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Comoros,คอโมโรส,174,KM,COM,2023,2023COM
+48,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Mayotte,มายอต,175,YT,MYT,2023,2023MYT
+49,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Congo,สาธารณรัฐคองโก,178,CG,COG,2023,2023COG
+50,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Democratic Republic of the Congo,สาธารณรัฐประชาธิปไตยคองโก,180,CD,COD,2023,2023COD
+51,001,World,009,Oceania,061,Polynesia,000,,Cook Islands,เกาะคุก,184,CK,COK,2023,2023COK
+52,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,Costa Rica,คอสตาริกา,188,CR,CRI,2023,2023CRI
+53,001,World,150,Europe,039,Southern Europe,000,,Croatia,โครเอเชีย,191,HR,HRV,2023,2023HRV
+54,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Cuba,คิวบา,192,CU,CUB,2023,2023CUB
+55,001,World,142,Asia,145,Western Asia,000,,Cyprus,ไซปรัส,196,CY,CYP,2023,2023CYP
+56,001,World,150,Europe,151,Eastern Europe,000,,Czechia,เช็กเกีย,203,CZ,CZE,2023,2023CZE
+57,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Benin,เบนิน,204,BJ,BEN,2023,2023BEN
+58,001,World,150,Europe,154,Northern Europe,000,,Denmark,เดนมาร์ก,208,DK,DNK,2023,2023DNK
+59,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Dominica,ดอมินีกา,212,DM,DMA,2023,2023DMA
+60,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Dominican Republic,สาธารณรัฐโดมินิกัน,214,DO,DOM,2023,2023DOM
+61,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Ecuador,เอกวาดอร์,218,EC,ECU,2023,2023ECU
+62,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,El Salvador,เอลซัลวาดอร์,222,SV,SLV,2023,2023SLV
+63,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Equatorial Guinea,อิเควทอเรียลกินี,226,GQ,GNQ,2023,2023GNQ
+64,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Ethiopia,เอธิโอเปีย,231,ET,ETH,2023,2023ETH
+65,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Eritrea,เอริเทรีย,232,ER,ERI,2023,2023ERI
+66,001,World,150,Europe,154,Northern Europe,000,,Estonia,เอสโตเนีย,233,EE,EST,2023,2023EST
+67,001,World,150,Europe,154,Northern Europe,000,,Faroe Islands,เกาะแฟโร,234,FO,FRO,2023,2023FRO
+68,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Falkland Islands (Malvinas),เกาะฟอล์กแลนด์,238,FK,FLK,2023,2023FLK
+69,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,South Georgia and the South Sandwich Islands,เกาะเซาท์จอร์เจียและหมู่เกาะเซาท์แซนด์วิช,239,GS,SGS,2023,2023SGS
+70,001,World,009,Oceania,054,Melanesia,000,,Fiji,ฟีจี,242,FJ,FJI,2023,2023FJI
+71,001,World,150,Europe,154,Northern Europe,000,,Finland,ฟินแลนด์,246,FI,FIN,2023,2023FIN
+72,001,World,150,Europe,154,Northern Europe,000,,Åland Islands,เกาะโอลันด์,248,AX,ALA,2023,2023ALA
+73,001,World,150,Europe,155,Western Europe,000,,France,ฝรั่งเศส,250,FR,FRA,2023,2023FRA
+74,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,French Guiana,เฟรนช์เกียนา,254,GF,GUF,2023,2023GUF
+75,001,World,009,Oceania,061,Polynesia,000,,French Polynesia,เฟรนช์พอลินีเชีย,258,PF,PYF,2023,2023PYF
+76,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,French Southern Territories,เฟรนช์เซาเทิร์นและแอนตาร์กติกแลนดส์,260,TF,ATF,2023,2023ATF
+77,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Djibouti,จิบูตี,262,DJ,DJI,2023,2023DJI
+78,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Gabon,กาบอง,266,GA,GAB,2023,2023GAB
+79,001,World,142,Asia,145,Western Asia,000,,Georgia,จอร์เจีย,268,GE,GEO,2023,2023GEO
+80,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Gambia,แกมเบีย,270,GM,GMB,2023,2023GMB
+81,001,World,142,Asia,145,Western Asia,000,,State of Palestine,ปาเลสไตน์,275,PS,PSE,2023,2023PSE
+82,001,World,150,Europe,155,Western Europe,000,,Germany,เยอรมนี,276,DE,DEU,2023,2023DEU
+83,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Ghana,กานา,288,GH,GHA,2023,2023GHA
+84,001,World,150,Europe,039,Southern Europe,000,,Gibraltar,ยิบรอลตาร์,292,GI,GIB,2023,2023GIB
+85,001,World,009,Oceania,057,Micronesia,000,,Kiribati,คิริบาส,296,KI,KIR,2023,2023KIR
+86,001,World,150,Europe,039,Southern Europe,000,,Greece,กรีซ,300,GR,GRC,2023,2023GRC
+87,001,World,019,Americas,021,Northern America,000,,Greenland,กรีนแลนด์,304,GL,GRL,2023,2023GRL
+88,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Grenada,กรีเนดา,308,GD,GRD,2023,2023GRD
+89,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Guadeloupe,กัวเดอลุป,312,GP,GLP,2023,2023GLP
+90,001,World,009,Oceania,057,Micronesia,000,,Guam,กวม,316,GU,GUM,2023,2023GUM
+91,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,Guatemala,กัวเตมาลา,320,GT,GTM,2023,2023GTM
+92,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Guinea,กินี,324,GN,GIN,2023,2023GIN
+93,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Guyana,กายอานา,328,GY,GUY,2023,2023GUY
+94,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Haiti,เฮติ,332,HT,HTI,2023,2023HTI
+95,001,World,009,Oceania,053,Australia and New Zealand,000,,Heard Island and McDonald Islands,เกาะเฮิร์ดและหมู่เกาะแมกดอนัลด์,334,HM,HMD,2023,2023HMD
+96,001,World,150,Europe,039,Southern Europe,000,,Holy See,สันตะสำนัก,336,VA,VAT,2023,2023VAT
+97,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,Honduras,ฮอนดูรัส,340,HN,HND,2023,2023HND
+98,001,World,142,Asia,030,Eastern Asia,000,,"China, Hong Kong Special Administrative Region",ฮ่องกง,344,HK,HKG,2023,2023HKG
+99,001,World,150,Europe,151,Eastern Europe,000,,Hungary,ฮังการี,348,HU,HUN,2023,2023HUN
+100,001,World,150,Europe,154,Northern Europe,000,,Iceland,ไอซ์แลนด์,352,IS,ISL,2023,2023ISL
+101,001,World,142,Asia,034,Southern Asia,000,,India,อินเดีย,356,IN,IND,2023,2023IND
+102,001,World,142,Asia,035,South-eastern Asia,000,,Indonesia,อินโดนีเซีย,360,ID,IDN,2023,2023IDN
+103,001,World,142,Asia,034,Southern Asia,000,,Iran (Islamic Republic of),อิหร่าน,364,IR,IRN,2023,2023IRN
+104,001,World,142,Asia,145,Western Asia,000,,Iraq,อิรัก,368,IQ,IRQ,2023,2023IRQ
+105,001,World,150,Europe,154,Northern Europe,000,,Ireland,ไอร์แลนด์,372,IE,IRL,2023,2023IRL
+106,001,World,142,Asia,145,Western Asia,000,,Israel,อิสราเอล,376,IL,ISR,2023,2023ISR
+107,001,World,150,Europe,039,Southern Europe,000,,Italy,อิตาลี,380,IT,ITA,2023,2023ITA
+108,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Côte d’Ivoire,โกตดิวัวร์,384,CI,CIV,2023,2023CIV
+109,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Jamaica,จาเมกา,388,JM,JAM,2023,2023JAM
+110,001,World,142,Asia,030,Eastern Asia,000,,Japan,ญี่ปุ่น,392,JP,JPN,2023,2023JPN
+111,001,World,142,Asia,143,Central Asia,000,,Kazakhstan,คาซัคสถาน,398,KZ,KAZ,2023,2023KAZ
+112,001,World,142,Asia,145,Western Asia,000,,Jordan,จอร์แดน,400,JO,JOR,2023,2023JOR
+113,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Kenya,เคนยา,404,KE,KEN,2023,2023KEN
+114,001,World,142,Asia,030,Eastern Asia,000,,Democratic People's Republic of Korea,เกาหลีเหนือ,408,KP,PRK,2023,2023PRK
+115,001,World,142,Asia,030,Eastern Asia,000,,Republic of Korea,เกาหลี,410,KR,KOR,2023,2023KOR
+116,001,World,142,Asia,145,Western Asia,000,,Kuwait,คูเวต,414,KW,KWT,2023,2023KWT
+117,001,World,142,Asia,143,Central Asia,000,,Kyrgyzstan,คีร์กีซสถาน,417,KG,KGZ,2023,2023KGZ
+118,001,World,142,Asia,035,South-eastern Asia,000,,Lao People's Democratic Republic,ลาว,418,LA,LAO,2023,2023LAO
+119,001,World,142,Asia,145,Western Asia,000,,Lebanon,เลบานอน,422,LB,LBN,2023,2023LBN
+120,001,World,002,Africa,202,Sub-Saharan Africa,018,Southern Africa,Lesotho,เลโซโท,426,LS,LSO,2023,2023LSO
+121,001,World,150,Europe,154,Northern Europe,000,,Latvia,ลัตเวีย,428,LV,LVA,2023,2023LVA
+122,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Liberia,ไลบีเรีย,430,LR,LBR,2023,2023LBR
+123,001,World,002,Africa,015,Northern Africa,000,,Libya,ลิเบีย,434,LY,LBY,2023,2023LBY
+124,001,World,150,Europe,155,Western Europe,000,,Liechtenstein,ลีชเทินชไตน์,438,LI,LIE,2023,2023LIE
+125,001,World,150,Europe,154,Northern Europe,000,,Lithuania,ลิทัวเนีย,440,LT,LTU,2023,2023LTU
+126,001,World,150,Europe,155,Western Europe,000,,Luxembourg,ลักเซมเบิร์ก,442,LU,LUX,2023,2023LUX
+127,001,World,142,Asia,030,Eastern Asia,000,,"China, Macao Special Administrative Region",มาเก๊า,446,MO,MAC,2023,2023MAC
+128,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Madagascar,มาดากัสการ์,450,MG,MDG,2023,2023MDG
+129,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Malawi,มาลาวี,454,MW,MWI,2023,2023MWI
+130,001,World,142,Asia,035,South-eastern Asia,000,,Malaysia,มาเลเซีย,458,MY,MYS,2023,2023MYS
+131,001,World,142,Asia,034,Southern Asia,000,,Maldives,มัลดีฟส์,462,MV,MDV,2023,2023MDV
+132,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Mali,มาลี,466,ML,MLI,2023,2023MLI
+133,001,World,150,Europe,039,Southern Europe,000,,Malta,มอลตา,470,MT,MLT,2023,2023MLT
+134,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Martinique,มาร์ตีนิก,474,MQ,MTQ,2023,2023MTQ
+135,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Mauritania,มอริเตเนีย,478,MR,MRT,2023,2023MRT
+136,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Mauritius,มอริเชียส,480,MU,MUS,2023,2023MUS
+137,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,Mexico,เม็กซิโก,484,MX,MEX,2023,2023MEX
+138,001,World,150,Europe,155,Western Europe,000,,Monaco,โมนาโก,492,MC,MCO,2023,2023MCO
+139,001,World,142,Asia,030,Eastern Asia,000,,Mongolia,มองโกเลีย,496,MN,MNG,2023,2023MNG
+140,001,World,150,Europe,151,Eastern Europe,000,,Republic of Moldova,มอลโดวา,498,MD,MDA,2023,2023MDA
+141,001,World,150,Europe,039,Southern Europe,000,,Montenegro,มอนเตเนโกร,499,ME,MNE,2023,2023MNE
+142,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Montserrat,มอนต์เซอร์รัต,500,MS,MSR,2023,2023MSR
+143,001,World,002,Africa,015,Northern Africa,000,,Morocco,โมร็อกโก,504,MA,MAR,2023,2023MAR
+144,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Mozambique,โมซัมบิก,508,MZ,MOZ,2023,2023MOZ
+145,001,World,142,Asia,145,Western Asia,000,,Oman,โอมาน,512,OM,OMN,2023,2023OMN
+146,001,World,002,Africa,202,Sub-Saharan Africa,018,Southern Africa,Namibia,นามิเบีย,516,NA,NAM,2023,2023NAM
+147,001,World,009,Oceania,057,Micronesia,000,,Nauru,นาอูรู,520,NR,NRU,2023,2023NRU
+148,001,World,142,Asia,034,Southern Asia,000,,Nepal,เนปาล,524,NP,NPL,2023,2023NPL
+149,001,World,150,Europe,155,Western Europe,000,,Netherlands (Kingdom of the),สหราชอาณาจักรเนเธอร์แลนด์,528,NL,NLD,2023,2023NLD
+150,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Curaçao,กูราเซา,531,CW,CUW,2023,2023CUW
+151,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Aruba,อารูบา,533,AW,ABW,2023,2023ABW
+152,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Sint Maarten (Dutch part),ซินต์มาร์เติน,534,SX,SXM,2023,2023SXM
+153,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,"Bonaire, Sint Eustatius and Saba",โบแนเรอ,535,BQ,BES,2023,2023BES
+154,001,World,009,Oceania,054,Melanesia,000,,New Caledonia,นิวแคลิโดเนีย,540,NC,NCL,2023,2023NCL
+155,001,World,009,Oceania,054,Melanesia,000,,Vanuatu,วานูวาตู,548,VU,VUT,2023,2023VUT
+156,001,World,009,Oceania,053,Australia and New Zealand,000,,New Zealand,นิวซีแลนด์,554,NZ,NZL,2023,2023NZL
+157,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,Nicaragua,นิการากัว,558,NI,NIC,2023,2023NIC
+158,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Niger,ไนเจอร์,562,NE,NER,2023,2023NER
+159,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Nigeria,ไนจีเรีย,566,NG,NGA,2023,2023NGA
+160,001,World,009,Oceania,061,Polynesia,000,,Niue,นีวเว,570,NU,NIU,2023,2023NIU
+161,001,World,009,Oceania,053,Australia and New Zealand,000,,Norfolk Island,เกาะนอร์ฟอล์ก,574,NF,NFK,2023,2023NFK
+162,001,World,150,Europe,154,Northern Europe,000,,Norway,นอร์เวย์,578,NO,NOR,2023,2023NOR
+163,001,World,009,Oceania,057,Micronesia,000,,Northern Mariana Islands,หมู่เกาะนอร์เทิร์นมาเรียนา,580,MP,MNP,2023,2023MNP
+164,001,World,009,Oceania,057,Micronesia,000,,United States Minor Outlying Islands,เกาะเล็กรอบนอกของสหรัฐ,581,UM,UMI,2023,2023UMI
+165,001,World,009,Oceania,057,Micronesia,000,,Micronesia (Federated States of),ไมโครนีเชีย,583,FM,FSM,2023,2023FSM
+166,001,World,009,Oceania,057,Micronesia,000,,Marshall Islands,สาธารณรัฐหมู่เกาะมาร์แชลล์,584,MH,MHL,2023,2023MHL
+167,001,World,009,Oceania,057,Micronesia,000,,Palau,ปาเลา,585,PW,PLW,2023,2023PLW
+168,001,World,142,Asia,034,Southern Asia,000,,Pakistan,ปากีสถาน,586,PK,PAK,2023,2023PAK
+169,001,World,019,Americas,419,Latin America and the Caribbean,013,Central America,Panama,ปานามา,591,PA,PAN,2023,2023PAN
+170,001,World,009,Oceania,054,Melanesia,000,,Papua New Guinea,ปาปัวนิวกินี,598,PG,PNG,2023,2023PNG
+171,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Paraguay,ปารากวัย,600,PY,PRY,2023,2023PRY
+172,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Peru,เปรู,604,PE,PER,2023,2023PER
+173,001,World,142,Asia,035,South-eastern Asia,000,,Philippines,ฟิลิปปินส์,608,PH,PHL,2023,2023PHL
+174,001,World,009,Oceania,061,Polynesia,000,,Pitcairn,เกาะพิตแคร์น,612,PN,PCN,2023,2023PCN
+175,001,World,150,Europe,151,Eastern Europe,000,,Poland,โปแลนด์,616,PL,POL,2023,2023POL
+176,001,World,150,Europe,039,Southern Europe,000,,Portugal,โปรตุเกส,620,PT,PRT,2023,2023PRT
+177,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Guinea-Bissau,กินี-บิสเซา,624,GW,GNB,2023,2023GNB
+178,001,World,142,Asia,035,South-eastern Asia,000,,Timor-Leste,ติมอร์-เลสเต,626,TL,TLS,2023,2023TLS
+179,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Puerto Rico,โตรีโก,630,PR,PRI,2023,2023PRI
+180,001,World,142,Asia,145,Western Asia,000,,Qatar,กาตาร์,634,QA,QAT,2023,2023QAT
+181,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Réunion,เรอูว์นียง,638,RE,REU,2023,2023REU
+182,001,World,150,Europe,151,Eastern Europe,000,,Romania,โรมาเนีย,642,RO,ROU,2023,2023ROU
+183,001,World,150,Europe,151,Eastern Europe,000,,Russian Federation,รัสเซีย,643,RU,RUS,2023,2023RUS
+184,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Rwanda,รวันดา,646,RW,RWA,2023,2023RWA
+185,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Saint Barthélemy,แซ็ง-บาร์เตเลมี,652,BL,BLM,2023,2023BLM
+186,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Saint Helena,เซนต์เฮเลนา,654,SH,SHN,2023,2023SHN
+187,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Saint Kitts and Nevis,เซนต์คิตส์และเนวิส,659,KN,KNA,2023,2023KNA
+188,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Anguilla,แองกวิลลา,660,AI,AIA,2023,2023AIA
+189,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Saint Lucia,เซนต์ลูเชีย,662,LC,LCA,2023,2023LCA
+190,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Saint Martin (French Part),เซนต์ลูเชีย ,663,MF,MAF,2023,2023MAF
+191,001,World,019,Americas,021,Northern America,000,,Saint Pierre and Miquelon,"อาณานิคมโพ้นทะเล
+แซ็งปีแยร์และมีเกอลง",666,PM,SPM,2023,2023SPM
+192,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Saint Vincent and the Grenadines,เซนต์วินเซนต์และเกรนาดีนส์,670,VC,VCT,2023,2023VCT
+193,001,World,150,Europe,039,Southern Europe,000,,San Marino,ซานมารีโน,674,SM,SMR,2023,2023SMR
+194,001,World,002,Africa,202,Sub-Saharan Africa,017,Middle Africa,Sao Tome and Principe,เซาตูแมอีปริงซีป,678,ST,STP,2023,2023STP
+195,001,World,142,Asia,145,Western Asia,000,,Saudi Arabia,ซาอุดีอาระเบีย,682,SA,SAU,2023,2023SAU
+196,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Senegal,เซเนกัล,686,SN,SEN,2023,2023SEN
+197,001,World,150,Europe,039,Southern Europe,000,,Serbia,เซอร์เบีย,688,RS,SRB,2023,2023SRB
+198,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Seychelles,เซเชลส์,690,SC,SYC,2023,2023SYC
+199,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Sierra Leone,เซียร์ราลีโอน,694,SL,SLE,2023,2023SLE
+200,001,World,142,Asia,035,South-eastern Asia,000,,Singapore,สิงคโปร์,702,SG,SGP,2023,2023SGP
+201,001,World,150,Europe,151,Eastern Europe,000,,Slovakia,สโลวาเกีย,703,SK,SVK,2023,2023SVK
+202,001,World,142,Asia,035,South-eastern Asia,000,,Viet Nam,เวียดนาม,704,VN,VNM,2023,2023VNM
+203,001,World,150,Europe,039,Southern Europe,000,,Slovenia,สโลวีเนีย,705,SI,SVN,2023,2023SVN
+204,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Somalia,โซมาเลีย,706,SO,SOM,2023,2023SOM
+205,001,World,002,Africa,202,Sub-Saharan Africa,018,Southern Africa,South Africa,แอฟริกาใต้,710,ZA,ZAF,2023,2023ZAF
+206,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Zimbabwe,ซิมบับเว,716,ZW,ZWE,2023,2023ZWE
+207,001,World,150,Europe,039,Southern Europe,000,,Spain,สเปน,724,ES,ESP,2023,2023ESP
+208,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,South Sudan,ซูดานใต้,728,SS,SSD,2023,2023SSD
+209,001,World,002,Africa,015,Northern Africa,000,,Sudan,ซูดาน,729,SD,SDN,2023,2023SDN
+210,001,World,002,Africa,015,Northern Africa,000,,Western Sahara,เวสเทิร์นสะฮารา,732,EH,ESH,2023,2023ESH
+211,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Suriname,ซูรินาม,740,SR,SUR,2023,2023SUR
+212,001,World,150,Europe,154,Northern Europe,000,,Svalbard and Jan Mayen Islands,‎สฟาลบาร์และยานไมเอน,744,SJ,SJM,2023,2023SJM
+213,001,World,002,Africa,202,Sub-Saharan Africa,018,Southern Africa,Eswatini,เอสวาตีนี,748,SZ,SWZ,2023,2023SWZ
+214,001,World,150,Europe,154,Northern Europe,000,,Sweden,สวีเดน,752,SE,SWE,2023,2023SWE
+215,001,World,150,Europe,155,Western Europe,000,,Switzerland,สวิตเซอร์แลนด์,756,CH,CHE,2023,2023CHE
+216,001,World,142,Asia,145,Western Asia,000,,Syrian Arab Republic,ซีเรีย,760,SY,SYR,2023,2023SYR
+217,001,World,142,Asia,143,Central Asia,000,,Tajikistan,ทาจิกิสถาน,762,TJ,TJK,2023,2023TJK
+218,001,World,142,Asia,035,South-eastern Asia,000,,Thailand,ไทย,764,TH,THA,2023,2023THA
+219,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Togo,โตโก,768,TG,TGO,2023,2023TGO
+220,001,World,009,Oceania,061,Polynesia,000,,Tokelau,โตเกเลา,772,TK,TKL,2023,2023TKL
+221,001,World,009,Oceania,061,Polynesia,000,,Tonga,ตองงา,776,TO,TON,2023,2023TON
+222,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Trinidad and Tobago,ตรินิแดดและโตเบโก,780,TT,TTO,2023,2023TTO
+223,001,World,142,Asia,145,Western Asia,000,,United Arab Emirates,สหรัฐอาหรับเอมิเรตส์,784,AE,ARE,2023,2023ARE
+224,001,World,002,Africa,015,Northern Africa,000,,Tunisia,ตูนิเซีย,788,TN,TUN,2023,2023TUN
+225,001,World,142,Asia,145,Western Asia,000,,Türkiye,ตุรกี,792,TR,TUR,2023,2023TUR
+226,001,World,142,Asia,143,Central Asia,000,,Turkmenistan,เติร์กเมนิสถาน,795,TM,TKM,2023,2023TKM
+227,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,Turks and Caicos Islands,เกาะเติกส์และเคคอส,796,TC,TCA,2023,2023TCA
+228,001,World,009,Oceania,061,Polynesia,000,,Tuvalu,ตูวาลู,798,TV,TUV,2023,2023TUV
+229,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Uganda,ยูกันดา,800,UG,UGA,2023,2023UGA
+230,001,World,150,Europe,151,Eastern Europe,000,,Ukraine,ยูเครน,804,UA,UKR,2023,2023UKR
+231,001,World,150,Europe,039,Southern Europe,000,,North Macedonia,มาซิโดเนียเหนือ,807,MK,MKD,2023,2023MKD
+232,001,World,002,Africa,015,Northern Africa,000,,Egypt,อียิปต์,818,EG,EGY,2023,2023EGY
+233,001,World,150,Europe,154,Northern Europe,000,,United Kingdom of Great Britain and Northern Ireland,สหราชอาณาจักร,826,GB,GBR,2023,2023GBR
+234,001,World,150,Europe,154,Northern Europe,830,Channel Islands,Guernsey,เกิร์นซีย์,831,GG,GGY,2023,2023GGY
+235,001,World,150,Europe,154,Northern Europe,830,Channel Islands,Jersey,เจอร์ซีย์,832,JE,JEY,2023,2023JEY
+236,001,World,150,Europe,154,Northern Europe,000,,Isle of Man,ไอล์ออฟแมน,833,IM,IMN,2023,2023IMN
+237,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,United Republic of Tanzania,แทนซาเนีย,834,TZ,TZA,2023,2023TZA
+238,001,World,019,Americas,021,Northern America,000,,United States of America,สหรัฐ,840,US,USA,2023,2023USA
+239,001,World,019,Americas,419,Latin America and the Caribbean,029,Caribbean,United States Virgin Islands,เกาะเวอร์จินของสหรัฐ,850,VI,VIR,2023,2023VIR
+240,001,World,002,Africa,202,Sub-Saharan Africa,011,Western Africa,Burkina Faso,บูร์กินาฟาโซ,854,BF,BFA,2023,2023BFA
+241,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Uruguay,อุรุกวัย,858,UY,URY,2023,2023URY
+242,001,World,142,Asia,143,Central Asia,000,,Uzbekistan,อุซเบกิสถาน,860,UZ,UZB,2023,2023UZB
+243,001,World,019,Americas,419,Latin America and the Caribbean,005,South America,Venezuela (Bolivarian Republic of),เวเนซุเอลา,862,VE,VEN,2023,2023VEN
+244,001,World,009,Oceania,061,Polynesia,000,,Wallis and Futuna Islands,วอลิสและฟูตูนา,876,WF,WLF,2023,2023WLF
+245,001,World,009,Oceania,061,Polynesia,000,,Samoa,ซามัว,882,WS,WSM,2023,2023WSM
+246,001,World,142,Asia,145,Western Asia,000,,Yemen,เยเมน,887,YE,YEM,2023,2023YEM
+247,001,World,002,Africa,202,Sub-Saharan Africa,014,Eastern Africa,Zambia,แซมเบีย,894,ZM,ZMB,2023,2023ZMB
+248,001,World,,,,,,,World,โลก,,01,001,2023,2023001
+249,999,Unknow,,,,,,,Unknow,ไม่ระบุ,,99,999,2023,2023999
