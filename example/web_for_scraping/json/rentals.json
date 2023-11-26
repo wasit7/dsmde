@@ -1,0 +1,14 @@
+{
+  "rentals": [
+    {"rent_id": 1, "book_id": 1, "customer_id": 1, "rent_date": "2023-01-01", "return_date": "2023-01-10"},
+    {"rent_id": 2, "book_id": 2, "customer_id": 2, "rent_date": "2023-01-05", "return_date": "2023-01-15"},
+    {"rent_id": 3, "book_id": 3, "customer_id": 3, "rent_date": "2023-01-10", "return_date": "2023-01-20"},
+    {"rent_id": 4, "book_id": 4, "customer_id": 4, "rent_date": "2023-01-15", "return_date": "2023-01-25"},
+    {"rent_id": 5, "book_id": 5, "customer_id": 5, "rent_date": "2023-01-20", "return_date": "2023-01-30"},
+    {"rent_id": 6, "book_id": 1, "customer_id": 6, "rent_date": "2023-02-01", "return_date": "2023-02-10"},
+    {"rent_id": 7, "book_id": 2, "customer_id": 7, "rent_date": "2023-02-05", "return_date": "2023-02-15"},
+    {"rent_id": 8, "book_id": 3, "customer_id": 8, "rent_date": "2023-02-10", "return_date": "2023-02-20"},
+    {"rent_id": 9, "book_id": 4, "customer_id": 9, "rent_date": "2023-02-15", "return_date": "2023-02-25"},
+    {"rent_id": 10, "book_id": 5, "customer_id": 10, "rent_date": "2023-02-20", "return_date": "2023-02-28"}
+  ]
+}

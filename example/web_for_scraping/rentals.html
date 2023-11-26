@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rental List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        async function loadRentals() {
+            const response = await fetch('json/rentals.json');
+            const data = await response.json();
+            const rentalsContainer = document.getElementById('rentals-container');
+
+            let index = 0;
+            const interval = setInterval(() => {
+                if (index < data.rentals.length) {
+                    const rental = data.rentals[index];
+                    const rentalElement = document.createElement('div');
+                    rentalElement.classList.add('my-rent-container','max-w-sm','b','rounded', 'overflow-hidden','shadow-lg','ml-6','mt-6','bg-slate-50','p-2');
+                    rentalElement.innerHTML = `
+                    <div class="grid grid-cols-2 divide-x">
+                        <div class="text-right p-1">Rent ID :</div> 
+                        <div class="text-left p-1 rent-id">${rental.rent_id}</div>
+                    </div>
+                    <div class="grid grid-cols-2 divide-x">
+                        <div class="text-right p-1">BOOK ID :</div> 
+                        <div class="text-left p-1 book-id">${rental.book_id}</div>
+                    </div>
+                    <div class="grid grid-cols-2 divide-x">
+                        <div class="text-right p-1">Customer ID :</div> 
+                        <div class="text-left p-1 customer-id">${rental.customer_id}</div>
+                    </div>
+                    <div class="grid grid-cols-2 divide-x">
+                        <div class="text-right p-1">Rent Date :</div> 
+                        <div class="text-left p-1 return-date">${rental.rent_date}</div>
+                    </div>
+                    <div class="grid grid-cols-2 divide-x">
+                        <div class="text-right p-1">Return Date :</div> 
+                        <div class="text-left p-1 rent-date">${rental.rent_id}</div>
+                    </div>
+                    `;
+                    // rentalElement.innerHTML = `Rent ID: ${rental.rent_id}, Book ID: ${rental.book_id}, Customer ID: ${rental.customer_id}, Rent Date: ${rental.rent_date}, Return Date: ${rental.return_date}`;
+                    rentalsContainer.appendChild(rentalElement);
+                    index++;
+                } else {
+                    clearInterval(interval);
+                    document.getElementById('footer').innerText = 'Loading complete';
+                }
+            }, 1000); // Load a new record every 5 seconds
+        }
+
+        window.onload = loadRentals;
+    </script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline">Rental List</h1>
+    <div id="rentals-container"></div>
+    <div id="footer" class="max-w-sm my-8"></div>
+</body>
+</html>

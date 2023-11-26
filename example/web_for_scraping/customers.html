@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer List with Pagination</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        async function loadCustomers(pageNumber) {
+            const response = await fetch('json/customers.json');
+            const data = await response.json();
+            const customersContainer = document.getElementById('customers-container');
+            customersContainer.innerHTML = ''; // Clear existing content
+
+            data.customers[`page${pageNumber}`].forEach(customer => {
+                const customerElement = document.createElement('div');
+                customerElement.classList.add('my-customer-container','max-w-sm','b','rounded', 'overflow-hidden','shadow-lg','ml-6','mt-6');
+                // customerElement.innerHTML = `ID: ${customer.customer_id}, Name: ${customer.name}, Email: ${customer.email}`;
+                const el_id = document.createElement('div');
+                el_id.classList.add('customer_id', 'bg-slate-50','p-2');
+                el_id.textContent = `${customer.customer_id}`;
+                customerElement.appendChild(el_id);
+
+                const el_name = document.createElement('div');
+                el_name.classList.add('customer_name', 'bg-slate-50','p-2');
+                el_name.textContent = `${customer.name}`;
+                customerElement.appendChild(el_name);
+
+                const el_email = document.createElement('div');
+                el_email.classList.add('customer_email', 'bg-slate-50','p-2');
+                el_email.textContent = `${customer.email}`;
+                customerElement.appendChild(el_email);
+                customersContainer.appendChild(customerElement);
+            });
+        }
+
+        function changePage(pageNumber) {
+            loadCustomers(pageNumber);
+        }
+
+        window.onload = () => loadCustomers(1); // Load first page by default
+    </script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline">Customer List</h1>
+    <div id="customers-container"></div>
+    <div id="pagination-container" class="mx-auto max-w-sm my-8">
+        <span id="page1" class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10" onclick="changePage(1)"> Page 1 </span>
+        <span id="page2" class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10" onclick="changePage(2)"> Page 2 </span>
+    </div>
+    <!-- <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" onclick="changePage(1)">Page 1</button> -->
+    <!-- <button onclick="changePage(2)">Page 2</button> -->
+    <!-- Add more buttons for additional pages as needed -->
+</body>
+</html>

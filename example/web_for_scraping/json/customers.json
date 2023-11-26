@@ -1,0 +1,18 @@
+{
+  "customers": {
+    "page1": [
+      {"customer_id": 1, "name": "Alice Smith", "email": "alice@example.com"},
+      {"customer_id": 2, "name": "Bob Johnson", "email": "bob@example.com"},
+      {"customer_id": 3, "name": "Carol White", "email": "carol@example.com"},
+      {"customer_id": 4, "name": "David Brown", "email": "david@example.com"},
+      {"customer_id": 5, "name": "Eve Davis", "email": "eve@example.com"}
+    ],
+    "page2": [
+      {"customer_id": 6, "name": "Frank Miller", "email": "frank@example.com"},
+      {"customer_id": 7, "name": "Grace Lee", "email": "grace@example.com"},
+      {"customer_id": 8, "name": "Henry Wilson", "email": "henry@example.com"},
+      {"customer_id": 9, "name": "Irene Taylor", "email": "irene@example.com"},
+      {"customer_id": 10, "name": "Jake Moore", "email": "jake@example.com"}
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+        async function loadBooks() {
+            const response = await fetch('json/books.json');
+            const data = await response.json();
+            const booksContainer = document.getElementById('books-container');
+
+            data.books.forEach(book => {
+                const bookElement = document.createElement('div');
+                bookElement.classList.add('my-book-container','max-w-sm','b','rounded', 'overflow-hidden','shadow-lg','ml-6','mt-6','bg-slate-50','p-2');
+                bookElement.innerHTML = `
+                <div class="book_tile"><b>${book.title}</b></div>
+                by
+                <div class="author">${book.author}</div>
+                <div class="book_id text-right">${book.book_id}</div>`;
+                booksContainer.appendChild(bookElement);
+            });
+        }
+
+        window.onload = loadBooks;
+    </script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline">Book List</h1>
+    <div id="books-container"></div>
+</body>
+</html>
