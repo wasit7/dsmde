@@ -7440,7 +7440,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Course-1:-Data-Collection-from-the-Internet-and-Social-Media-for-Data-Analysts">Course 1: Data Collection from the Internet and Social Media for Data Analysts<a class="anchor-link" href="#Course-1:-Data-Collection-from-the-Internet-and-Social-Media-for-Data-Analysts">¶</a></h1><h2 id="Hypothetical-Scenario:">Hypothetical Scenario:<a class="anchor-link" href="#Hypothetical-Scenario:">¶</a></h2><p>We're tasked with collecting and analyzing data from social media platforms to identify emerging trends related to environmental activism. We'll need to scrape data, handle various data types, and respect legal boundaries while aiming to provide actionable insights for a non-profit organization looking to boost its campaigns' effectiveness.</p>
+<h1 id="Course-1:-Data-Collection-from-the-Internet-and-Social-Media-for-Data-Analysts">Course 1: Data Collection from the Internet and Social Media for Data Analysts<a class="anchor-link" href="#Course-1:-Data-Collection-from-the-Internet-and-Social-Media-for-Data-Analysts">¶</a></h1><h2 id="Scenario:">Scenario:<a class="anchor-link" href="#Scenario:">¶</a></h2><p>We're tasked with collecting and analyzing data from social media platforms or websites to identify emerging trends.</p>
 </div>
 </div>
 </div>
@@ -7636,9 +7636,8 @@ Handling rate limits and designing scalable data requests ensure robust data col
 
 <span class="k">def</span> <span class="nf">safe_request</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">requests</span>
-
-<span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        
     <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RateLimitException</span><span class="p">:</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">safe_request</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>

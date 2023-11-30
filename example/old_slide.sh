@@ -1,1 +1,0 @@
-jupyter nbconvert $(find . -name '*.ipynb') --to slides
