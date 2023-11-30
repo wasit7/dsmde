@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>3_data_platform slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>async_example slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7434,267 +7434,112 @@ main {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=42e12559-45e2-458a-b8a9-1773f81f59ba">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=580acf14-348b-4cb4-9476-ea329f161c0a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-Notes-for-Course-4.3:-Data-Governance-Management-for-Data-Analysts">Lecture Notes for Course 4.3: Data Governance Management for Data Analysts<a class="anchor-link" href="#Lecture-Notes-for-Course-4.3:-Data-Governance-Management-for-Data-Analysts">¶</a></h1><h2 id="Hypothetical-Scenario:">Hypothetical Scenario:<a class="anchor-link" href="#Hypothetical-Scenario:">¶</a></h2><p>The data science students are working on a project for a healthcare provider to improve patient care through better data management. The students must ensure the data is collected, stored, and analyzed in compliance with regulations like HIPAA while being accessible for analysis to improve patient outcomes.</p>
+<h1 id="To-run-Async-functions-in-Jupyter">To run Async functions in Jupyter<a class="anchor-link" href="#To-run-Async-functions-in-Jupyter">¶</a></h1>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5bbf2994-4337-4c29-9120-01da18c326ac">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ddba734f-ae72-4b75-8538-9ce9eb67913e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-1:-Fundamentals-of-Data-Governance">Section 1: Fundamentals of Data Governance<a class="anchor-link" href="#Section-1:-Fundamentals-of-Data-Governance">¶</a></h3><p><strong>Text Content:</strong>
-Data Governance is the collection of practices and processes which help to ensure the formal management of data assets within an organization. It encompasses the people, processes, and technology required to manage and protect data.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8355f08a-9145-4469-8a57-17ad99c0444a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-2:-The-Role-of-Data-Discovery-in-Governance">Section 2: The Role of Data Discovery in Governance<a class="anchor-link" href="#Section-2:-The-Role-of-Data-Discovery-in-Governance">¶</a></h3><p><strong>Text Content:</strong>
-Data discovery is crucial in identifying the data assets you govern. It helps in classifying data, understanding its lineage, and its relevance to various business contexts.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf4ba7a9-05bb-458d-8f9b-997ef1e8cb8a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-3:-Data-Ingestion-Strategies-and-Best-Practices">Section 3: Data Ingestion Strategies and Best Practices<a class="anchor-link" href="#Section-3:-Data-Ingestion-Strategies-and-Best-Practices">¶</a></h3><p><strong>Text Content:</strong>
-Effective data ingestion involves transporting data from various sources to a storage medium where it can be accessed, used, and analyzed by an organization.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
 
-<span class="c1"># Example of ingesting data from a CSV file</span>
-<span class="n">data_frame</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'patient_data.csv'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_frame</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">seconds</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">seconds</span><span class="p">):</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Timer </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> second(s) passed"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Timer </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">: finished!'</span><span class="p">)</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># Running two timers concurrently</span>
+    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span>
+        <span class="n">timer</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>  <span class="c1"># Timer A for 5 seconds</span>
+        <span class="n">timer</span><span class="p">(</span><span class="s2">"B"</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>   <span class="c1"># Timer B for 3 seconds</span>
+    <span class="p">)</span>
+    
+<span class="k">await</span> <span class="n">main</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e86a0a60-cec3-4931-975f-c00b507426d8">
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Timer A: 1 second(s) passed
+Timer B: 1 second(s) passed
+Timer A: 2 second(s) passed
+Timer B: 2 second(s) passed
+Timer A: 3 second(s) passed
+Timer B: 3 second(s) passed
+Timer B: finished!
+Timer A: 4 second(s) passed
+Timer A: 5 second(s) passed
+Timer A: finished!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=afa3fdcb-8b28-4f4f-8971-5729d1bfc291">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-4:-Introduction-to-Python-Kedro-for-Data-Pipelines">Section 4: Introduction to Python Kedro for Data Pipelines<a class="anchor-link" href="#Section-4:-Introduction-to-Python-Kedro-for-Data-Pipelines">¶</a></h3><p><strong>Text Content:</strong>
-Kedro is a framework that uses software engineering best practices to help data scientists build robust data pipelines.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">kedro.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span><span class="p">,</span> <span class="n">node</span>
-<span class="kn">from</span> <span class="nn">kedro.runner</span> <span class="kn">import</span> <span class="n">SequentialRunner</span>
+<h1 id="To-run-Async-functions-in-command-line">To run Async functions in command line<a class="anchor-link" href="#To-run-Async-functions-in-command-line">¶</a></h1><p>standalone Python script (Python3.10+)</p>
+<h2 id="command-line">command line<a class="anchor-link" href="#command-line">¶</a></h2><div class="highlight"><pre><span></span>python<span class="w"> </span>async_example.py
+</pre></div>
+<h2 id="code">code<a class="anchor-link" href="#code">¶</a></h2><div class="highlight"><pre><span></span><span class="c1"># async_example.py</span>
+<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">aiohttp</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="c1"># Define a simple pipeline</span>
-<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
-    <span class="n">node</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">inputs</span><span class="o">=</span><span class="s2">"x"</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="s2">"y"</span><span class="p">)</span>
-<span class="p">])</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">seconds</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">seconds</span><span class="p">):</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Timer </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2"> second(s) passed"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Timer </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">: finished!'</span><span class="p">)</span>
 
-<span class="c1"># Run the pipeline</span>
-<span class="n">runner</span> <span class="o">=</span> <span class="n">SequentialRunner</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">data_catalog</span><span class="o">=</span><span class="p">{</span><span class="s1">'x'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}))</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># Running two timers concurrently</span>
+    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span>
+        <span class="n">timer</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>  <span class="c1"># Timer A for 5 seconds</span>
+        <span class="n">timer</span><span class="p">(</span><span class="s2">"B"</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>   <span class="c1"># Timer B for 3 seconds</span>
+    <span class="p">)</span>
+    
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d1b6863f-a30e-4b0b-bcef-37d305df213c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=603b9994-250d-4a1a-af82-45d17c12b345">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-5:-Automating-Workflows-with-Apache-Airflow">Section 5: Automating Workflows with Apache Airflow<a class="anchor-link" href="#Section-5:-Automating-Workflows-with-Apache-Airflow">¶</a></h3><p><strong>Text Content:</strong>
-Apache Airflow is an open-source tool to orchestrate complex computational workflows and data processing pipelines.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Pseudo-code snippet as Airflow requires full DAG setup</span>
-<span class="kn">from</span> <span class="nn">airflow</span> <span class="kn">import</span> <span class="n">DAG</span>
-<span class="kn">from</span> <span class="nn">airflow.operators.python_operator</span> <span class="kn">import</span> <span class="n">PythonOperator</span>
-
-<span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
-    <span class="c1"># function to execute</span>
-    <span class="k">pass</span>
-
-<span class="n">dag</span> <span class="o">=</span> <span class="n">DAG</span><span class="p">(</span><span class="s1">'my_dag'</span><span class="p">,</span> <span class="n">default_args</span><span class="o">=</span><span class="n">default_args</span><span class="p">,</span> <span class="n">schedule_interval</span><span class="o">=</span><span class="s1">'@daily'</span><span class="p">)</span>
-
-<span class="n">task</span> <span class="o">=</span> <span class="n">PythonOperator</span><span class="p">(</span>
-    <span class="n">task_id</span><span class="o">=</span><span class="s1">'my_task'</span><span class="p">,</span>
-    <span class="n">python_callable</span><span class="o">=</span><span class="n">my_function</span><span class="p">,</span>
-    <span class="n">dag</span><span class="o">=</span><span class="n">dag</span>
-<span class="p">)</span>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7fb21a0a-a5eb-434d-90ba-f3e717f5beb9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-6:-Using-Apache-Superset-for-Data-Visualization">Section 6: Using Apache Superset for Data Visualization<a class="anchor-link" href="#Section-6:-Using-Apache-Superset-for-Data-Visualization">¶</a></h3><p><strong>Text Content:</strong>
-Apache Superset is an open-source business intelligence web application that allows data exploration and visualization.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=068f5292-eb74-429c-9a3b-037af8ae46d9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-7:-Building-a-Data-Governance-Framework">Section 7: Building a Data Governance Framework<a class="anchor-link" href="#Section-7:-Building-a-Data-Governance-Framework">¶</a></h3><p><strong>Text Content:</strong>
-A data governance framework involves policies, standards, and metrics that ensure data is used and maintained correctly.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d9b04277-f61a-4ed6-b478-880a03050a32">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-8:-Data-Security-and-Compliance-Considerations">Section 8: Data Security and Compliance Considerations<a class="anchor-link" href="#Section-8:-Data-Security-and-Compliance-Considerations">¶</a></h3><p><strong>Text Content:</strong>
-Ensuring data security and compliance involves understanding the legal frameworks like GDPR or HIPAA and implementing the required controls.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf1ceb22-2428-495d-b582-50995fd9f39e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-9:-Case-Study:-Implementing-Governance-in-Healthcare-Data">Section 9: Case Study: Implementing Governance in Healthcare Data<a class="anchor-link" href="#Section-9:-Case-Study:-Implementing-Governance-in-Healthcare-Data">¶</a></h3><p><strong>Text Content:</strong>
-We explore how a healthcare provider implemented a data governance strategy to ensure the privacy, security, and integrity of patient data.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2d57d969-1b16-445a-9c84-d97aadafafdf">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-10:-Practical-Session:-Setting-up-a-Data-Landing-Zone">Section 10: Practical Session: Setting up a Data Landing Zone<a class="anchor-link" href="#Section-10:-Practical-Session:-Setting-up-a-Data-Landing-Zone">¶</a></h3><p><strong>Text Content:</strong>
-A Data Landing Zone is an intermediate storage area used for data processing. It's often the first stop for data in its raw form.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Simulating data landing zone using Python</span>
-<span class="kn">import</span> <span class="nn">os</span>
-
-<span class="c1"># Create a directory for the Data Landing Zone</span>
-<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">'data_landing_zone'</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># Assuming we have data to download</span>
-<span class="c1"># An example would be downloading data files into this directory</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dbbadd33-c2c0-4051-93b0-ddaac68d3d6a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-11:-Data-Cataloging-and-Metadata-Management">Section 11: Data Cataloging and Metadata Management<a class="anchor-link" href="#Section-11:-Data-Cataloging-and-Metadata-Management">¶</a></h3><p><strong>Text Content:</strong>
-Data cataloging helps in creating a centralized directory of your data assets, making it easier for data professionals to find the data they need.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Pseudo-code for cataloging</span>
-
- <span class="n">data</span> <span class="n">assets</span>
-<span class="c1"># Catalog can be built using databases, specialized software, or even Python packages like Pandas</span>
-<span class="n">data_catalog</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">'patient_data'</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">'location'</span><span class="p">:</span> <span class="s1">'data/2023/patient_data.csv'</span><span class="p">,</span>
-        <span class="s1">'description'</span><span class="p">:</span> <span class="s1">'Contains patient demographic and medical history.'</span>
-    <span class="p">},</span>
-    <span class="c1"># More entries would follow</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=da784629-f5fa-4179-9b24-9f75c968579a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-12:-Data-Quality-Management-and-Versioning">Section 12: Data Quality Management and Versioning<a class="anchor-link" href="#Section-12:-Data-Quality-Management-and-Versioning">¶</a></h3><p><strong>Text Content:</strong>
-Data quality management ensures that data is accurate, complete, and reliable. Versioning helps in tracking changes and maintaining the history of data.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Example of a function to check data quality</span>
-<span class="k">def</span> <span class="nf">check_data_quality</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span> <span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-
-<span class="c1"># Assuming `data_frame` is a Pandas DataFrame of our data</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">check_data_quality</span><span class="p">(</span><span class="n">data_frame</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b26f8671-b939-4b2f-95d6-b78c7e2c5a79">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-13:-Project:-Creating-an-End-to-End-Data-Pipeline">Section 13: Project: Creating an End-to-End Data Pipeline<a class="anchor-link" href="#Section-13:-Project:-Creating-an-End-to-End-Data-Pipeline">¶</a></h3><p><strong>Text Content:</strong>
-The project will involve students creating a data pipeline from ingestion to visualization, implementing governance practices throughout.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># High-level pseudo-code outlining the pipeline steps</span>
-<span class="c1"># Detailed Python code would be required for a full project</span>
-<span class="n">pipeline_steps</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'data_ingestion'</span><span class="p">,</span> <span class="s1">'data_processing'</span><span class="p">,</span> <span class="s1">'data_validation'</span><span class="p">,</span> <span class="s1">'data_visualization'</span><span class="p">]</span>
-<span class="c1"># Implement each step using Python functions or classes</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=59474f5a-be67-42fd-ac56-decabdc41f35">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-14:-Course-Summary:-The-Future-of-Data-Governance">Section 14: Course Summary: The Future of Data Governance<a class="anchor-link" href="#Section-14:-Course-Summary:-The-Future-of-Data-Governance">¶</a></h3><p><strong>Text Content:</strong>
-We summarize the course and discuss emerging trends in data governance, like the rise of automated governance through AI and machine learning.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d97c5d31-565b-4063-8db0-3f6851446495">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-15:-Interactive-Q&amp;A-and-Course-Feedback">Section 15: Interactive Q&amp;A and Course Feedback<a class="anchor-link" href="#Section-15:-Interactive-Q&amp;A-and-Course-Feedback">¶</a></h3><p><strong>Text Content:</strong>
-An interactive session where students can ask questions and provide feedback on the course, facilitating an active learning environment.</p>
 </div>
 </div>
 </div>

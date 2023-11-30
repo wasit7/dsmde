@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>5_keyword_software slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>old_07_knowledge_graph slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7434,315 +7434,457 @@ main {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bd5d5777-5972-4db9-82e7-b205ca2a5739">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0f5a52c6-05df-4872-a232-c64fd36c3ed9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-Notes-for-Course-4.5:-Software:-Keyword-Extraction-for-Data-Analysts">Lecture Notes for Course 4.5: Software: Keyword Extraction for Data Analysts<a class="anchor-link" href="#Lecture-Notes-for-Course-4.5:-Software:-Keyword-Extraction-for-Data-Analysts">¶</a></h1><h2 id="Hypothetical-Scenario:">Hypothetical Scenario:<a class="anchor-link" href="#Hypothetical-Scenario:">¶</a></h2><p><strong>Context</strong>: Imagine that the Thai Tourism Authority wants to analyze social media posts to understand what locations or services are trending among travelers. Your task is to use keyword extraction to identify these trends.</p>
+<h1 id="Course-7:-Knowledge-Graph-Network-Models-for-Data-Analysts">Course 7: Knowledge Graph Network Models for Data Analysts<a class="anchor-link" href="#Course-7:-Knowledge-Graph-Network-Models-for-Data-Analysts">¶</a></h1><p><strong>Course Description:</strong>
+The Dynamic world of Knowledge Graph Network Models focus on their creation, analysis, and application in data science. It's tailored for data analysts and covers everything from the basics of graph theory to advanced techniques in knowledge graph reasoning and embedding.</p>
+<p><strong>Course Objectives:</strong></p>
+<ul>
+<li>Understand the fundamentals of knowledge graphs and graph theory.</li>
+<li>Learn to extract SPO triples and construct knowledge graphs from textual data.</li>
+<li>Master knowledge graph embedding and visualization techniques.</li>
+<li>Develop skills in data integration, querying, and graph reasoning.</li>
+<li>Apply knowledge graph concepts in real-world scenarios, specifically in data governance and strategic planning.</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd1734f6-093e-4201-8ad3-70e5515a8761">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bc48de6d-aac3-4ee9-be7d-c4fdb9a27eeb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-1:-Introduction-to-Automated-Keyword-Extraction">Section 1: Introduction to Automated Keyword Extraction<a class="anchor-link" href="#Section-1:-Introduction-to-Automated-Keyword-Extraction">¶</a></h3><p><strong>Text Content</strong>: Automated keyword extraction is a process used to find words or phrases from text that represent the main content. It's crucial for summarizing data and understanding key themes without reading all the content.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code example for simple keyword extraction using RAKE (Rapid Automatic Keyword Extraction algorithm)</span>
-<span class="kn">from</span> <span class="nn">rake_nltk</span> <span class="kn">import</span> <span class="n">Rake</span>
-
-<span class="n">rake</span> <span class="o">=</span> <span class="n">Rake</span><span class="p">()</span>
-<span class="n">text</span> <span class="o">=</span> <span class="s2">"The Grand Palace in Bangkok has received thousands of likes on social media this month."</span>
-<span class="n">rake</span><span class="o">.</span><span class="n">extract_keywords_from_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-
-<span class="n">keyword_extracted</span> <span class="o">=</span> <span class="n">rake</span><span class="o">.</span><span class="n">get_ranked_phrases</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">keyword_extracted</span><span class="p">)</span>
-</pre></div>
+<h2 id="Section-1:-Hypothetical-Scenario-in-Thailand">Section 1: Hypothetical Scenario in Thailand<a class="anchor-link" href="#Section-1:-Hypothetical-Scenario-in-Thailand">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Developing a Knowledge Graph for Thailand's tourism sector.</li>
+<li>Identifying connections between tourist sites, local businesses, and cultural events.</li>
+<li>Improving recommendation systems for travelers.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Imagine we're tasked to enhance the experience of tourists in Thailand. We'll develop a knowledge graph that interlinks tourist sites, nearby accommodations, local cuisines, cultural events, and transportation options. This graph will serve as the backbone for a recommendation system tailored for international visitors.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Graph Theory: Understanding nodes and edges representing entities and their relationships.</li>
+<li>Recommendation Systems: How graph data can power personalized suggestions.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d3bb11c7-59d1-4901-8aec-192369cc8a2d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5fec859f-05c9-482b-a05a-e2cb47159f5b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-2:-Using-APIs-for-Named-Entity-Recognition-(NER)">Section 2: Using APIs for Named Entity Recognition (NER)<a class="anchor-link" href="#Section-2:-Using-APIs-for-Named-Entity-Recognition-(NER)">¶</a></h3><p><strong>Text Content</strong>: NER is a subtask of information extraction that seeks to locate and classify named entities mentioned in text into predefined categories such as the names of persons, organizations, locations, expressions of times, quantities, monetary values, percentages, etc.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for using an NER API</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="s2">"Ayutthaya Historical Park is frequently mentioned in traveler's blogs."</span>
-<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'text'</span><span class="p">:</span> <span class="n">text</span><span class="p">}</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">"http://ner_api_endpoint"</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
-
-<span class="n">entities</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">entities</span><span class="p">)</span>
-</pre></div>
+<h2 id="Section-2:-Introduction-to-Knowledge-Graphs">Section 2: Introduction to Knowledge Graphs<a class="anchor-link" href="#Section-2:-Introduction-to-Knowledge-Graphs">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Definition and components of a knowledge graph.</li>
+<li>Importance in structuring data and extracting insights.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Knowledge graphs organize data in a way that highlights the interconnectivity between different entities. They consist of nodes (entities) and edges (relationships), providing a structured form of data that's intuitive for both humans and AI systems to understand and use.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Semantic Web: Describes the relationships between data in a way that computers can understand.</li>
+<li>Ontologies: Frameworks for representing knowledge.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ae45c89b-5df7-4229-9643-5a365f520e00">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=77f579ee-7e78-4282-bfc8-9b66cc15f731">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-3:-Exploring-Zero-Shot-Sentence-Classification-APIs">Section 3: Exploring Zero-Shot Sentence Classification APIs<a class="anchor-link" href="#Section-3:-Exploring-Zero-Shot-Sentence-Classification-APIs">¶</a></h3><p><strong>Text Content</strong>: Zero-shot classification enables us to classify data into categories that the model has never seen before during training.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for using a zero-shot classification API</span>
-<span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">pipeline</span>
-
-<span class="n">classifier</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span><span class="s2">"zero-shot-classification"</span><span class="p">)</span>
-<span class="n">classification</span> <span class="o">=</span> <span class="n">classifier</span><span class="p">(</span>
-    <span class="s2">"Phi Phi Islands are a popular destination for tourists visiting Thailand."</span><span class="p">,</span>
-    <span class="n">candidate_labels</span><span class="o">=</span><span class="p">[</span><span class="s2">"travel"</span><span class="p">,</span> <span class="s2">"food"</span><span class="p">,</span> <span class="s2">"accommodation"</span><span class="p">,</span> <span class="s2">"entertainment"</span><span class="p">],</span>
-<span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">classification</span><span class="p">)</span>
-</pre></div>
+<h2 id="Section-3:-Extracting-SPO-Triples-from-Textual-Data">Section 3: Extracting SPO Triples from Textual Data<a class="anchor-link" href="#Section-3:-Extracting-SPO-Triples-from-Textual-Data">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Identifying Subject-Predicate-Object (SPO) triples in Thai language texts.</li>
+<li>Techniques for natural language processing in Thai.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+SPO extraction is the process of identifying subjects, predicates, and objects in sentences, which are critical for populating a knowledge graph. In the Thai language, this may involve specific challenges due to its script and grammar.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Syntactic Parsing: Analyzing sentence structure to understand grammar and relationships.</li>
+<li>Named Entity Recognition: Identifying and classifying key information in text.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aff3abbf-e6c7-4e8f-a681-a8b5a798a8e2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7e6bc4a8-4f3e-479b-8cc7-65493f2f1e3a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-4:-Question-and-Answering-with-RAG---An-Overview">Section 4: Question and Answering with RAG - An Overview<a class="anchor-link" href="#Section-4:-Question-and-Answering-with-RAG---An-Overview">¶</a></h3><p><strong>Text Content</strong>: The Retrieval-Augmented Generation (RAG) model combines the dense vector retrieval of relevant documents with a generative model to answer questions.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code to demonstrate RAG usage for Q&amp;A</span>
-<span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">RagTokenizer</span><span class="p">,</span> <span class="n">RagRetriever</span><span class="p">,</span> <span class="n">RagTokenForGeneration</span>
-
-<span class="n">tokenizer</span> <span class="o">=</span> <span class="n">RagTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">"facebook/rag-token-nq"</span><span class="p">)</span>
-<span class="n">retriever</span> <span class="o">=</span> <span class="n">RagRetriever</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">"facebook/rag-token-nq"</span><span class="p">,</span> <span class="n">index_name</span><span class="o">=</span><span class="s2">"exact"</span><span class="p">,</span> <span class="n">use_dummy_dataset</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">RagTokenForGeneration</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">"facebook/rag-token-nq"</span><span class="p">,</span> <span class="n">retriever</span><span class="o">=</span><span class="n">retriever</span><span class="p">)</span>
-
-<span class="n">input_ids</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="s2">"What is the most visited place in Thailand?"</span><span class="p">,</span> <span class="n">return_tensors</span><span class="o">=</span><span class="s2">"pt"</span><span class="p">)</span><span class="o">.</span><span class="n">input_ids</span>
-<span class="n">outputs</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">input_ids</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">skip_special_tokens</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-</pre></div>
+<h2 id="Section-4:-Exploring-Knowledge-Graph-Embedding-Techniques">Section 4: Exploring Knowledge Graph Embedding Techniques<a class="anchor-link" href="#Section-4:-Exploring-Knowledge-Graph-Embedding-Techniques">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Understanding embeddings in the context of knowledge graphs.</li>
+<li>Comparing different embedding models.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Embedding techniques translate high-dimensional information into lower-dimensional space while preserving relationships, facilitating operations like similarity search and link prediction in knowledge graphs.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Vector Space Models: Mathematical modeling of textual information.</li>
+<li>Translational Models: Approaches like TransE that interpret relationships as translations in the embedding space.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dfa5fe6c-201f-4531-91d4-cdc32295b0df">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cde79f13-a818-4c64-8bcc-0b3e80aaaa19">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-5:-Setting-up-the-API-Environment">Section 5: Setting up the API Environment<a class="anchor-link" href="#Section-5:-Setting-up-the-API-Environment">¶</a></h3><p><strong>Text Content</strong>: Setting up an environment for API interaction involves getting API keys, installing required libraries, and ensuring proper endpoint configuration.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for setting up an API environment</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="c1"># Load .env file where the API_KEY is stored</span>
-<span class="n">load_dotenv</span><span class="p">()</span>
-
-<span class="n">API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"API_KEY"</span><span class="p">)</span>
-
-<span class="c1"># Base URL of the API service</span>
-<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">"http://example_api_service.com/"</span>
-
-<span class="c1"># Test the API with a simple GET request</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">"Authorization"</span><span class="p">:</span> <span class="sa">f</span><span class="s2">"Bearer </span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s2">"</span><span class="p">})</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-</pre></div>
+<h2 id="Section-5:-Utilizing-KGE-and-UMAP-for-Graph-Analysis">Section 5: Utilizing KGE and UMAP for Graph Analysis<a class="anchor-link" href="#Section-5:-Utilizing-KGE-and-UMAP-for-Graph-Analysis">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Applying Knowledge Graph Embeddings (KGE) for graph analysis.</li>
+<li>Using Uniform Manifold Approximation and Projection (UMAP) for visualization.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+KGE helps uncover hidden patterns within graphs, while UMAP provides a way to visualize these high-dimensional structures in a 2D or 3D space, making it easier to interpret the complex relationships.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Manifold Learning: Understanding the framework for high-dimensional data projection.</li>
+<li>Dimensionality Reduction: Techniques to reduce the number of random variables.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e277e47b-d465-450e-951f-9f2088a59849">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1ce753eb-94bd-42c1-9248-9d76d5f0d093">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-6:-Practical-Exercise:-Integrating-APIs-into-a-Data-Pipeline">Section 6: Practical Exercise: Integrating APIs into a Data Pipeline<a class="anchor-link" href="#Section-6:-Practical-Exercise:-Integrating-APIs-into-a-Data-Pipeline">¶</a></h3><p><strong>Text Content</strong>: In this exercise, we will integrate the NER API into a simple data pipeline to process a batch of social media posts.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for integrating an API into a data pipeline</span>
-<span class="kn">import</span> <span class="nn">json</span>
-
-<span class="c1"># Sample batch of social media posts</span>
-<span class="n">posts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Chiang Mai's night markets are a must-see!"</span><span class="p">,</span> <span class="s2">"Had an amazing street food tour in Bangkok."</span><span class="p">]</span>
-
-<span class="c1"># Function to call the NER API for a batch of posts</span>
-<span class="k">def</span> <span class="nf">extract_entities</span><span class="p">(</span><span class="n">posts</span><span class="p">):</span>
-    <span class="n">entities_batch</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">post</span> <span class="ow">in</span> <span class="n">posts</span><span class="p">:</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">"http://ner_api_endpoint"</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s1">'text'</span><span class="p">:</span> <span class="n">post</span><span class="p">})</span>
-        <span class="n">entities</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-        <span class="n">entities_batch</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entities</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">entities_batch</span>
-
-<span class="n">entities_extracted</span> <span class="o">=</span> <span class="n">extract_entities</span><span class="p">(</span><span class="n">posts</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">entities_extracted</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span>
-
-<span class="mi">2</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
-</pre></div>
+<h2 id="Section-6:-Knowledge-Graph-Reasoning:-Principles-and-Applications">Section 6: Knowledge Graph Reasoning: Principles and Applications<a class="anchor-link" href="#Section-6:-Knowledge-Graph-Reasoning:-Principles-and-Applications">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Principles behind reasoning over knowledge graphs.</li>
+<li>Applications in real-world problem-solving.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Knowledge graph reasoning allows us to infer new knowledge from existing data, such as predicting missing links or answering complex queries. This becomes instrumental in applications like fraud detection or personalized content recommendations.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Inductive Logic: Deriving general principles from specific examples.</li>
+<li>Deductive Reasoning: Drawing specific conclusions from general knowledge.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7dfeebdb-3f24-40c7-aa8b-a157fd7dc6c9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=148a0323-2346-42e1-835a-09ca54831422">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-7:-Customizing-API-Requests-for-Specific-Use-Cases">Section 7: Customizing API Requests for Specific Use Cases<a class="anchor-link" href="#Section-7:-Customizing-API-Requests-for-Specific-Use-Cases">¶</a></h3><p><strong>Text Content</strong>: Depending on the API's flexibility, we can customize requests to suit specific needs, such as setting the language for NER to Thai.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code to customize API requests</span>
-<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'text'</span><span class="p">:</span> <span class="s2">"วัดพระแก้วเป็นสถานที่ที่ทุกคนควรไปเยือน"</span><span class="p">,</span> <span class="s1">'language'</span><span class="p">:</span> <span class="s1">'th'</span><span class="p">}</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">"http://ner_api_endpoint"</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
-
-<span class="n">entities</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">entities</span><span class="p">)</span>
-</pre></div>
+<h2 id="Section-7:-Building-a-Knowledge-Graph:-Step-by-Step">Section 7: Building a Knowledge Graph: Step-by-Step<a class="anchor-link" href="#Section-7:-Building-a-Knowledge-Graph:-Step-by-Step">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Defining the scope and scale of the graph.</li>
+<li>Steps in the data collection, cleaning, integration, and graph construction.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Building a knowledge graph entails a series of meticulous steps, starting from data collection and curation to the integration and modeling of data within a graph structure, ensuring accuracy and consistency throughout the process.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Data Modeling: Structuring data according to a certain schema.</li>
+<li>Graph Databases: Storing and querying data in graph form.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d659d258-5755-48c8-9a89-7be183a4275a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=369cf874-4f19-495c-80bd-e6edeae0f0f8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-8:-Handling-API-Responses-and-Extracted-Keywords">Section 8: Handling API Responses and Extracted Keywords<a class="anchor-link" href="#Section-8:-Handling-API-Responses-and-Extracted-Keywords">¶</a></h3><p><strong>Text Content</strong>: Once we receive a response from the API, we need to parse the results and extract the relevant keywords.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for handling API responses</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">"http://ner_api_endpoint"</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s1">'text'</span><span class="p">:</span> <span class="s2">"Visiting the ruins of Sukhothai is a journey back in time."</span><span class="p">})</span>
-<span class="n">results</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-
-<span class="c1"># Extract and print the keywords</span>
-<span class="n">keywords</span> <span class="o">=</span> <span class="p">[</span><span class="n">entity</span><span class="p">[</span><span class="s1">'word'</span><span class="p">]</span> <span class="k">for</span> <span class="n">entity</span> <span class="ow">in</span> <span class="n">results</span><span class="p">[</span><span class="s1">'entities'</span><span class="p">]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">keywords</span><span class="p">)</span>
-</pre></div>
+<h2 id="Section-8:-Tools-and-Platforms-for-Knowledge-Graph-Exploration">Section 8: Tools and Platforms for Knowledge Graph Exploration<a class="anchor-link" href="#Section-8:-Tools-and-Platforms-for-Knowledge-Graph-Exploration">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Overview of tools like Neo4j, GraphDB, and Stardog.</li>
+<li>Platform selection criteria based on the project's needs.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+The selection of tools for knowledge graph construction and exploration is critical. Popular platforms offer different features</p>
+</li>
+</ul>
+<p>and capabilities, ranging from powerful querying languages to user-friendly interfaces for non-technical users.</p>
+<ul>
+<li><strong>Useful Theories:</strong><ul>
+<li>Database Management Systems (DBMS): Software for creating and managing databases.</li>
+<li>Query Languages: Languages like SPARQL for retrieving and manipulating data.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f8fb5378-e5f6-415f-80f4-4195e75d52e5">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8e06f712-42eb-4b6a-82b8-6e66883ebdad">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-9:-Visualizing-API-Data-for-Better-Insights">Section 9: Visualizing API Data for Better Insights<a class="anchor-link" href="#Section-9:-Visualizing-API-Data-for-Better-Insights">¶</a></h3><p><strong>Text Content</strong>: Visualization helps in understanding the frequency and distribution of keywords across multiple texts.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for visualizing API data using Matplotlib</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">keywords</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Bangkok'</span><span class="p">,</span> <span class="s1">'Chiang Mai'</span><span class="p">,</span> <span class="s1">'Sukhothai'</span><span class="p">,</span> <span class="s1">'Phuket'</span><span class="p">,</span> <span class="s1">'Samui'</span><span class="p">]</span>
-<span class="n">frequencies</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">keywords</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Keyword'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Frequency'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Keyword Frequency in Social Media Posts'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
+<h2 id="Section-9:-Case-Study:-Building-a-Graph-for-a-News-Corpus">Section 9: Case Study: Building a Graph for a News Corpus<a class="anchor-link" href="#Section-9:-Case-Study:-Building-a-Graph-for-a-News-Corpus">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Applying knowledge graph techniques to a Thai news dataset.</li>
+<li>Insights gained from graph analysis of news data.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+We examine a case where a knowledge graph is developed from a corpus of Thai news articles, revealing not just the news events but also the interrelated factors like key personalities, locations, and organizational entities involved.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Content Analysis: Examining words, phrases, and concepts within texts.</li>
+<li>Social Network Analysis: Analyzing the relationships between actors in social networks.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f319c657-288e-4598-87b4-fca11be084ee">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67f90362-254c-4801-b31f-b770bbcaa102">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-10:-Case-Study:-Keyword-Extraction-for-Content-Strategy">Section 10: Case Study: Keyword Extraction for Content Strategy<a class="anchor-link" href="#Section-10:-Case-Study:-Keyword-Extraction-for-Content-Strategy">¶</a></h3><p><strong>Text Content</strong>: In this case study, we'll use keyword extraction to inform the content strategy of a tourism blog focusing on Thailand.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code to extract keywords for content strategy</span>
-<span class="c1"># Using the RAKE algorithm</span>
-<span class="kn">from</span> <span class="nn">rake_nltk</span> <span class="kn">import</span> <span class="n">Rake</span>
-
-<span class="n">rake</span> <span class="o">=</span> <span class="n">Rake</span><span class="p">()</span>
-<span class="n">blog_posts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"10 Things to do in Bangkok"</span><span class="p">,</span> <span class="s2">"A Guide to Street Food in Chiang Mai"</span><span class="p">,</span> <span class="s2">"Finding Peace in the Temples of Sukhothai"</span><span class="p">]</span>
-<span class="n">keywords</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">post</span> <span class="ow">in</span> <span class="n">blog_posts</span><span class="p">:</span>
-    <span class="n">rake</span><span class="o">.</span><span class="n">extract_keywords_from_text</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
-    <span class="n">post_keywords</span> <span class="o">=</span> <span class="n">rake</span><span class="o">.</span><span class="n">get_ranked_phrases</span><span class="p">()</span>
-    <span class="n">keywords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">post_keywords</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">keywords</span><span class="p">)</span>
-</pre></div>
+<h2 id="Section-10:-Data-Integration-and-Interoperability-in-Graphs">Section 10: Data Integration and Interoperability in Graphs<a class="anchor-link" href="#Section-10:-Data-Integration-and-Interoperability-in-Graphs">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Combining diverse data sources into a unified graph.</li>
+<li>Ensuring interoperability among different datasets.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Integrating various datasets into a single knowledge graph requires attention to the harmonization of data formats, schemas, and ontologies, allowing seamless interoperability and querying across the combined dataset.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Ontology Alignment: Aligning different ontological structures to each other.</li>
+<li>Schema Mapping: Techniques for mapping between different data models.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f62373e1-4419-40f4-880f-954d7c21646b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=af100a77-e19c-4c2d-8492-9e8ff02b53e9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-11:-Project:-Building-a-Keyword-Extraction-Tool">Section 11: Project: Building a Keyword Extraction Tool<a class="anchor-link" href="#Section-11:-Project:-Building-a-Keyword-Extraction-Tool">¶</a></h3><p><strong>Text Content</strong>: As a project, we will build a tool that extracts keywords from text using the APIs we've explored.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for building a keyword extraction tool</span>
-<span class="c1"># This section will guide the students through creating a simple CLI tool that uses the previously discussed APIs.</span>
-</pre></div>
+<h2 id="Section-11:-Visualizing-and-Interacting-with-Knowledge-Graphs">Section 11: Visualizing and Interacting with Knowledge Graphs<a class="anchor-link" href="#Section-11:-Visualizing-and-Interacting-with-Knowledge-Graphs">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Tools and methods for graph visualization.</li>
+<li>Interactive exploration of knowledge graphs.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Visualizing a knowledge graph can provide immediate, intuitive insights into the structure and distribution of data. Interactive tools also allow users to explore and manipulate the graph in real-time, providing a dynamic way to engage with the data.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Information Visualization: The study of visual representation of data.</li>
+<li>Human-Computer Interaction (HCI): Designing interactive systems that are user-friendly.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ef600ccb-f04d-4e96-8604-6eaba2bed1f4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=719b4083-e291-461b-b68d-a42daeed630d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-12:-Evaluating-API-Performance-and-Accuracy">Section 12: Evaluating API Performance and Accuracy<a class="anchor-link" href="#Section-12:-Evaluating-API-Performance-and-Accuracy">¶</a></h3><p><strong>Text Content</strong>: It's crucial to evaluate the performance and accuracy of the APIs to ensure they meet our analysis needs.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for evaluating API performance</span>
-<span class="c1"># The section will include methods to measure API response times and accuracy using a test dataset.</span>
-</pre></div>
+<h2 id="Section-12:-Hands-On-Project:-Creating-a-Knowledge-Graph-from-Scratch">Section 12: Hands-On Project: Creating a Knowledge Graph from Scratch<a class="anchor-link" href="#Section-12:-Hands-On-Project:-Creating-a-Knowledge-Graph-from-Scratch">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Step-by-step project guide.</li>
+<li>Best practices for hands-on knowledge graph creation.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+This section would involve a practical project where students construct a knowledge graph from scratch, applying the theories and tools they've learned to a dataset relevant to Thailand's socio-economic context.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Project Management: Organizing and managing resources efficiently.</li>
+<li>Agile Development: Iterative and incremental project management.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ec2e8675-1ddc-477a-80ea-cb6f654a4be6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=232e7299-a227-477a-9aeb-1d6eeff4e51d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-13:-Scaling-API-Calls-for-Large-Datasets">Section 13: Scaling API Calls for Large Datasets<a class="anchor-link" href="#Section-13:-Scaling-API-Calls-for-Large-Datasets">¶</a></h3><p><strong>Text Content</strong>: We must consider the efficiency and limits of APIs when dealing with large datasets to avoid being throttled or blocked.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for scaling API calls</span>
-<span class="c1"># The section will discuss best practices for batch processing and rate limiting.</span>
-</pre></div>
+<h2 id="Section-13:-Advanced-Querying-and-Reasoning-over-Knowledge-Graph-Models">Section 13: Advanced Querying and Reasoning over Knowledge Graph Models<a class="anchor-link" href="#Section-13:-Advanced-Querying-and-Reasoning-over-Knowledge-Graph-Models">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Techniques for complex queries in graph databases.</li>
+<li>Reasoning strategies for extracting deep insights.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Advanced querying involves not just retrieving data but also performing operations that can deduce new information or patterns. Reasoning over a graph involves complex algorithms that can infer additional information not explicitly stored in the graph.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Logical Inference: Drawing conclusions based on premises and rules.</li>
+<li>Query Optimization: Techniques to improve the efficiency of data retrieval.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e1e491cd-3db5-4bfc-ba8e-f33a30270af4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0a7fae18-de38-41e8-9871-ee505a08f10c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-14:-Course-Recap-and-Real-world-Applications">Section 14: Course Recap and Real-world Applications<a class="anchor-link" href="#Section-14:-Course-Recap-and-Real-world-Applications">¶</a></h3><p><strong>Text Content</strong>: This section recaps the course and discusses how to apply these skills in real-world scenarios, like optimizing content for search engines or understanding customer feedback.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for recap and application</span>
-<span class="c1"># A summary of Python code snippets and techniques learned throughout the course.</span>
-</pre></div>
+<h2 id="Section-14:-Best-Practices-in-Knowledge-Graph-Management">Section 14: Best Practices in Knowledge Graph Management<a class="anchor-link" href="#Section-14:-Best-Practices-in-Knowledge-Graph-Management">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Maintenance and updating of knowledge graphs.</li>
+<li>Ensuring quality and relevance of graph data over time.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+Good knowledge graph management ensures that the graph remains accurate, relevant, and reflective of the real world. This involves regular updates, validation of information, and adherence to best practices in data governance.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Data Governance: The overall management of data availability, usability, and security.</li>
+<li>Data Lifecycle Management: Strategies for managing the flow of data throughout its lifecycle.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=868b269c-9b42-43c6-b454-331589be81e8">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1e4c56b8-ced5-42c9-b792-6bb896599c48">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-15:-Final-Assignment-and-Course-Evaluation">Section 15: Final Assignment and Course Evaluation<a class="anchor-link" href="#Section-15:-Final-Assignment-and-Course-Evaluation">¶</a></h3><p><strong>Text Content</strong>: The final assignment will involve a comprehensive keyword analysis of a new dataset, and the course evaluation will gather feedback on the learning experience.</p>
-<div class="highlight"><pre><span></span><span class="c1"># Python code for final assignment</span>
-<span class="c1"># Instructions and starter code for the final assignment.</span>
-</pre></div>
+<h2 id="Section-15:-Peer-to-Peer-Review:-Knowledge-Graph-Case-Studies">Section 15: Peer-to-Peer Review: Knowledge Graph Case Studies<a class="anchor-link" href="#Section-15:-Peer-to-Peer-Review:-Knowledge-Graph-Case-Studies">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Sharing and reviewing knowledge graph projects among peers.</li>
+<li>Learning from real-world implementations.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+In this final section, students will engage in a peer-to-peer review process, showcasing their own projects and learning from the experiences of others. This collaborative effort will help solidify their understanding and provide diverse perspectives on knowledge graph applications.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+<ul>
+<li>Peer Review: A method of self-regulation by qualified members of a profession.</li>
+<li>Case Study Methodology: A research strategy involving an empirical investigation.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b244a72e-dc5c-4328-8180-b497d45a6afd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Section-16:-Final-Thoughts-and-Continuing-Education-in-Knowledge-Graphs">Section 16: Final Thoughts and Continuing Education in Knowledge Graphs<a class="anchor-link" href="#Section-16:-Final-Thoughts-and-Continuing-Education-in-Knowledge-Graphs">¶</a></h2><ul>
+<li><p><strong>Key Points:</strong></p>
+<ul>
+<li>Reflection on the course content.</li>
+<li>Pathways for further education and specialization.</li>
+</ul>
+</li>
+<li><p><strong>Text Content:</strong>
+This concluding section would encourage students to reflect on what they've learned, how it can be applied in real-world scenarios, and what additional resources or pathways they can pursue to further deepen their understanding and proficiency in knowledge graphs.</p>
+</li>
+<li><p><strong>Useful Theories:</strong></p>
+</li>
+<li><p>Lifelong Learning: The ongoing, voluntary, and self-motivated pursuit of knowledge.</p>
+</li>
+<li><p>Specialization Courses: Focused studies to gain advanced skills in a specific area of knowledge graphs.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>

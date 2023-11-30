@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>8_dsi310_quiz_2 slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>9_mdm slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7434,153 +7434,4283 @@ main {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fec90c40-79d4-4655-930f-73f4161fa585">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ab7d38e1-aeab-48f1-958b-93e502ccd0f3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>File management and web scraping in Python, using real-world websites and scenarios. Each question will be designed to test and enhance different aspects of these skills.</p>
-<ul>
-<li>Quiz 1: Basic File Reading and Writing</li>
-<li>Quiz 2: Web Scraping Basic HTML Data</li>
-<li>Quiz 3: Web Scraping with Pagination</li>
-<li>Quiz 4: Advanced File Operations</li>
-<li>Quiz 5: Web Scraping Dynamic Content</li>
-<li>Quiz 6: Extracting and Analyzing Data from API</li>
-<li>Quiz 7: Scraping and Processing E-commerce Product Data</li>
-<li>Quiz 8: Automated Data Cleaning from a Text File</li>
-<li>Quiz 9: Parsing and Summarizing Data from a News API</li>
-<li>Quiz 10: Web Scraping with JavaScript-Rendered Content</li>
-</ul>
+<h1 id="Setup">Setup<a class="anchor-link" href="#Setup">¶</a></h1>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=109a5dc1-7d34-465d-8c9a-4c3e5d75b237">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-1:-Basic-File-Reading-and-Writing">Quiz 1: Basic File Reading and Writing<a class="anchor-link" href="#Quiz-1:-Basic-File-Reading-and-Writing">¶</a></h3><p><strong>Task</strong>: Write a Python script to read a CSV file containing movie data from <a href="https://www.imdb.com/interfaces/">IMDb</a>, then convert and save this data into a JSON file. The script should be able to handle basic data cleaning like trimming whitespace from strings.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3aab0ab1-94c2-4da6-a5b5-609b8f45f0fe">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-2:-Web-Scraping-Basic-HTML-Data">Quiz 2: Web Scraping Basic HTML Data<a class="anchor-link" href="#Quiz-2:-Web-Scraping-Basic-HTML-Data">¶</a></h3><p><strong>Task</strong>: Write a Python script using <code>BeautifulSoup</code> to scrape the current top news headlines from <a href="https://www.bbc.com/news">BBC News</a>. Extract the headline text and the corresponding URLs, and save them in a CSV file.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6244f822-7ee7-4809-ad41-9b32e6719744">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-3:-Web-Scraping-with-Pagination">Quiz 3: Web Scraping with Pagination<a class="anchor-link" href="#Quiz-3:-Web-Scraping-with-Pagination">¶</a></h3><p><strong>Task</strong>: Create a Python script to scrape job listings from the first three pages of <a href="https://www.indeed.com">Indeed</a> for a specific job title and location. The script should extract the job title, company name, location, and summary of each listing and save it to a CSV file.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=53d89efb-b511-4504-acce-4a3ccc1cd6a2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-4:-Advanced-File-Operations">Quiz 4: Advanced File Operations<a class="anchor-link" href="#Quiz-4:-Advanced-File-Operations">¶</a></h3><p><strong>Task</strong>: Write a Python script to scan a directory containing log files (text files). The script should aggregate error messages from all files, count their occurrences, and output a summary in a new text file. Assume a specific pattern in the log files denotes errors.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e2c0bf64-a789-4394-b7ec-59e41b890751">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-5:-Web-Scraping-Dynamic-Content">Quiz 5: Web Scraping Dynamic Content<a class="anchor-link" href="#Quiz-5:-Web-Scraping-Dynamic-Content">¶</a></h3><p><strong>Task</strong>: Use Python with Selenium to scrape the latest tech news articles from <a href="https://techcrunch.com/">TechCrunch</a>. The script should navigate the site, handle dynamic content loading, and extract the article titles, authors, and publication dates, saving them in a CSV file.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=df86608e-9f99-45db-9e98-4b9c7de5ccb9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-6:-Extracting-and-Analyzing-Data-from-API">Quiz 6: Extracting and Analyzing Data from API<a class="anchor-link" href="#Quiz-6:-Extracting-and-Analyzing-Data-from-API">¶</a></h3><p><strong>Task</strong>: Write a Python script to fetch weather data from the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. Extract temperature, humidity, and weather conditions for a specified city, and write this data to a JSON file. Include error handling for invalid city names.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f457d65d-468e-4a62-ad9f-9ac6c0e83c2c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-7:-Scraping-and-Processing-E-commerce-Product-Data">Quiz 7: Scraping and Processing E-commerce Product Data<a class="anchor-link" href="#Quiz-7:-Scraping-and-Processing-E-commerce-Product-Data">¶</a></h3><p><strong>Task</strong>: Create a Python script to scrape product details from an e-commerce site like <a href="https://www.amazon.com">Amazon</a>. Focus on a specific category (e.g., books, electronics). Extract product names, prices, and ratings, and save them in a pandas DataFrame for further analysis.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=60f86d6e-a91a-4963-9e4c-4efe6473b9b1">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-8:-Automated-Data-Cleaning-from-a-Text-File">Quiz 8: Automated Data Cleaning from a Text File<a class="anchor-link" href="#Quiz-8:-Automated-Data-Cleaning-from-a-Text-File">¶</a></h3><p><strong>Task</strong>: Write a Python script to read a text file from <a href="https://www.gutenberg.org/">Project Gutenberg</a>. The script should remove all the headers and footers added by Project Gutenberg, count the frequency of each word in the text, and output the top 10 most frequent words to a new file.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e30c3bdb-ce60-4954-a5dd-d1456c6ee0e6">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-9:-Parsing-and-Summarizing-Data-from-a-News-API">Quiz 9: Parsing and Summarizing Data from a News API<a class="anchor-link" href="#Quiz-9:-Parsing-and-Summarizing-Data-from-a-News-API">¶</a></h3><p><strong>Task</strong>: Use the <a href="https://newsapi.org/">News API</a> to fetch recent news articles on a specific topic (e.g., "climate change"). Write a Python script to parse this data, extracting the article title, source, and publication date, and then summarize this data in a CSV file.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9fe4d150-92c6-46a1-bca4-75f601fd1f83">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Quiz-10:-Web-Scraping-with-JavaScript-Rendered-Content">Quiz 10: Web Scraping with JavaScript-Rendered Content<a class="anchor-link" href="#Quiz-10:-Web-Scraping-with-JavaScript-Rendered-Content">¶</a></h3><p><strong>Task</strong>: Write a Python script using Selenium to scrape movie ratings and reviews from a site like <a href="https://www.rottentomatoes.com/">Rotten Tomatoes</a>. The script should navigate through a list of movies, handle the dynamically loaded content, and extract the movie title, rating, and a sample of user reviews.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=232b3f79-7ece-496c-9d7d-a36946dc7388">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b3833632-21d2-4095-83a9-97dcc4a4efde">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [99]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># !pip install -U git+https://github.com/storemesh/mapping-v2.git</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1c8efb84-a82a-4d91-a833-26d8d91c0480">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=802eab2b-372a-4c1f-b10b-3066acfd4386">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">dsm_mapping</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">mapping</span> <span class="o">=</span> <span class="n">dsm_mapping</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">Mapping</span><span class="p">(</span>
+    <span class="n">services_uri</span><span class="o">=</span><span class="s1">'http://192.168.24.170:8180'</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="s2">"KEL1zxVp.t3EAe1C1oWmSJh3cwKnG3uHeOXESiqKq"</span><span class="p">,</span>
+    <span class="n">project_id</span><span class="o">=</span><span class="mi">7</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>{'id': 7, 'name': 'Country', 'type': 'nGram'}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eaf27d22-7a4f-41ed-b9ec-06f7f45b7477">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="import-master-data">import master data<a class="anchor-link" href="#import-master-data">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=75ce3f91-00cc-4a0c-b9cb-222085cb2eee">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_master</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'master_country.csv'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=af9e5b3e-c78b-420e-bbc5-219bd3f146ce">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df_master</span><span class="p">[[</span><span class="s1">'id'</span><span class="p">,</span><span class="s1">'country_en'</span><span class="p">,</span><span class="s1">'country_th'</span><span class="p">]]</span>
+<span class="n">df2</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">'id'</span><span class="p">],</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">'country_en'</span><span class="p">,</span><span class="s1">'country_th'</span><span class="p">])</span>
+<span class="n">df2</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>id</th>
+<th>variable</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>2023AFG</td>
+<td>country_en</td>
+<td>Afghanistan</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2023ALB</td>
+<td>country_en</td>
+<td>Albania</td>
+</tr>
+<tr>
+<th>2</th>
+<td>2023ATA</td>
+<td>country_en</td>
+<td>Antarctica</td>
+</tr>
+<tr>
+<th>3</th>
+<td>2023DZA</td>
+<td>country_en</td>
+<td>Algeria</td>
+</tr>
+<tr>
+<th>4</th>
+<td>2023ASM</td>
+<td>country_en</td>
+<td>American Samoa</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>495</th>
+<td>2023WSM</td>
+<td>country_th</td>
+<td>ซามัว</td>
+</tr>
+<tr>
+<th>496</th>
+<td>2023YEM</td>
+<td>country_th</td>
+<td>เยเมน</td>
+</tr>
+<tr>
+<th>497</th>
+<td>2023ZMB</td>
+<td>country_th</td>
+<td>แซมเบีย</td>
+</tr>
+<tr>
+<th>498</th>
+<td>2023001</td>
+<td>country_th</td>
+<td>โลก</td>
+</tr>
+<tr>
+<th>499</th>
+<td>2023999</td>
+<td>country_th</td>
+<td>ไม่ระบุ</td>
+</tr>
+</tbody>
+</table>
+<p>500 rows × 3 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d298631c-1c38-4b43-a68a-c8c1c74da99d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">mapping</span><span class="o">.</span><span class="n">bulk_master_data</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df2</span><span class="p">,</span> <span class="n">column_id</span><span class="o">=</span><span class="s1">'id'</span><span class="p">,</span> <span class="n">column_text</span><span class="o">=</span><span class="s1">'value'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>{'msg': 'master data created'}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d43d6246-5a49-41a2-9ef3-2fe17196c349">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="mapping">mapping<a class="anchor-link" href="#mapping">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=00b07410-e1a8-4048-b598-f3dd805988c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_query</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'country_person.csv'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=18721d47-a40e-402d-a6c4-5829c106d055">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_query</span><span class="p">[</span><span class="s1">'result'</span><span class="p">]</span><span class="o">=</span><span class="n">df_query</span><span class="p">[</span><span class="s1">'country'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">mapping</span><span class="o">.</span><span class="n">search</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bf36c1d6-fa50-461b-adb6-8e418d023af5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_query</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>country</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Thailand</td>
+<td>Success({'id': 711, 'master_id': '2023THA', 't...</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Poland</td>
+<td>Success({'id': 668, 'master_id': '2023POL', 't...</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Singapore</td>
+<td>Success({'id': 693, 'master_id': '2023SGP', 't...</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Switzerland</td>
+<td>Success({'id': 708, 'master_id': '2023CHE', 't...</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Japan</td>
+<td>Success({'id': 603, 'master_id': '2023JPN', 't...</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>332</th>
+<td>South korea</td>
+<td>Success({'id': 701, 'master_id': '2023SSD', 't...</td>
+</tr>
+<tr>
+<th>333</th>
+<td>United state</td>
+<td>Success({'id': 732, 'master_id': '2023VIR', 't...</td>
+</tr>
+<tr>
+<th>334</th>
+<td>Netherland</td>
+<td>Success({'id': 642, 'master_id': '2023NLD', 't...</td>
+</tr>
+<tr>
+<th>335</th>
+<td>U.s.a.</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>336</th>
+<td>Ttc manila part 2</td>
+<td>Error(masterdata not found)</td>
+</tr>
+</tbody>
+</table>
+<p>337 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7c20e6e0-ef4f-4d0f-8cc5-15410407f170">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_query</span><span class="p">[</span><span class="s1">'value'</span><span class="p">]</span>  <span class="o">=</span> <span class="n">df_query</span><span class="p">[</span><span class="s1">'result'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'text'</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">value</span> <span class="k">else</span> <span class="s1">''</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=625d4360-304c-47cd-92c6-6c3b0403b9ed">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_query</span><span class="p">[</span><span class="s1">'error'</span><span class="p">]</span>  <span class="o">=</span> <span class="n">df_query</span><span class="p">[</span><span class="s1">'result'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">error</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8923ba48-a2ff-4fe9-9d4d-396673430702">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.max_rows'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> 
+<span class="n">df3</span><span class="o">=</span><span class="n">df_query</span><span class="p">[[</span><span class="s1">'country'</span><span class="p">,</span><span class="s1">'value'</span><span class="p">,</span><span class="s1">'error'</span><span class="p">]]</span>
+<span class="n">df3</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[87]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>country</th>
+<th>value</th>
+<th>error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Thailand</td>
+<td>Thailand</td>
+<td>None</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Poland</td>
+<td>Poland</td>
+<td>None</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Singapore</td>
+<td>Singapore</td>
+<td>None</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Switzerland</td>
+<td>Switzerland</td>
+<td>None</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Japan</td>
+<td>Japan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>5</th>
+<td>India</td>
+<td>India</td>
+<td>None</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Kenya</td>
+<td>Kenya</td>
+<td>None</td>
+</tr>
+<tr>
+<th>7</th>
+<td>United</td>
+<td>United Arab Emirates</td>
+<td>None</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Egypt</td>
+<td>Egypt</td>
+<td>None</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Bangladesh</td>
+<td>Bangladesh</td>
+<td>None</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Pacific</td>
+<td>Pakistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Camboia</td>
+<td>Cambodia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>12</th>
+<td>United arab emirates</td>
+<td>United Arab Emirates</td>
+<td>None</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Pakistan</td>
+<td>Pakistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Ukraine</td>
+<td>Ukraine</td>
+<td>None</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Iran</td>
+<td>Iraq</td>
+<td>None</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Zimbabwe</td>
+<td>Zimbabwe</td>
+<td>None</td>
+</tr>
+<tr>
+<th>17</th>
+<td>Mongolia</td>
+<td>Mongolia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>18</th>
+<td>Sri lanka</td>
+<td>Sri Lanka</td>
+<td>None</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Cyprus</td>
+<td>Cyprus</td>
+<td>None</td>
+</tr>
+<tr>
+<th>20</th>
+<td>Iraq</td>
+<td>Iraq</td>
+<td>None</td>
+</tr>
+<tr>
+<th>21</th>
+<td>Slovenia</td>
+<td>Slovenia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>22</th>
+<td>Ireland</td>
+<td>Ireland</td>
+<td>None</td>
+</tr>
+<tr>
+<th>23</th>
+<td>Uzbekistan</td>
+<td>Uzbekistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>24</th>
+<td>Senegal</td>
+<td>Senegal</td>
+<td>None</td>
+</tr>
+<tr>
+<th>25</th>
+<td>Antigua and barbuda</td>
+<td>Antigua and Barbuda</td>
+<td>None</td>
+</tr>
+<tr>
+<th>26</th>
+<td>Guinea  ( guinee )</td>
+<td>Guinea</td>
+<td>None</td>
+</tr>
+<tr>
+<th>27</th>
+<td>Somalia</td>
+<td>Somalia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>28</th>
+<td>Aruba, bonaire and curacao</td>
+<td>Aruba</td>
+<td>None</td>
+</tr>
+<tr>
+<th>29</th>
+<td>San marino</td>
+<td>San Marino</td>
+<td>None</td>
+</tr>
+<tr>
+<th>30</th>
+<td>Greenland</td>
+<td>Greenland</td>
+<td>None</td>
+</tr>
+<tr>
+<th>31</th>
+<td>Central african republic</td>
+<td>Central African Republic</td>
+<td>None</td>
+</tr>
+<tr>
+<th>32</th>
+<td>Dominica</td>
+<td>Dominica</td>
+<td>None</td>
+</tr>
+<tr>
+<th>33</th>
+<td>Syria</td>
+<td>Syrian Arab Republic</td>
+<td>None</td>
+</tr>
+<tr>
+<th>34</th>
+<td>Macedonia</td>
+<td>Mali</td>
+<td>None</td>
+</tr>
+<tr>
+<th>35</th>
+<td>Croatia (hrvatska)</td>
+<td>Croatia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>36</th>
+<td>Montenegro</td>
+<td>Montenegro</td>
+<td>None</td>
+</tr>
+<tr>
+<th>37</th>
+<td>Norfolk island</td>
+<td>Norfolk Island</td>
+<td>None</td>
+</tr>
+<tr>
+<th>38</th>
+<td>Haiti</td>
+<td>Haiti</td>
+<td>None</td>
+</tr>
+<tr>
+<th>39</th>
+<td>Saint helena</td>
+<td>Saint Helena</td>
+<td>None</td>
+</tr>
+<tr>
+<th>40</th>
+<td>Grenada</td>
+<td>Grenada</td>
+<td>None</td>
+</tr>
+<tr>
+<th>41</th>
+<td>Cocos (keeling) islands</td>
+<td>Cocos (Keeling) Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>42</th>
+<td>Myanmar</td>
+<td>Myanmar</td>
+<td>None</td>
+</tr>
+<tr>
+<th>43</th>
+<td>Phrea</td>
+<td>Philippines</td>
+<td>None</td>
+</tr>
+<tr>
+<th>44</th>
+<td>Malaysia</td>
+<td>Malaysia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>45</th>
+<td>Turkey</td>
+<td>Turkmenistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>46</th>
+<td>Netherlands(the)</td>
+<td>Netherlands (Kingdom of the)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>47</th>
+<td>American samoa</td>
+<td>American Samoa</td>
+<td>None</td>
+</tr>
+<tr>
+<th>48</th>
+<td>Russian federation</td>
+<td>Russian Federation</td>
+<td>None</td>
+</tr>
+<tr>
+<th>49</th>
+<td>Greater asset ltd</td>
+<td>Grenada</td>
+<td>None</td>
+</tr>
+<tr>
+<th>50</th>
+<td>Thakhek</td>
+<td>Thailand</td>
+<td>None</td>
+</tr>
+<tr>
+<th>51</th>
+<td>Brunei</td>
+<td>Brunei Darussalam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>52</th>
+<td>Syria</td>
+<td>Syrian Arab Republic</td>
+<td>None</td>
+</tr>
+<tr>
+<th>53</th>
+<td>Colombia</td>
+<td>Colombia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>54</th>
+<td>Romania</td>
+<td>Romania</td>
+<td>None</td>
+</tr>
+<tr>
+<th>55</th>
+<td>Uruguay</td>
+<td>Uruguay</td>
+<td>None</td>
+</tr>
+<tr>
+<th>56</th>
+<td>Czech republic</td>
+<td>Czechia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>57</th>
+<td>Netherlands antilles</td>
+<td>Netherlands (Kingdom of the)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>58</th>
+<td>Tanzania</td>
+<td>Tajikistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>59</th>
+<td>Guadeloupe</td>
+<td>Guadeloupe</td>
+<td>None</td>
+</tr>
+<tr>
+<th>60</th>
+<td>Croatia</td>
+<td>Croatia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>61</th>
+<td>Kyrgyzstan</td>
+<td>Kyrgyzstan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>62</th>
+<td>Saint lucia</td>
+<td>Saint Lucia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>63</th>
+<td>Latvia</td>
+<td>Latvia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>64</th>
+<td>Bosnia and herzegovina</td>
+<td>Bosnia and Herzegovina</td>
+<td>None</td>
+</tr>
+<tr>
+<th>65</th>
+<td>Gibraltar</td>
+<td>Gibraltar</td>
+<td>None</td>
+</tr>
+<tr>
+<th>66</th>
+<td>Guernsey</td>
+<td>Guernsey</td>
+<td>None</td>
+</tr>
+<tr>
+<th>67</th>
+<td>Niger</td>
+<td>Nigeria</td>
+<td>None</td>
+</tr>
+<tr>
+<th>68</th>
+<td>Cook islands</td>
+<td>Cook Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>69</th>
+<td>Jersey</td>
+<td>Jersey</td>
+<td>None</td>
+</tr>
+<tr>
+<th>70</th>
+<td>Montserrat</td>
+<td>Montserrat</td>
+<td>None</td>
+</tr>
+<tr>
+<th>71</th>
+<td>Hong kong s.a.r.</td>
+<td>Honduras</td>
+<td>None</td>
+</tr>
+<tr>
+<th>72</th>
+<td>Malawi</td>
+<td>Malawi</td>
+<td>None</td>
+</tr>
+<tr>
+<th>73</th>
+<td>Palestinian territory occupied</td>
+<td>Palau</td>
+<td>None</td>
+</tr>
+<tr>
+<th>74</th>
+<td>Botswana</td>
+<td>Botswana</td>
+<td>None</td>
+</tr>
+<tr>
+<th>75</th>
+<td>Cayman islands</td>
+<td>Cayman Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>76</th>
+<td>Timor-leste</td>
+<td>Timor-Leste</td>
+<td>None</td>
+</tr>
+<tr>
+<th>77</th>
+<td>Barbados</td>
+<td>Barbados</td>
+<td>None</td>
+</tr>
+<tr>
+<th>78</th>
+<td>Bahamas the</td>
+<td>Bahamas</td>
+<td>None</td>
+</tr>
+<tr>
+<th>79</th>
+<td>Aruba</td>
+<td>Aruba</td>
+<td>None</td>
+</tr>
+<tr>
+<th>80</th>
+<td>Virgin islands (british)</td>
+<td>Viet Nam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>81</th>
+<td>Faroe islands</td>
+<td>Faroe Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>82</th>
+<td>Vatican city state (holy see)</td>
+<td>Vanuatu</td>
+<td>None</td>
+</tr>
+<tr>
+<th>83</th>
+<td>Niue</td>
+<td>Niue</td>
+<td>None</td>
+</tr>
+<tr>
+<th>84</th>
+<td>South georgia</td>
+<td>South Georgia and the South Sandwich Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>85</th>
+<td>Hongkong</td>
+<td>Honduras</td>
+<td>None</td>
+</tr>
+<tr>
+<th>86</th>
+<td>Tokyo</td>
+<td>Tokelau</td>
+<td>None</td>
+</tr>
+<tr>
+<th>87</th>
+<td>Côte d'ivoire</td>
+<td>Côte d’Ivoire</td>
+<td>None</td>
+</tr>
+<tr>
+<th>88</th>
+<td>Korea</td>
+<td>World</td>
+<td>None</td>
+</tr>
+<tr>
+<th>89</th>
+<td>Egergerg</td>
+<td>Egypt</td>
+<td>None</td>
+</tr>
+<tr>
+<th>90</th>
+<td>Laos</td>
+<td>Lao People's Democratic Republic</td>
+<td>None</td>
+</tr>
+<tr>
+<th>91</th>
+<td>တိုင်းပြည်</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>92</th>
+<td>Russia</td>
+<td>Russian Federation</td>
+<td>None</td>
+</tr>
+<tr>
+<th>93</th>
+<td>Belgium</td>
+<td>Belgium</td>
+<td>None</td>
+</tr>
+<tr>
+<th>94</th>
+<td>Algeria</td>
+<td>Algeria</td>
+<td>None</td>
+</tr>
+<tr>
+<th>95</th>
+<td>Ethiopia</td>
+<td>Ethiopia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>96</th>
+<td>Austria</td>
+<td>Austria</td>
+<td>None</td>
+</tr>
+<tr>
+<th>97</th>
+<td>Republic of south africa</td>
+<td>Republic of Korea</td>
+<td>None</td>
+</tr>
+<tr>
+<th>98</th>
+<td>Saudi arabia</td>
+<td>Saudi Arabia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>99</th>
+<td>Bhutan</td>
+<td>Bhutan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>100</th>
+<td>Kuwait</td>
+<td>Kuwait</td>
+<td>None</td>
+</tr>
+<tr>
+<th>101</th>
+<td>Sweden</td>
+<td>Sweden</td>
+<td>None</td>
+</tr>
+<tr>
+<th>102</th>
+<td>Tonga</td>
+<td>Tonga</td>
+<td>None</td>
+</tr>
+<tr>
+<th>103</th>
+<td>Palestine</td>
+<td>Palau</td>
+<td>None</td>
+</tr>
+<tr>
+<th>104</th>
+<td>Argentina</td>
+<td>Argentina</td>
+<td>None</td>
+</tr>
+<tr>
+<th>105</th>
+<td>Guyana</td>
+<td>Guyana</td>
+<td>None</td>
+</tr>
+<tr>
+<th>106</th>
+<td>New caledonia</td>
+<td>New Caledonia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>107</th>
+<td>Guam</td>
+<td>Guam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>108</th>
+<td>Tajikistan</td>
+<td>Tajikistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>109</th>
+<td>Bulgaria</td>
+<td>Bulgaria</td>
+<td>None</td>
+</tr>
+<tr>
+<th>110</th>
+<td>Solomon islands</td>
+<td>Solomon Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>111</th>
+<td>Djibouti</td>
+<td>Djibouti</td>
+<td>None</td>
+</tr>
+<tr>
+<th>112</th>
+<td>Mali</td>
+<td>Mali</td>
+<td>None</td>
+</tr>
+<tr>
+<th>113</th>
+<td>Congo</td>
+<td>Congo</td>
+<td>None</td>
+</tr>
+<tr>
+<th>114</th>
+<td>Zaire</td>
+<td>Zambia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>115</th>
+<td>Guatemala</td>
+<td>Guatemala</td>
+<td>None</td>
+</tr>
+<tr>
+<th>116</th>
+<td>Kiribati</td>
+<td>Kiribati</td>
+<td>None</td>
+</tr>
+<tr>
+<th>117</th>
+<td>Lithuania</td>
+<td>Lithuania</td>
+<td>None</td>
+</tr>
+<tr>
+<th>118</th>
+<td>Bahamas</td>
+<td>Bahamas</td>
+<td>None</td>
+</tr>
+<tr>
+<th>119</th>
+<td>Gambia</td>
+<td>Gambia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>120</th>
+<td>Sierra leone</td>
+<td>Sierra Leone</td>
+<td>None</td>
+</tr>
+<tr>
+<th>121</th>
+<td>Rwanda</td>
+<td>Rwanda</td>
+<td>None</td>
+</tr>
+<tr>
+<th>122</th>
+<td>Hawaii</td>
+<td>Haiti</td>
+<td>None</td>
+</tr>
+<tr>
+<th>123</th>
+<td>Palau</td>
+<td>Palau</td>
+<td>None</td>
+</tr>
+<tr>
+<th>124</th>
+<td>British antractic terri.</td>
+<td>British Indian Ocean Territory</td>
+<td>None</td>
+</tr>
+<tr>
+<th>125</th>
+<td>Mayotte</td>
+<td>Mayotte</td>
+<td>None</td>
+</tr>
+<tr>
+<th>126</th>
+<td>Western sahara</td>
+<td>Western Sahara</td>
+<td>None</td>
+</tr>
+<tr>
+<th>127</th>
+<td>United states virgin isl.</td>
+<td>United States Virgin Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>128</th>
+<td>Netherlands the</td>
+<td>Netherlands (Kingdom of the)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>129</th>
+<td>Christmas island</td>
+<td>Christmas Island</td>
+<td>None</td>
+</tr>
+<tr>
+<th>130</th>
+<td>Micronesia</td>
+<td>Micronesia (Federated States of)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>131</th>
+<td>United states minor outlying islands</td>
+<td>United States Minor Outlying Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>132</th>
+<td>Macau s.a.r.</td>
+<td>Malawi</td>
+<td>None</td>
+</tr>
+<tr>
+<th>133</th>
+<td>Lesotho</td>
+<td>Lesotho</td>
+<td>None</td>
+</tr>
+<tr>
+<th>134</th>
+<td>Sao tome and principe</td>
+<td>Sao Tome and Principe</td>
+<td>None</td>
+</tr>
+<tr>
+<th>135</th>
+<td>Korea, south</td>
+<td>World</td>
+<td>None</td>
+</tr>
+<tr>
+<th>136</th>
+<td>Virgin islands, british</td>
+<td>Viet Nam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>137</th>
+<td>China</td>
+<td>China</td>
+<td>None</td>
+</tr>
+<tr>
+<th>138</th>
+<td>Australia</td>
+<td>Australia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>139</th>
+<td>U.s.a</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>140</th>
+<td>Denmark</td>
+<td>Denmark</td>
+<td>None</td>
+</tr>
+<tr>
+<th>141</th>
+<td>Morocco</td>
+<td>Morocco</td>
+<td>None</td>
+</tr>
+<tr>
+<th>142</th>
+<td>Yemen</td>
+<td>Yemen</td>
+<td>None</td>
+</tr>
+<tr>
+<th>143</th>
+<td>Germany</td>
+<td>Germany</td>
+<td>None</td>
+</tr>
+<tr>
+<th>144</th>
+<td>Albania</td>
+<td>Albania</td>
+<td>None</td>
+</tr>
+<tr>
+<th>145</th>
+<td>Malta</td>
+<td>Malta</td>
+<td>None</td>
+</tr>
+<tr>
+<th>146</th>
+<td>Burkina faso</td>
+<td>Burkina Faso</td>
+<td>None</td>
+</tr>
+<tr>
+<th>147</th>
+<td>Spain</td>
+<td>Spain</td>
+<td>None</td>
+</tr>
+<tr>
+<th>148</th>
+<td>Netherlands</td>
+<td>Netherlands (Kingdom of the)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>149</th>
+<td>Belarus</td>
+<td>Belarus</td>
+<td>None</td>
+</tr>
+<tr>
+<th>150</th>
+<td>Fiji</td>
+<td>Fiji</td>
+<td>None</td>
+</tr>
+<tr>
+<th>151</th>
+<td>Mexico</td>
+<td>Mexico</td>
+<td>None</td>
+</tr>
+<tr>
+<th>152</th>
+<td>Portugal</td>
+<td>Portugal</td>
+<td>None</td>
+</tr>
+<tr>
+<th>153</th>
+<td>Virgin islands (usa)</td>
+<td>Viet Nam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>154</th>
+<td>Yugoslavia</td>
+<td>Uganda</td>
+<td>None</td>
+</tr>
+<tr>
+<th>155</th>
+<td>Burundi</td>
+<td>Burundi</td>
+<td>None</td>
+</tr>
+<tr>
+<th>156</th>
+<td>Namibia</td>
+<td>Namibia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>157</th>
+<td>Armenia</td>
+<td>Armenia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>158</th>
+<td>Liberia</td>
+<td>Liberia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>159</th>
+<td>Vanuatu</td>
+<td>Vanuatu</td>
+<td>None</td>
+</tr>
+<tr>
+<th>160</th>
+<td>Belize</td>
+<td>Belize</td>
+<td>None</td>
+</tr>
+<tr>
+<th>161</th>
+<td>Moldova</td>
+<td>Monaco</td>
+<td>None</td>
+</tr>
+<tr>
+<th>162</th>
+<td>Iceland</td>
+<td>Iceland</td>
+<td>None</td>
+</tr>
+<tr>
+<th>163</th>
+<td>Togo</td>
+<td>Togo</td>
+<td>None</td>
+</tr>
+<tr>
+<th>164</th>
+<td>Venezuela</td>
+<td>Venezuela (Bolivarian Republic of)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>165</th>
+<td>Canary islands</td>
+<td>Canada</td>
+<td>None</td>
+</tr>
+<tr>
+<th>166</th>
+<td>Guinea</td>
+<td>Guinea</td>
+<td>None</td>
+</tr>
+<tr>
+<th>167</th>
+<td>Cote d'ivoire (ivory coast)</td>
+<td>Côte d’Ivoire</td>
+<td>None</td>
+</tr>
+<tr>
+<th>168</th>
+<td>British indian ocean territory</td>
+<td>British Indian Ocean Territory</td>
+<td>None</td>
+</tr>
+<tr>
+<th>169</th>
+<td>Phillippines</td>
+<td>Philippines</td>
+<td>None</td>
+</tr>
+<tr>
+<th>170</th>
+<td>Türkiye</td>
+<td>Türkiye</td>
+<td>None</td>
+</tr>
+<tr>
+<th>171</th>
+<td>India</td>
+<td>India</td>
+<td>None</td>
+</tr>
+<tr>
+<th>172</th>
+<td>Loas</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>173</th>
+<td>Korea, north</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>174</th>
+<td>Brunei darussalam</td>
+<td>Brunei Darussalam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>175</th>
+<td>Nepal</td>
+<td>Nepal</td>
+<td>None</td>
+</tr>
+<tr>
+<th>176</th>
+<td>Country</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>177</th>
+<td>France</td>
+<td>France</td>
+<td>None</td>
+</tr>
+<tr>
+<th>178</th>
+<td>Italy</td>
+<td>Italy</td>
+<td>None</td>
+</tr>
+<tr>
+<th>179</th>
+<td>Sri</td>
+<td>Sri Lanka</td>
+<td>None</td>
+</tr>
+<tr>
+<th>180</th>
+<td>Srilanka</td>
+<td>Sri Lanka</td>
+<td>None</td>
+</tr>
+<tr>
+<th>181</th>
+<td>Ghana</td>
+<td>Ghana</td>
+<td>None</td>
+</tr>
+<tr>
+<th>182</th>
+<td>Bahrain</td>
+<td>Bahrain</td>
+<td>None</td>
+</tr>
+<tr>
+<th>183</th>
+<td>Hk</td>
+<td>Haiti</td>
+<td>None</td>
+</tr>
+<tr>
+<th>184</th>
+<td>Mauritius</td>
+<td>Mauritius</td>
+<td>None</td>
+</tr>
+<tr>
+<th>185</th>
+<td>Suriname</td>
+<td>Suriname</td>
+<td>None</td>
+</tr>
+<tr>
+<th>186</th>
+<td>United kingdom</td>
+<td>United Kingdom of Great Britain and Northern I...</td>
+<td>None</td>
+</tr>
+<tr>
+<th>187</th>
+<td>French polynesia</td>
+<td>French Polynesia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>188</th>
+<td>Qatar</td>
+<td>Qatar</td>
+<td>None</td>
+</tr>
+<tr>
+<th>189</th>
+<td>Nicaragua</td>
+<td>Nicaragua</td>
+<td>None</td>
+</tr>
+<tr>
+<th>190</th>
+<td>Panama</td>
+<td>Panama</td>
+<td>None</td>
+</tr>
+<tr>
+<th>191</th>
+<td>Papua new guinea</td>
+<td>Papua New Guinea</td>
+<td>None</td>
+</tr>
+<tr>
+<th>192</th>
+<td>Libya</td>
+<td>Libya</td>
+<td>None</td>
+</tr>
+<tr>
+<th>193</th>
+<td>Bolivia</td>
+<td>Bolivia (Plurinational State of)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>194</th>
+<td>Maldives</td>
+<td>Maldives</td>
+<td>None</td>
+</tr>
+<tr>
+<th>195</th>
+<td>Estonia</td>
+<td>Estonia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>196</th>
+<td>Andorra</td>
+<td>Andorra</td>
+<td>None</td>
+</tr>
+<tr>
+<th>197</th>
+<td>Swaziland</td>
+<td>Sweden</td>
+<td>None</td>
+</tr>
+<tr>
+<th>198</th>
+<td>British indian ocean terri.</td>
+<td>British Indian Ocean Territory</td>
+<td>None</td>
+</tr>
+<tr>
+<th>199</th>
+<td>St.christopher and nevis</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>200</th>
+<td>Monaco</td>
+<td>Monaco</td>
+<td>None</td>
+</tr>
+<tr>
+<th>201</th>
+<td>Puerto rico</td>
+<td>Puerto Rico</td>
+<td>None</td>
+</tr>
+<tr>
+<th>202</th>
+<td>Cape verde</td>
+<td>Cameroon</td>
+<td>None</td>
+</tr>
+<tr>
+<th>203</th>
+<td>Chad</td>
+<td>Chad</td>
+<td>None</td>
+</tr>
+<tr>
+<th>204</th>
+<td>Holy see (the)</td>
+<td>Holy See</td>
+<td>None</td>
+</tr>
+<tr>
+<th>205</th>
+<td>Guinea-bissau</td>
+<td>Guinea-Bissau</td>
+<td>None</td>
+</tr>
+<tr>
+<th>206</th>
+<td>Nauru</td>
+<td>Nauru</td>
+<td>None</td>
+</tr>
+<tr>
+<th>207</th>
+<td>Saint kitts and nevis</td>
+<td>Saint Kitts and Nevis</td>
+<td>None</td>
+</tr>
+<tr>
+<th>208</th>
+<td>Saint vincent and the grenadines</td>
+<td>Saint Vincent and the Grenadines</td>
+<td>None</td>
+</tr>
+<tr>
+<th>209</th>
+<td>Saint pierre and miquelon</td>
+<td>Saint Pierre and Miquelon</td>
+<td>None</td>
+</tr>
+<tr>
+<th>210</th>
+<td>Agentina</td>
+<td>Argentina</td>
+<td>None</td>
+</tr>
+<tr>
+<th>211</th>
+<td>United state of america</td>
+<td>United States of America</td>
+<td>None</td>
+</tr>
+<tr>
+<th>212</th>
+<td>Phillipines</td>
+<td>Philippines</td>
+<td>None</td>
+</tr>
+<tr>
+<th>213</th>
+<td>Virgin islands, u.s.</td>
+<td>Viet Nam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>214</th>
+<td>Taiwan</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>215</th>
+<td>Vietnam</td>
+<td>Viet Nam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>216</th>
+<td>Unknow</td>
+<td>Unknow</td>
+<td>None</td>
+</tr>
+<tr>
+<th>217</th>
+<td>New</td>
+<td>New Zealand</td>
+<td>None</td>
+</tr>
+<tr>
+<th>218</th>
+<td>Norway</td>
+<td>Norway</td>
+<td>None</td>
+</tr>
+<tr>
+<th>219</th>
+<td>Test</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>220</th>
+<td>Brazil</td>
+<td>Brazil</td>
+<td>None</td>
+</tr>
+<tr>
+<th>221</th>
+<td>Hungary</td>
+<td>Hungary</td>
+<td>None</td>
+</tr>
+<tr>
+<th>222</th>
+<td>United states of america</td>
+<td>United States of America</td>
+<td>None</td>
+</tr>
+<tr>
+<th>223</th>
+<td>Peru</td>
+<td>Peru</td>
+<td>None</td>
+</tr>
+<tr>
+<th>224</th>
+<td>Kazakhstan</td>
+<td>Kazakhstan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>225</th>
+<td>Trinidad and tobago</td>
+<td>Trinidad and Tobago</td>
+<td>None</td>
+</tr>
+<tr>
+<th>226</th>
+<td>Oman</td>
+<td>Oman</td>
+<td>None</td>
+</tr>
+<tr>
+<th>227</th>
+<td>Ecuador</td>
+<td>Ecuador</td>
+<td>None</td>
+</tr>
+<tr>
+<th>228</th>
+<td>Honduras</td>
+<td>Honduras</td>
+<td>None</td>
+</tr>
+<tr>
+<th>229</th>
+<td>Uganda</td>
+<td>Uganda</td>
+<td>None</td>
+</tr>
+<tr>
+<th>230</th>
+<td>Paraguay</td>
+<td>Paraguay</td>
+<td>None</td>
+</tr>
+<tr>
+<th>231</th>
+<td>Lebanon</td>
+<td>Lebanon</td>
+<td>None</td>
+</tr>
+<tr>
+<th>232</th>
+<td>Macao</td>
+<td>Malawi</td>
+<td>None</td>
+</tr>
+<tr>
+<th>233</th>
+<td>Slovakia</td>
+<td>Slovakia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>234</th>
+<td>United states miscellaneo</td>
+<td>United States Minor Outlying Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>235</th>
+<td>Cote divoire</td>
+<td>Côte d’Ivoire</td>
+<td>None</td>
+</tr>
+<tr>
+<th>236</th>
+<td>Curacao</td>
+<td>Curaçao</td>
+<td>None</td>
+</tr>
+<tr>
+<th>237</th>
+<td>Luxembourg</td>
+<td>Luxembourg</td>
+<td>None</td>
+</tr>
+<tr>
+<th>238</th>
+<td>Madagascar</td>
+<td>Madagascar</td>
+<td>None</td>
+</tr>
+<tr>
+<th>239</th>
+<td>Saipan</td>
+<td>Saint Lucia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>240</th>
+<td>British virgin islands</td>
+<td>British Virgin Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>241</th>
+<td>Ivory coast</td>
+<td>Iraq</td>
+<td>None</td>
+</tr>
+<tr>
+<th>242</th>
+<td>Turkmenistan</td>
+<td>Turkmenistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>243</th>
+<td>Equatorial guinea</td>
+<td>Equatorial Guinea</td>
+<td>None</td>
+</tr>
+<tr>
+<th>244</th>
+<td>Isle of man</td>
+<td>Isle of Man</td>
+<td>None</td>
+</tr>
+<tr>
+<th>245</th>
+<td>Korea north</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>246</th>
+<td>Fiji islands</td>
+<td>Fiji</td>
+<td>None</td>
+</tr>
+<tr>
+<th>247</th>
+<td>Heard and mcdonald islands</td>
+<td>Heard Island and McDonald Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>248</th>
+<td>Wallis and futuna islands</td>
+<td>Wallis and Futuna Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>249</th>
+<td>Hong kong sar</td>
+<td>Honduras</td>
+<td>None</td>
+</tr>
+<tr>
+<th>250</th>
+<td>Egyp</td>
+<td>Egypt</td>
+<td>None</td>
+</tr>
+<tr>
+<th>251</th>
+<td>Kuala lmpur</td>
+<td>Kuwait</td>
+<td>None</td>
+</tr>
+<tr>
+<th>252</th>
+<td>Myanma</td>
+<td>Myanmar</td>
+<td>None</td>
+</tr>
+<tr>
+<th>253</th>
+<td>Macau</td>
+<td>Malawi</td>
+<td>None</td>
+</tr>
+<tr>
+<th>254</th>
+<td>ไทย</td>
+<td>ไทย</td>
+<td>None</td>
+</tr>
+<tr>
+<th>255</th>
+<td>El colegio</td>
+<td>El Salvador</td>
+<td>None</td>
+</tr>
+<tr>
+<th>256</th>
+<td>Indonesia</td>
+<td>Indonesia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>257</th>
+<td>Philippines</td>
+<td>Philippines</td>
+<td>None</td>
+</tr>
+<tr>
+<th>258</th>
+<td>Canada</td>
+<td>Canada</td>
+<td>None</td>
+</tr>
+<tr>
+<th>259</th>
+<td>Cameroon</td>
+<td>Cameroon</td>
+<td>None</td>
+</tr>
+<tr>
+<th>260</th>
+<td>Costa rica</td>
+<td>Costa Rica</td>
+<td>None</td>
+</tr>
+<tr>
+<th>261</th>
+<td>New zealand</td>
+<td>New Zealand</td>
+<td>None</td>
+</tr>
+<tr>
+<th>262</th>
+<td>El salvador</td>
+<td>El Salvador</td>
+<td>None</td>
+</tr>
+<tr>
+<th>263</th>
+<td>Seychelles</td>
+<td>Seychelles</td>
+<td>None</td>
+</tr>
+<tr>
+<th>264</th>
+<td>Reunion</td>
+<td>Réunion</td>
+<td>None</td>
+</tr>
+<tr>
+<th>265</th>
+<td>Angola</td>
+<td>Angola</td>
+<td>None</td>
+</tr>
+<tr>
+<th>266</th>
+<td>Serbia</td>
+<td>Serbia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>267</th>
+<td>Sudan</td>
+<td>Sudan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>268</th>
+<td>Bermuda</td>
+<td>Bermuda</td>
+<td>None</td>
+</tr>
+<tr>
+<th>269</th>
+<td>Mauritania</td>
+<td>Mauritania</td>
+<td>None</td>
+</tr>
+<tr>
+<th>270</th>
+<td>Cuba</td>
+<td>Cuba</td>
+<td>None</td>
+</tr>
+<tr>
+<th>271</th>
+<td>Liechtenstein</td>
+<td>Liechtenstein</td>
+<td>None</td>
+</tr>
+<tr>
+<th>272</th>
+<td>Samoa</td>
+<td>Samoa</td>
+<td>None</td>
+</tr>
+<tr>
+<th>273</th>
+<td>Tahiti</td>
+<td>Tajikistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>274</th>
+<td>Benin</td>
+<td>Benin</td>
+<td>None</td>
+</tr>
+<tr>
+<th>275</th>
+<td>Comoros</td>
+<td>Comoros</td>
+<td>None</td>
+</tr>
+<tr>
+<th>276</th>
+<td>No country</td>
+<td>Norway</td>
+<td>None</td>
+</tr>
+<tr>
+<th>277</th>
+<td>Korea south</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>278</th>
+<td>Tuvalu</td>
+<td>Tuvalu</td>
+<td>None</td>
+</tr>
+<tr>
+<th>279</th>
+<td>Gambia the</td>
+<td>Gambia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>280</th>
+<td>Anguilla</td>
+<td>Anguilla</td>
+<td>None</td>
+</tr>
+<tr>
+<th>281</th>
+<td>Democratic republic of the congo</td>
+<td>Democratic Republic of the Congo</td>
+<td>None</td>
+</tr>
+<tr>
+<th>282</th>
+<td>Republic of the congo</td>
+<td>Republic of Korea</td>
+<td>None</td>
+</tr>
+<tr>
+<th>283</th>
+<td>Åland islands</td>
+<td>Åland Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>284</th>
+<td>Antarctica</td>
+<td>Antarctica</td>
+<td>None</td>
+</tr>
+<tr>
+<th>285</th>
+<td>Virgin islands (us)</td>
+<td>Viet Nam</td>
+<td>None</td>
+</tr>
+<tr>
+<th>286</th>
+<td>Northern mariana islands</td>
+<td>Northern Mariana Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>287</th>
+<td>Martinique</td>
+<td>Martinique</td>
+<td>None</td>
+</tr>
+<tr>
+<th>288</th>
+<td>Uae</td>
+<td>Uganda</td>
+<td>None</td>
+</tr>
+<tr>
+<th>289</th>
+<td>Phnom penh</td>
+<td>Philippines</td>
+<td>None</td>
+</tr>
+<tr>
+<th>290</th>
+<td>U.a.e.</td>
+<td>Uganda</td>
+<td>None</td>
+</tr>
+<tr>
+<th>291</th>
+<td>Hanoi</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>292</th>
+<td>Hong kong</td>
+<td>Honduras</td>
+<td>None</td>
+</tr>
+<tr>
+<th>293</th>
+<td>Usa</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>294</th>
+<td>Chile</td>
+<td>Chile</td>
+<td>None</td>
+</tr>
+<tr>
+<th>295</th>
+<td>Nigeria</td>
+<td>Nigeria</td>
+<td>None</td>
+</tr>
+<tr>
+<th>296</th>
+<td>American</td>
+<td>American Samoa</td>
+<td>None</td>
+</tr>
+<tr>
+<th>297</th>
+<td>Mozambique</td>
+<td>Mozambique</td>
+<td>None</td>
+</tr>
+<tr>
+<th>298</th>
+<td>Hong</td>
+<td>Honduras</td>
+<td>None</td>
+</tr>
+<tr>
+<th>299</th>
+<td>Greece</td>
+<td>Greece</td>
+<td>None</td>
+</tr>
+<tr>
+<th>300</th>
+<td>Saudi</td>
+<td>Saudi Arabia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>301</th>
+<td>Jordan</td>
+<td>Jordan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>302</th>
+<td>Cambodia</td>
+<td>Cambodia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>303</th>
+<td>United states</td>
+<td>United States Virgin Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>304</th>
+<td>País</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>305</th>
+<td>919/357 jtc bldg, 28th floor, room 357 silom r...</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>306</th>
+<td>Th</td>
+<td>Thailand</td>
+<td>None</td>
+</tr>
+<tr>
+<th>307</th>
+<td>Tunisia</td>
+<td>Tunisia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>308</th>
+<td>Finland</td>
+<td>Finland</td>
+<td>None</td>
+</tr>
+<tr>
+<th>309</th>
+<td>Dominican republic</td>
+<td>Dominican Republic</td>
+<td>None</td>
+</tr>
+<tr>
+<th>310</th>
+<td>Jamaica</td>
+<td>Jamaica</td>
+<td>None</td>
+</tr>
+<tr>
+<th>311</th>
+<td>Israel</td>
+<td>Israel</td>
+<td>None</td>
+</tr>
+<tr>
+<th>312</th>
+<td>Trinidad</td>
+<td>Trinidad and Tobago</td>
+<td>None</td>
+</tr>
+<tr>
+<th>313</th>
+<td>Afghanistan</td>
+<td>Afghanistan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>314</th>
+<td>East timor</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>315</th>
+<td>Scotland</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>316</th>
+<td>Georgia</td>
+<td>Georgia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>317</th>
+<td>Zambia</td>
+<td>Zambia</td>
+<td>None</td>
+</tr>
+<tr>
+<th>318</th>
+<td>Azerbaijan</td>
+<td>Azerbaijan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>319</th>
+<td>Saint barthelemy</td>
+<td>Saint Barthélemy</td>
+<td>None</td>
+</tr>
+<tr>
+<th>320</th>
+<td>French guiana</td>
+<td>French Guiana</td>
+<td>None</td>
+</tr>
+<tr>
+<th>321</th>
+<td>Gabon</td>
+<td>Gabon</td>
+<td>None</td>
+</tr>
+<tr>
+<th>322</th>
+<td>South africa</td>
+<td>South Africa</td>
+<td>None</td>
+</tr>
+<tr>
+<th>323</th>
+<td>Turks and caicos islands</td>
+<td>Turks and Caicos Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>324</th>
+<td>Marshall islands</td>
+<td>Marshall Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>325</th>
+<td>Bouvet island</td>
+<td>Bouvet Island</td>
+<td>None</td>
+</tr>
+<tr>
+<th>326</th>
+<td>Eritrea</td>
+<td>Eritrea</td>
+<td>None</td>
+</tr>
+<tr>
+<th>327</th>
+<td>Tokelau</td>
+<td>Tokelau</td>
+<td>None</td>
+</tr>
+<tr>
+<th>328</th>
+<td>Svalbard and jan mayen islands</td>
+<td>Svalbard and Jan Mayen Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>329</th>
+<td>Smaller territories of the uk</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>330</th>
+<td>Falkland islands</td>
+<td>Falkland Islands (Malvinas)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>331</th>
+<td>Pitcairn island</td>
+<td>Pitcairn</td>
+<td>None</td>
+</tr>
+<tr>
+<th>332</th>
+<td>South korea</td>
+<td>South Sudan</td>
+<td>None</td>
+</tr>
+<tr>
+<th>333</th>
+<td>United state</td>
+<td>United States Virgin Islands</td>
+<td>None</td>
+</tr>
+<tr>
+<th>334</th>
+<td>Netherland</td>
+<td>Netherlands (Kingdom of the)</td>
+<td>None</td>
+</tr>
+<tr>
+<th>335</th>
+<td>U.s.a.</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+<tr>
+<th>336</th>
+<td>Ttc manila part 2</td>
+<td></td>
+<td>masterdata not found</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9a569f36-6f76-40e4-8ff0-1995fcd63acf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Dask">Dask<a class="anchor-link" href="#Dask">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b6bab300-49a2-49f2-b720-14e2780986b6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">dask.dataframe</span> <span class="k">as</span> <span class="nn">dd</span>
+<span class="n">df_query</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'country_person.csv'</span><span class="p">)</span>
+<span class="n">ddf</span> <span class="o">=</span> <span class="n">dd</span><span class="o">.</span><span class="n">from_pandas</span><span class="p">(</span><span class="n">df_query</span><span class="p">,</span> <span class="n">npartitions</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=634a2492-be39-48b3-ba83-d444d75ac118">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">ddf</span><span class="p">[</span><span class="s1">'result'</span><span class="p">]</span> <span class="o">=</span> <span class="n">ddf</span><span class="p">[</span><span class="s1">'country'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">mapping</span><span class="o">.</span><span class="n">search</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/home/wasit/miniconda3/envs/dsmde/lib/python3.10/site-packages/dask/dataframe/core.py:4522: UserWarning: 
+You did not provide metadata, so Dask is running your function on a small dataset to guess output types. It is possible that Dask will guess incorrectly.
+To provide an explicit output types or to silence this message, please provide the `meta=` keyword, as described in the map or apply function that you are using.
+  Before: .apply(func)
+  After:  .apply(func, meta=('country', 'object'))
+
+  warnings.warn(meta_warning(meta))
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e7821747-e1b2-48a2-91b7-a8e2d22ba91a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [97]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">ddf</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[97]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>country</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Thailand</td>
+<td>Success({'id': 711, 'master_id': '2023THA', 't...</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Poland</td>
+<td>Success({'id': 668, 'master_id': '2023POL', 't...</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Singapore</td>
+<td>Success({'id': 693, 'master_id': '2023SGP', 't...</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Switzerland</td>
+<td>Success({'id': 708, 'master_id': '2023CHE', 't...</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Japan</td>
+<td>Success({'id': 603, 'master_id': '2023JPN', 't...</td>
+</tr>
+<tr>
+<th>5</th>
+<td>India</td>
+<td>Success({'id': 594, 'master_id': '2023IND', 't...</td>
+</tr>
+<tr>
+<th>6</th>
+<td>Kenya</td>
+<td>Success({'id': 606, 'master_id': '2023KEN', 't...</td>
+</tr>
+<tr>
+<th>7</th>
+<td>United</td>
+<td>Success({'id': 657, 'master_id': '2023UMI', 't...</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Egypt</td>
+<td>Success({'id': 725, 'master_id': '2023EGY', 't...</td>
+</tr>
+<tr>
+<th>9</th>
+<td>Bangladesh</td>
+<td>Success({'id': 507, 'master_id': '2023BGD', 't...</td>
+</tr>
+<tr>
+<th>10</th>
+<td>Pacific</td>
+<td>Success({'id': 661, 'master_id': '2023PAK', 't...</td>
+</tr>
+<tr>
+<th>11</th>
+<td>Camboia</td>
+<td>Success({'id': 527, 'master_id': '2023KHM', 't...</td>
+</tr>
+<tr>
+<th>12</th>
+<td>United arab emirates</td>
+<td>Success({'id': 716, 'master_id': '2023ARE', 't...</td>
+</tr>
+<tr>
+<th>13</th>
+<td>Pakistan</td>
+<td>Success({'id': 661, 'master_id': '2023PAK', 't...</td>
+</tr>
+<tr>
+<th>14</th>
+<td>Ukraine</td>
+<td>Success({'id': 723, 'master_id': '2023UKR', 't...</td>
+</tr>
+<tr>
+<th>15</th>
+<td>Iran</td>
+<td>Success({'id': 597, 'master_id': '2023IRQ', 't...</td>
+</tr>
+<tr>
+<th>16</th>
+<td>Zimbabwe</td>
+<td>Success({'id': 699, 'master_id': '2023ZWE', 't...</td>
+</tr>
+<tr>
+<th>17</th>
+<td>Mongolia</td>
+<td>Success({'id': 632, 'master_id': '2023MNG', 't...</td>
+</tr>
+<tr>
+<th>18</th>
+<td>Sri lanka</td>
+<td>Success({'id': 533, 'master_id': '2023LKA', 't...</td>
+</tr>
+<tr>
+<th>19</th>
+<td>Cyprus</td>
+<td>Success({'id': 548, 'master_id': '2023CYP', 't...</td>
+</tr>
+<tr>
+<th>20</th>
+<td>Iraq</td>
+<td>Success({'id': 597, 'master_id': '2023IRQ', 't...</td>
+</tr>
+<tr>
+<th>21</th>
+<td>Slovenia</td>
+<td>Success({'id': 696, 'master_id': '2023SVN', 't...</td>
+</tr>
+<tr>
+<th>22</th>
+<td>Ireland</td>
+<td>Success({'id': 598, 'master_id': '2023IRL', 't...</td>
+</tr>
+<tr>
+<th>23</th>
+<td>Uzbekistan</td>
+<td>Success({'id': 735, 'master_id': '2023UZB', 't...</td>
+</tr>
+<tr>
+<th>24</th>
+<td>Senegal</td>
+<td>Success({'id': 689, 'master_id': '2023SEN', 't...</td>
+</tr>
+<tr>
+<th>25</th>
+<td>Antigua and barbuda</td>
+<td>Success({'id': 500, 'master_id': '2023ATG', 't...</td>
+</tr>
+<tr>
+<th>26</th>
+<td>Guinea  ( guinee )</td>
+<td>Success({'id': 585, 'master_id': '2023GIN', 't...</td>
+</tr>
+<tr>
+<th>27</th>
+<td>Somalia</td>
+<td>Success({'id': 697, 'master_id': '2023SOM', 't...</td>
+</tr>
+<tr>
+<th>28</th>
+<td>Aruba, bonaire and curacao</td>
+<td>Success({'id': 644, 'master_id': '2023ABW', 't...</td>
+</tr>
+<tr>
+<th>29</th>
+<td>San marino</td>
+<td>Success({'id': 686, 'master_id': '2023SMR', 't...</td>
+</tr>
+<tr>
+<th>30</th>
+<td>Greenland</td>
+<td>Success({'id': 580, 'master_id': '2023GRL', 't...</td>
+</tr>
+<tr>
+<th>31</th>
+<td>Central african republic</td>
+<td>Success({'id': 532, 'master_id': '2023CAF', 't...</td>
+</tr>
+<tr>
+<th>32</th>
+<td>Dominica</td>
+<td>Success({'id': 552, 'master_id': '2023DMA', 't...</td>
+</tr>
+<tr>
+<th>33</th>
+<td>Syria</td>
+<td>Success({'id': 709, 'master_id': '2023SYR', 't...</td>
+</tr>
+<tr>
+<th>34</th>
+<td>Macedonia</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>35</th>
+<td>Croatia (hrvatska)</td>
+<td>Success({'id': 546, 'master_id': '2023HRV', 't...</td>
+</tr>
+<tr>
+<th>36</th>
+<td>Montenegro</td>
+<td>Success({'id': 634, 'master_id': '2023MNE', 't...</td>
+</tr>
+<tr>
+<th>37</th>
+<td>Norfolk island</td>
+<td>Success({'id': 654, 'master_id': '2023NFK', 't...</td>
+</tr>
+<tr>
+<th>38</th>
+<td>Haiti</td>
+<td>Success({'id': 587, 'master_id': '2023HTI', 't...</td>
+</tr>
+<tr>
+<th>39</th>
+<td>Saint helena</td>
+<td>Success({'id': 679, 'master_id': '2023SHN', 't...</td>
+</tr>
+<tr>
+<th>40</th>
+<td>Grenada</td>
+<td>Success({'id': 581, 'master_id': '2023GRD', 't...</td>
+</tr>
+<tr>
+<th>41</th>
+<td>Cocos (keeling) islands</td>
+<td>Success({'id': 538, 'master_id': '2023CCK', 't...</td>
+</tr>
+<tr>
+<th>42</th>
+<td>Myanmar</td>
+<td>Success({'id': 524, 'master_id': '2023MMR', 't...</td>
+</tr>
+<tr>
+<th>43</th>
+<td>Phrea</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>44</th>
+<td>Malaysia</td>
+<td>Success({'id': 623, 'master_id': '2023MYS', 't...</td>
+</tr>
+<tr>
+<th>45</th>
+<td>Turkey</td>
+<td>Success({'id': 719, 'master_id': '2023TKM', 't...</td>
+</tr>
+<tr>
+<th>46</th>
+<td>Netherlands(the)</td>
+<td>Success({'id': 642, 'master_id': '2023NLD', 't...</td>
+</tr>
+<tr>
+<th>47</th>
+<td>American samoa</td>
+<td>Success({'id': 497, 'master_id': '2023ASM', 't...</td>
+</tr>
+<tr>
+<th>48</th>
+<td>Russian federation</td>
+<td>Success({'id': 676, 'master_id': '2023RUS', 't...</td>
+</tr>
+<tr>
+<th>49</th>
+<td>Greater asset ltd</td>
+<td>Success({'id': 581, 'master_id': '2023GRD', 't...</td>
+</tr>
+<tr>
+<th>50</th>
+<td>Thakhek</td>
+<td>Success({'id': 711, 'master_id': '2023THA', 't...</td>
+</tr>
+<tr>
+<th>51</th>
+<td>Brunei</td>
+<td>Success({'id': 522, 'master_id': '2023BRN', 't...</td>
+</tr>
+<tr>
+<th>52</th>
+<td>Syria</td>
+<td>Success({'id': 709, 'master_id': '2023SYR', 't...</td>
+</tr>
+<tr>
+<th>53</th>
+<td>Colombia</td>
+<td>Success({'id': 539, 'master_id': '2023COL', 't...</td>
+</tr>
+<tr>
+<th>54</th>
+<td>Romania</td>
+<td>Success({'id': 675, 'master_id': '2023ROU', 't...</td>
+</tr>
+<tr>
+<th>55</th>
+<td>Uruguay</td>
+<td>Success({'id': 734, 'master_id': '2023URY', 't...</td>
+</tr>
+<tr>
+<th>56</th>
+<td>Czech republic</td>
+<td>Success({'id': 549, 'master_id': '2023CZE', 't...</td>
+</tr>
+<tr>
+<th>57</th>
+<td>Netherlands antilles</td>
+<td>Success({'id': 642, 'master_id': '2023NLD', 't...</td>
+</tr>
+<tr>
+<th>58</th>
+<td>Tanzania</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>59</th>
+<td>Guadeloupe</td>
+<td>Success({'id': 582, 'master_id': '2023GLP', 't...</td>
+</tr>
+<tr>
+<th>60</th>
+<td>Croatia</td>
+<td>Success({'id': 546, 'master_id': '2023HRV', 't...</td>
+</tr>
+<tr>
+<th>61</th>
+<td>Kyrgyzstan</td>
+<td>Success({'id': 610, 'master_id': '2023KGZ', 't...</td>
+</tr>
+<tr>
+<th>62</th>
+<td>Saint lucia</td>
+<td>Success({'id': 682, 'master_id': '2023LCA', 't...</td>
+</tr>
+<tr>
+<th>63</th>
+<td>Latvia</td>
+<td>Success({'id': 614, 'master_id': '2023LVA', 't...</td>
+</tr>
+<tr>
+<th>64</th>
+<td>Bosnia and herzegovina</td>
+<td>Success({'id': 514, 'master_id': '2023BIH', 't...</td>
+</tr>
+<tr>
+<th>65</th>
+<td>Gibraltar</td>
+<td>Success({'id': 577, 'master_id': '2023GIB', 't...</td>
+</tr>
+<tr>
+<th>66</th>
+<td>Guernsey</td>
+<td>Success({'id': 727, 'master_id': '2023GGY', 't...</td>
+</tr>
+<tr>
+<th>67</th>
+<td>Niger</td>
+<td>Success({'id': 652, 'master_id': '2023NGA', 't...</td>
+</tr>
+<tr>
+<th>68</th>
+<td>Cook islands</td>
+<td>Success({'id': 544, 'master_id': '2023COK', 't...</td>
+</tr>
+<tr>
+<th>69</th>
+<td>Jersey</td>
+<td>Success({'id': 728, 'master_id': '2023JEY', 't...</td>
+</tr>
+<tr>
+<th>70</th>
+<td>Montserrat</td>
+<td>Success({'id': 635, 'master_id': '2023MSR', 't...</td>
+</tr>
+<tr>
+<th>71</th>
+<td>Hong kong s.a.r.</td>
+<td>Success({'id': 590, 'master_id': '2023HND', 't...</td>
+</tr>
+<tr>
+<th>72</th>
+<td>Malawi</td>
+<td>Success({'id': 622, 'master_id': '2023MWI', 't...</td>
+</tr>
+<tr>
+<th>73</th>
+<td>Palestinian territory occupied</td>
+<td>Success({'id': 660, 'master_id': '2023PLW', 't...</td>
+</tr>
+<tr>
+<th>74</th>
+<td>Botswana</td>
+<td>Success({'id': 515, 'master_id': '2023BWA', 't...</td>
+</tr>
+<tr>
+<th>75</th>
+<td>Cayman islands</td>
+<td>Success({'id': 531, 'master_id': '2023CYM', 't...</td>
+</tr>
+<tr>
+<th>76</th>
+<td>Timor-leste</td>
+<td>Success({'id': 671, 'master_id': '2023TLS', 't...</td>
+</tr>
+<tr>
+<th>77</th>
+<td>Barbados</td>
+<td>Success({'id': 509, 'master_id': '2023BRB', 't...</td>
+</tr>
+<tr>
+<th>78</th>
+<td>Bahamas the</td>
+<td>Success({'id': 505, 'master_id': '2023BHS', 't...</td>
+</tr>
+<tr>
+<th>79</th>
+<td>Aruba</td>
+<td>Success({'id': 644, 'master_id': '2023ABW', 't...</td>
+</tr>
+<tr>
+<th>80</th>
+<td>Virgin islands (british)</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>81</th>
+<td>Faroe islands</td>
+<td>Success({'id': 560, 'master_id': '2023FRO', 't...</td>
+</tr>
+<tr>
+<th>82</th>
+<td>Vatican city state (holy see)</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>83</th>
+<td>Niue</td>
+<td>Success({'id': 653, 'master_id': '2023NIU', 't...</td>
+</tr>
+<tr>
+<th>84</th>
+<td>South georgia</td>
+<td>Success({'id': 562, 'master_id': '2023SGS', 't...</td>
+</tr>
+<tr>
+<th>85</th>
+<td>Hongkong</td>
+<td>Success({'id': 590, 'master_id': '2023HND', 't...</td>
+</tr>
+<tr>
+<th>86</th>
+<td>Tokyo</td>
+<td>Success({'id': 713, 'master_id': '2023TKL', 't...</td>
+</tr>
+<tr>
+<th>87</th>
+<td>Côte d'ivoire</td>
+<td>Success({'id': 601, 'master_id': '2023CIV', 't...</td>
+</tr>
+<tr>
+<th>88</th>
+<td>Korea</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>89</th>
+<td>Egergerg</td>
+<td>Success({'id': 575, 'master_id': '2023DEU', 't...</td>
+</tr>
+<tr>
+<th>90</th>
+<td>Laos</td>
+<td>Success({'id': 611, 'master_id': '2023LAO', 't...</td>
+</tr>
+<tr>
+<th>91</th>
+<td>တိုင်းပြည်</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>92</th>
+<td>Russia</td>
+<td>Success({'id': 676, 'master_id': '2023RUS', 't...</td>
+</tr>
+<tr>
+<th>93</th>
+<td>Belgium</td>
+<td>Success({'id': 510, 'master_id': '2023BEL', 't...</td>
+</tr>
+<tr>
+<th>94</th>
+<td>Algeria</td>
+<td>Success({'id': 496, 'master_id': '2023DZA', 't...</td>
+</tr>
+<tr>
+<th>95</th>
+<td>Ethiopia</td>
+<td>Success({'id': 557, 'master_id': '2023ETH', 't...</td>
+</tr>
+<tr>
+<th>96</th>
+<td>Austria</td>
+<td>Success({'id': 504, 'master_id': '2023AUT', 't...</td>
+</tr>
+<tr>
+<th>97</th>
+<td>Republic of south africa</td>
+<td>Success({'id': 608, 'master_id': '2023KOR', 't...</td>
+</tr>
+<tr>
+<th>98</th>
+<td>Saudi arabia</td>
+<td>Success({'id': 688, 'master_id': '2023SAU', 't...</td>
+</tr>
+<tr>
+<th>99</th>
+<td>Bhutan</td>
+<td>Success({'id': 512, 'master_id': '2023BTN', 't...</td>
+</tr>
+<tr>
+<th>100</th>
+<td>Kuwait</td>
+<td>Success({'id': 609, 'master_id': '2023KWT', 't...</td>
+</tr>
+<tr>
+<th>101</th>
+<td>Sweden</td>
+<td>Success({'id': 707, 'master_id': '2023SWE', 't...</td>
+</tr>
+<tr>
+<th>102</th>
+<td>Tonga</td>
+<td>Success({'id': 714, 'master_id': '2023TON', 't...</td>
+</tr>
+<tr>
+<th>103</th>
+<td>Palestine</td>
+<td>Success({'id': 660, 'master_id': '2023PLW', 't...</td>
+</tr>
+<tr>
+<th>104</th>
+<td>Argentina</td>
+<td>Success({'id': 502, 'master_id': '2023ARG', 't...</td>
+</tr>
+<tr>
+<th>105</th>
+<td>Guyana</td>
+<td>Success({'id': 586, 'master_id': '2023GUY', 't...</td>
+</tr>
+<tr>
+<th>106</th>
+<td>New caledonia</td>
+<td>Success({'id': 647, 'master_id': '2023NCL', 't...</td>
+</tr>
+<tr>
+<th>107</th>
+<td>Guam</td>
+<td>Success({'id': 583, 'master_id': '2023GUM', 't...</td>
+</tr>
+<tr>
+<th>108</th>
+<td>Tajikistan</td>
+<td>Success({'id': 710, 'master_id': '2023TJK', 't...</td>
+</tr>
+<tr>
+<th>109</th>
+<td>Bulgaria</td>
+<td>Success({'id': 523, 'master_id': '2023BGR', 't...</td>
+</tr>
+<tr>
+<th>110</th>
+<td>Solomon islands</td>
+<td>Success({'id': 520, 'master_id': '2023SLB', 't...</td>
+</tr>
+<tr>
+<th>111</th>
+<td>Djibouti</td>
+<td>Success({'id': 570, 'master_id': '2023DJI', 't...</td>
+</tr>
+<tr>
+<th>112</th>
+<td>Mali</td>
+<td>Success({'id': 624, 'master_id': '2023MDV', 't...</td>
+</tr>
+<tr>
+<th>113</th>
+<td>Congo</td>
+<td>Success({'id': 542, 'master_id': '2023COG', 't...</td>
+</tr>
+<tr>
+<th>114</th>
+<td>Zaire</td>
+<td>Success({'id': 740, 'master_id': '2023ZMB', 't...</td>
+</tr>
+<tr>
+<th>115</th>
+<td>Guatemala</td>
+<td>Success({'id': 584, 'master_id': '2023GTM', 't...</td>
+</tr>
+<tr>
+<th>116</th>
+<td>Kiribati</td>
+<td>Success({'id': 578, 'master_id': '2023KIR', 't...</td>
+</tr>
+<tr>
+<th>117</th>
+<td>Lithuania</td>
+<td>Success({'id': 618, 'master_id': '2023LTU', 't...</td>
+</tr>
+<tr>
+<th>118</th>
+<td>Bahamas</td>
+<td>Success({'id': 505, 'master_id': '2023BHS', 't...</td>
+</tr>
+<tr>
+<th>119</th>
+<td>Gambia</td>
+<td>Success({'id': 573, 'master_id': '2023GMB', 't...</td>
+</tr>
+<tr>
+<th>120</th>
+<td>Sierra leone</td>
+<td>Success({'id': 692, 'master_id': '2023SLE', 't...</td>
+</tr>
+<tr>
+<th>121</th>
+<td>Rwanda</td>
+<td>Success({'id': 677, 'master_id': '2023RWA', 't...</td>
+</tr>
+<tr>
+<th>122</th>
+<td>Hawaii</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>123</th>
+<td>Palau</td>
+<td>Success({'id': 660, 'master_id': '2023PLW', 't...</td>
+</tr>
+<tr>
+<th>124</th>
+<td>British antractic terri.</td>
+<td>Success({'id': 519, 'master_id': '2023IOT', 't...</td>
+</tr>
+<tr>
+<th>125</th>
+<td>Mayotte</td>
+<td>Success({'id': 541, 'master_id': '2023MYT', 't...</td>
+</tr>
+<tr>
+<th>126</th>
+<td>Western sahara</td>
+<td>Success({'id': 703, 'master_id': '2023ESH', 't...</td>
+</tr>
+<tr>
+<th>127</th>
+<td>United states virgin isl.</td>
+<td>Success({'id': 732, 'master_id': '2023VIR', 't...</td>
+</tr>
+<tr>
+<th>128</th>
+<td>Netherlands the</td>
+<td>Success({'id': 642, 'master_id': '2023NLD', 't...</td>
+</tr>
+<tr>
+<th>129</th>
+<td>Christmas island</td>
+<td>Success({'id': 537, 'master_id': '2023CXR', 't...</td>
+</tr>
+<tr>
+<th>130</th>
+<td>Micronesia</td>
+<td>Success({'id': 658, 'master_id': '2023FSM', 't...</td>
+</tr>
+<tr>
+<th>131</th>
+<td>United states minor outlying islands</td>
+<td>Success({'id': 657, 'master_id': '2023UMI', 't...</td>
+</tr>
+<tr>
+<th>132</th>
+<td>Macau s.a.r.</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>133</th>
+<td>Lesotho</td>
+<td>Success({'id': 613, 'master_id': '2023LSO', 't...</td>
+</tr>
+<tr>
+<th>134</th>
+<td>Sao tome and principe</td>
+<td>Success({'id': 687, 'master_id': '2023STP', 't...</td>
+</tr>
+<tr>
+<th>135</th>
+<td>Korea, south</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>136</th>
+<td>Virgin islands, british</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>137</th>
+<td>China</td>
+<td>Success({'id': 536, 'master_id': '2023CHN', 't...</td>
+</tr>
+<tr>
+<th>138</th>
+<td>Australia</td>
+<td>Success({'id': 503, 'master_id': '2023AUS', 't...</td>
+</tr>
+<tr>
+<th>139</th>
+<td>U.s.a</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>140</th>
+<td>Denmark</td>
+<td>Success({'id': 551, 'master_id': '2023DNK', 't...</td>
+</tr>
+<tr>
+<th>141</th>
+<td>Morocco</td>
+<td>Success({'id': 636, 'master_id': '2023MAR', 't...</td>
+</tr>
+<tr>
+<th>142</th>
+<td>Yemen</td>
+<td>Success({'id': 739, 'master_id': '2023YEM', 't...</td>
+</tr>
+<tr>
+<th>143</th>
+<td>Germany</td>
+<td>Success({'id': 575, 'master_id': '2023DEU', 't...</td>
+</tr>
+<tr>
+<th>144</th>
+<td>Albania</td>
+<td>Success({'id': 494, 'master_id': '2023ALB', 't...</td>
+</tr>
+<tr>
+<th>145</th>
+<td>Malta</td>
+<td>Success({'id': 626, 'master_id': '2023MLT', 't...</td>
+</tr>
+<tr>
+<th>146</th>
+<td>Burkina faso</td>
+<td>Success({'id': 733, 'master_id': '2023BFA', 't...</td>
+</tr>
+<tr>
+<th>147</th>
+<td>Spain</td>
+<td>Success({'id': 700, 'master_id': '2023ESP', 't...</td>
+</tr>
+<tr>
+<th>148</th>
+<td>Netherlands</td>
+<td>Success({'id': 642, 'master_id': '2023NLD', 't...</td>
+</tr>
+<tr>
+<th>149</th>
+<td>Belarus</td>
+<td>Success({'id': 526, 'master_id': '2023BLR', 't...</td>
+</tr>
+<tr>
+<th>150</th>
+<td>Fiji</td>
+<td>Success({'id': 563, 'master_id': '2023FJI', 't...</td>
+</tr>
+<tr>
+<th>151</th>
+<td>Mexico</td>
+<td>Success({'id': 630, 'master_id': '2023MEX', 't...</td>
+</tr>
+<tr>
+<th>152</th>
+<td>Portugal</td>
+<td>Success({'id': 669, 'master_id': '2023PRT', 't...</td>
+</tr>
+<tr>
+<th>153</th>
+<td>Virgin islands (usa)</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>154</th>
+<td>Yugoslavia</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>155</th>
+<td>Burundi</td>
+<td>Success({'id': 525, 'master_id': '2023BDI', 't...</td>
+</tr>
+<tr>
+<th>156</th>
+<td>Namibia</td>
+<td>Success({'id': 639, 'master_id': '2023NAM', 't...</td>
+</tr>
+<tr>
+<th>157</th>
+<td>Armenia</td>
+<td>Success({'id': 508, 'master_id': '2023ARM', 't...</td>
+</tr>
+<tr>
+<th>158</th>
+<td>Liberia</td>
+<td>Success({'id': 615, 'master_id': '2023LBR', 't...</td>
+</tr>
+<tr>
+<th>159</th>
+<td>Vanuatu</td>
+<td>Success({'id': 648, 'master_id': '2023VUT', 't...</td>
+</tr>
+<tr>
+<th>160</th>
+<td>Belize</td>
+<td>Success({'id': 518, 'master_id': '2023BLZ', 't...</td>
+</tr>
+<tr>
+<th>161</th>
+<td>Moldova</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>162</th>
+<td>Iceland</td>
+<td>Success({'id': 593, 'master_id': '2023ISL', 't...</td>
+</tr>
+<tr>
+<th>163</th>
+<td>Togo</td>
+<td>Success({'id': 712, 'master_id': '2023TGO', 't...</td>
+</tr>
+<tr>
+<th>164</th>
+<td>Venezuela</td>
+<td>Success({'id': 736, 'master_id': '2023VEN', 't...</td>
+</tr>
+<tr>
+<th>165</th>
+<td>Canary islands</td>
+<td>Success({'id': 529, 'master_id': '2023CAN', 't...</td>
+</tr>
+<tr>
+<th>166</th>
+<td>Guinea</td>
+<td>Success({'id': 585, 'master_id': '2023GIN', 't...</td>
+</tr>
+<tr>
+<th>167</th>
+<td>Cote d'ivoire (ivory coast)</td>
+<td>Success({'id': 601, 'master_id': '2023CIV', 't...</td>
+</tr>
+<tr>
+<th>168</th>
+<td>British indian ocean territory</td>
+<td>Success({'id': 519, 'master_id': '2023IOT', 't...</td>
+</tr>
+<tr>
+<th>169</th>
+<td>Phillippines</td>
+<td>Success({'id': 666, 'master_id': '2023PHL', 't...</td>
+</tr>
+<tr>
+<th>170</th>
+<td>Türkiye</td>
+<td>Success({'id': 718, 'master_id': '2023TUR', 't...</td>
+</tr>
+<tr>
+<th>171</th>
+<td>India</td>
+<td>Success({'id': 594, 'master_id': '2023IND', 't...</td>
+</tr>
+<tr>
+<th>172</th>
+<td>Loas</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>173</th>
+<td>Korea, north</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>174</th>
+<td>Brunei darussalam</td>
+<td>Success({'id': 522, 'master_id': '2023BRN', 't...</td>
+</tr>
+<tr>
+<th>175</th>
+<td>Nepal</td>
+<td>Success({'id': 641, 'master_id': '2023NPL', 't...</td>
+</tr>
+<tr>
+<th>176</th>
+<td>Country</td>
+<td>Success({'id': 542, 'master_id': '2023COG', 't...</td>
+</tr>
+<tr>
+<th>177</th>
+<td>France</td>
+<td>Success({'id': 566, 'master_id': '2023FRA', 't...</td>
+</tr>
+<tr>
+<th>178</th>
+<td>Italy</td>
+<td>Success({'id': 600, 'master_id': '2023ITA', 't...</td>
+</tr>
+<tr>
+<th>179</th>
+<td>Sri</td>
+<td>Success({'id': 533, 'master_id': '2023LKA', 't...</td>
+</tr>
+<tr>
+<th>180</th>
+<td>Srilanka</td>
+<td>Success({'id': 533, 'master_id': '2023LKA', 't...</td>
+</tr>
+<tr>
+<th>181</th>
+<td>Ghana</td>
+<td>Success({'id': 576, 'master_id': '2023GHA', 't...</td>
+</tr>
+<tr>
+<th>182</th>
+<td>Bahrain</td>
+<td>Success({'id': 506, 'master_id': '2023BHR', 't...</td>
+</tr>
+<tr>
+<th>183</th>
+<td>Hk</td>
+<td>Success({'id': 587, 'master_id': '2023HTI', 't...</td>
+</tr>
+<tr>
+<th>184</th>
+<td>Mauritius</td>
+<td>Success({'id': 629, 'master_id': '2023MUS', 't...</td>
+</tr>
+<tr>
+<th>185</th>
+<td>Suriname</td>
+<td>Success({'id': 704, 'master_id': '2023SUR', 't...</td>
+</tr>
+<tr>
+<th>186</th>
+<td>United kingdom</td>
+<td>Success({'id': 726, 'master_id': '2023GBR', 't...</td>
+</tr>
+<tr>
+<th>187</th>
+<td>French polynesia</td>
+<td>Success({'id': 568, 'master_id': '2023PYF', 't...</td>
+</tr>
+<tr>
+<th>188</th>
+<td>Qatar</td>
+<td>Success({'id': 673, 'master_id': '2023QAT', 't...</td>
+</tr>
+<tr>
+<th>189</th>
+<td>Nicaragua</td>
+<td>Success({'id': 650, 'master_id': '2023NIC', 't...</td>
+</tr>
+<tr>
+<th>190</th>
+<td>Panama</td>
+<td>Success({'id': 662, 'master_id': '2023PAN', 't...</td>
+</tr>
+<tr>
+<th>191</th>
+<td>Papua new guinea</td>
+<td>Success({'id': 663, 'master_id': '2023PNG', 't...</td>
+</tr>
+<tr>
+<th>192</th>
+<td>Libya</td>
+<td>Success({'id': 616, 'master_id': '2023LBY', 't...</td>
+</tr>
+<tr>
+<th>193</th>
+<td>Bolivia</td>
+<td>Success({'id': 513, 'master_id': '2023BOL', 't...</td>
+</tr>
+<tr>
+<th>194</th>
+<td>Maldives</td>
+<td>Success({'id': 624, 'master_id': '2023MDV', 't...</td>
+</tr>
+<tr>
+<th>195</th>
+<td>Estonia</td>
+<td>Success({'id': 559, 'master_id': '2023EST', 't...</td>
+</tr>
+<tr>
+<th>196</th>
+<td>Andorra</td>
+<td>Success({'id': 498, 'master_id': '2023AND', 't...</td>
+</tr>
+<tr>
+<th>197</th>
+<td>Swaziland</td>
+<td>Success({'id': 707, 'master_id': '2023SWE', 't...</td>
+</tr>
+<tr>
+<th>198</th>
+<td>British indian ocean terri.</td>
+<td>Success({'id': 519, 'master_id': '2023IOT', 't...</td>
+</tr>
+<tr>
+<th>199</th>
+<td>St.christopher and nevis</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>200</th>
+<td>Monaco</td>
+<td>Success({'id': 631, 'master_id': '2023MCO', 't...</td>
+</tr>
+<tr>
+<th>201</th>
+<td>Puerto rico</td>
+<td>Success({'id': 672, 'master_id': '2023PRI', 't...</td>
+</tr>
+<tr>
+<th>202</th>
+<td>Cape verde</td>
+<td>Success({'id': 528, 'master_id': '2023CMR', 't...</td>
+</tr>
+<tr>
+<th>203</th>
+<td>Chad</td>
+<td>Success({'id': 534, 'master_id': '2023TCD', 't...</td>
+</tr>
+<tr>
+<th>204</th>
+<td>Holy see (the)</td>
+<td>Success({'id': 589, 'master_id': '2023VAT', 't...</td>
+</tr>
+<tr>
+<th>205</th>
+<td>Guinea-bissau</td>
+<td>Success({'id': 670, 'master_id': '2023GNB', 't...</td>
+</tr>
+<tr>
+<th>206</th>
+<td>Nauru</td>
+<td>Success({'id': 640, 'master_id': '2023NRU', 't...</td>
+</tr>
+<tr>
+<th>207</th>
+<td>Saint kitts and nevis</td>
+<td>Success({'id': 680, 'master_id': '2023KNA', 't...</td>
+</tr>
+<tr>
+<th>208</th>
+<td>Saint vincent and the grenadines</td>
+<td>Success({'id': 685, 'master_id': '2023VCT', 't...</td>
+</tr>
+<tr>
+<th>209</th>
+<td>Saint pierre and miquelon</td>
+<td>Success({'id': 684, 'master_id': '2023SPM', 't...</td>
+</tr>
+<tr>
+<th>210</th>
+<td>Agentina</td>
+<td>Success({'id': 502, 'master_id': '2023ARG', 't...</td>
+</tr>
+<tr>
+<th>211</th>
+<td>United state of america</td>
+<td>Success({'id': 731, 'master_id': '2023USA', 't...</td>
+</tr>
+<tr>
+<th>212</th>
+<td>Phillipines</td>
+<td>Success({'id': 666, 'master_id': '2023PHL', 't...</td>
+</tr>
+<tr>
+<th>213</th>
+<td>Virgin islands, u.s.</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>214</th>
+<td>Taiwan</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>215</th>
+<td>Vietnam</td>
+<td>Success({'id': 695, 'master_id': '2023VNM', 't...</td>
+</tr>
+<tr>
+<th>216</th>
+<td>Unknow</td>
+<td>Success({'id': 742, 'master_id': '2023999', 't...</td>
+</tr>
+<tr>
+<th>217</th>
+<td>New</td>
+<td>Success({'id': 649, 'master_id': '2023NZL', 't...</td>
+</tr>
+<tr>
+<th>218</th>
+<td>Norway</td>
+<td>Success({'id': 655, 'master_id': '2023NOR', 't...</td>
+</tr>
+<tr>
+<th>219</th>
+<td>Test</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>220</th>
+<td>Brazil</td>
+<td>Success({'id': 517, 'master_id': '2023BRA', 't...</td>
+</tr>
+<tr>
+<th>221</th>
+<td>Hungary</td>
+<td>Success({'id': 592, 'master_id': '2023HUN', 't...</td>
+</tr>
+<tr>
+<th>222</th>
+<td>United states of america</td>
+<td>Success({'id': 731, 'master_id': '2023USA', 't...</td>
+</tr>
+<tr>
+<th>223</th>
+<td>Peru</td>
+<td>Success({'id': 665, 'master_id': '2023PER', 't...</td>
+</tr>
+<tr>
+<th>224</th>
+<td>Kazakhstan</td>
+<td>Success({'id': 604, 'master_id': '2023KAZ', 't...</td>
+</tr>
+<tr>
+<th>225</th>
+<td>Trinidad and tobago</td>
+<td>Success({'id': 715, 'master_id': '2023TTO', 't...</td>
+</tr>
+<tr>
+<th>226</th>
+<td>Oman</td>
+<td>Success({'id': 638, 'master_id': '2023OMN', 't...</td>
+</tr>
+<tr>
+<th>227</th>
+<td>Ecuador</td>
+<td>Success({'id': 554, 'master_id': '2023ECU', 't...</td>
+</tr>
+<tr>
+<th>228</th>
+<td>Honduras</td>
+<td>Success({'id': 590, 'master_id': '2023HND', 't...</td>
+</tr>
+<tr>
+<th>229</th>
+<td>Uganda</td>
+<td>Success({'id': 722, 'master_id': '2023UGA', 't...</td>
+</tr>
+<tr>
+<th>230</th>
+<td>Paraguay</td>
+<td>Success({'id': 664, 'master_id': '2023PRY', 't...</td>
+</tr>
+<tr>
+<th>231</th>
+<td>Lebanon</td>
+<td>Success({'id': 612, 'master_id': '2023LBN', 't...</td>
+</tr>
+<tr>
+<th>232</th>
+<td>Macao</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>233</th>
+<td>Slovakia</td>
+<td>Success({'id': 694, 'master_id': '2023SVK', 't...</td>
+</tr>
+<tr>
+<th>234</th>
+<td>United states miscellaneo</td>
+<td>Success({'id': 657, 'master_id': '2023UMI', 't...</td>
+</tr>
+<tr>
+<th>235</th>
+<td>Cote divoire</td>
+<td>Success({'id': 601, 'master_id': '2023CIV', 't...</td>
+</tr>
+<tr>
+<th>236</th>
+<td>Curacao</td>
+<td>Success({'id': 643, 'master_id': '2023CUW', 't...</td>
+</tr>
+<tr>
+<th>237</th>
+<td>Luxembourg</td>
+<td>Success({'id': 619, 'master_id': '2023LUX', 't...</td>
+</tr>
+<tr>
+<th>238</th>
+<td>Madagascar</td>
+<td>Success({'id': 621, 'master_id': '2023MDG', 't...</td>
+</tr>
+<tr>
+<th>239</th>
+<td>Saipan</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>240</th>
+<td>British virgin islands</td>
+<td>Success({'id': 521, 'master_id': '2023VGB', 't...</td>
+</tr>
+<tr>
+<th>241</th>
+<td>Ivory coast</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>242</th>
+<td>Turkmenistan</td>
+<td>Success({'id': 719, 'master_id': '2023TKM', 't...</td>
+</tr>
+<tr>
+<th>243</th>
+<td>Equatorial guinea</td>
+<td>Success({'id': 556, 'master_id': '2023GNQ', 't...</td>
+</tr>
+<tr>
+<th>244</th>
+<td>Isle of man</td>
+<td>Success({'id': 729, 'master_id': '2023IMN', 't...</td>
+</tr>
+<tr>
+<th>245</th>
+<td>Korea north</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>246</th>
+<td>Fiji islands</td>
+<td>Success({'id': 563, 'master_id': '2023FJI', 't...</td>
+</tr>
+<tr>
+<th>247</th>
+<td>Heard and mcdonald islands</td>
+<td>Success({'id': 588, 'master_id': '2023HMD', 't...</td>
+</tr>
+<tr>
+<th>248</th>
+<td>Wallis and futuna islands</td>
+<td>Success({'id': 737, 'master_id': '2023WLF', 't...</td>
+</tr>
+<tr>
+<th>249</th>
+<td>Hong kong sar</td>
+<td>Success({'id': 590, 'master_id': '2023HND', 't...</td>
+</tr>
+<tr>
+<th>250</th>
+<td>Egyp</td>
+<td>Success({'id': 725, 'master_id': '2023EGY', 't...</td>
+</tr>
+<tr>
+<th>251</th>
+<td>Kuala lmpur</td>
+<td>Success({'id': 609, 'master_id': '2023KWT', 't...</td>
+</tr>
+<tr>
+<th>252</th>
+<td>Myanma</td>
+<td>Success({'id': 524, 'master_id': '2023MMR', 't...</td>
+</tr>
+<tr>
+<th>253</th>
+<td>Macau</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>254</th>
+<td>ไทย</td>
+<td>Success({'id': 961, 'master_id': '2023THA', 't...</td>
+</tr>
+<tr>
+<th>255</th>
+<td>El colegio</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>256</th>
+<td>Indonesia</td>
+<td>Success({'id': 595, 'master_id': '2023IDN', 't...</td>
+</tr>
+<tr>
+<th>257</th>
+<td>Philippines</td>
+<td>Success({'id': 666, 'master_id': '2023PHL', 't...</td>
+</tr>
+<tr>
+<th>258</th>
+<td>Canada</td>
+<td>Success({'id': 529, 'master_id': '2023CAN', 't...</td>
+</tr>
+<tr>
+<th>259</th>
+<td>Cameroon</td>
+<td>Success({'id': 528, 'master_id': '2023CMR', 't...</td>
+</tr>
+<tr>
+<th>260</th>
+<td>Costa rica</td>
+<td>Success({'id': 545, 'master_id': '2023CRI', 't...</td>
+</tr>
+<tr>
+<th>261</th>
+<td>New zealand</td>
+<td>Success({'id': 649, 'master_id': '2023NZL', 't...</td>
+</tr>
+<tr>
+<th>262</th>
+<td>El salvador</td>
+<td>Success({'id': 555, 'master_id': '2023SLV', 't...</td>
+</tr>
+<tr>
+<th>263</th>
+<td>Seychelles</td>
+<td>Success({'id': 691, 'master_id': '2023SYC', 't...</td>
+</tr>
+<tr>
+<th>264</th>
+<td>Reunion</td>
+<td>Success({'id': 674, 'master_id': '2023REU', 't...</td>
+</tr>
+<tr>
+<th>265</th>
+<td>Angola</td>
+<td>Success({'id': 499, 'master_id': '2023AGO', 't...</td>
+</tr>
+<tr>
+<th>266</th>
+<td>Serbia</td>
+<td>Success({'id': 690, 'master_id': '2023SRB', 't...</td>
+</tr>
+<tr>
+<th>267</th>
+<td>Sudan</td>
+<td>Success({'id': 702, 'master_id': '2023SDN', 't...</td>
+</tr>
+<tr>
+<th>268</th>
+<td>Bermuda</td>
+<td>Success({'id': 511, 'master_id': '2023BMU', 't...</td>
+</tr>
+<tr>
+<th>269</th>
+<td>Mauritania</td>
+<td>Success({'id': 628, 'master_id': '2023MRT', 't...</td>
+</tr>
+<tr>
+<th>270</th>
+<td>Cuba</td>
+<td>Success({'id': 547, 'master_id': '2023CUB', 't...</td>
+</tr>
+<tr>
+<th>271</th>
+<td>Liechtenstein</td>
+<td>Success({'id': 617, 'master_id': '2023LIE', 't...</td>
+</tr>
+<tr>
+<th>272</th>
+<td>Samoa</td>
+<td>Success({'id': 738, 'master_id': '2023WSM', 't...</td>
+</tr>
+<tr>
+<th>273</th>
+<td>Tahiti</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>274</th>
+<td>Benin</td>
+<td>Success({'id': 550, 'master_id': '2023BEN', 't...</td>
+</tr>
+<tr>
+<th>275</th>
+<td>Comoros</td>
+<td>Success({'id': 540, 'master_id': '2023COM', 't...</td>
+</tr>
+<tr>
+<th>276</th>
+<td>No country</td>
+<td>Success({'id': 655, 'master_id': '2023NOR', 't...</td>
+</tr>
+<tr>
+<th>277</th>
+<td>Korea south</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>278</th>
+<td>Tuvalu</td>
+<td>Success({'id': 721, 'master_id': '2023TUV', 't...</td>
+</tr>
+<tr>
+<th>279</th>
+<td>Gambia the</td>
+<td>Success({'id': 573, 'master_id': '2023GMB', 't...</td>
+</tr>
+<tr>
+<th>280</th>
+<td>Anguilla</td>
+<td>Success({'id': 681, 'master_id': '2023AIA', 't...</td>
+</tr>
+<tr>
+<th>281</th>
+<td>Democratic republic of the congo</td>
+<td>Success({'id': 543, 'master_id': '2023COD', 't...</td>
+</tr>
+<tr>
+<th>282</th>
+<td>Republic of the congo</td>
+<td>Success({'id': 608, 'master_id': '2023KOR', 't...</td>
+</tr>
+<tr>
+<th>283</th>
+<td>Åland islands</td>
+<td>Success({'id': 565, 'master_id': '2023ALA', 't...</td>
+</tr>
+<tr>
+<th>284</th>
+<td>Antarctica</td>
+<td>Success({'id': 495, 'master_id': '2023ATA', 't...</td>
+</tr>
+<tr>
+<th>285</th>
+<td>Virgin islands (us)</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>286</th>
+<td>Northern mariana islands</td>
+<td>Success({'id': 656, 'master_id': '2023MNP', 't...</td>
+</tr>
+<tr>
+<th>287</th>
+<td>Martinique</td>
+<td>Success({'id': 627, 'master_id': '2023MTQ', 't...</td>
+</tr>
+<tr>
+<th>288</th>
+<td>Uae</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>289</th>
+<td>Phnom penh</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>290</th>
+<td>U.a.e.</td>
+<td>Success({'id': 722, 'master_id': '2023UGA', 't...</td>
+</tr>
+<tr>
+<th>291</th>
+<td>Hanoi</td>
+<td>Success({'id': 587, 'master_id': '2023HTI', 't...</td>
+</tr>
+<tr>
+<th>292</th>
+<td>Hong kong</td>
+<td>Success({'id': 590, 'master_id': '2023HND', 't...</td>
+</tr>
+<tr>
+<th>293</th>
+<td>Usa</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>294</th>
+<td>Chile</td>
+<td>Success({'id': 535, 'master_id': '2023CHL', 't...</td>
+</tr>
+<tr>
+<th>295</th>
+<td>Nigeria</td>
+<td>Success({'id': 652, 'master_id': '2023NGA', 't...</td>
+</tr>
+<tr>
+<th>296</th>
+<td>American</td>
+<td>Success({'id': 497, 'master_id': '2023ASM', 't...</td>
+</tr>
+<tr>
+<th>297</th>
+<td>Mozambique</td>
+<td>Success({'id': 637, 'master_id': '2023MOZ', 't...</td>
+</tr>
+<tr>
+<th>298</th>
+<td>Hong</td>
+<td>Success({'id': 590, 'master_id': '2023HND', 't...</td>
+</tr>
+<tr>
+<th>299</th>
+<td>Greece</td>
+<td>Success({'id': 579, 'master_id': '2023GRC', 't...</td>
+</tr>
+<tr>
+<th>300</th>
+<td>Saudi</td>
+<td>Success({'id': 688, 'master_id': '2023SAU', 't...</td>
+</tr>
+<tr>
+<th>301</th>
+<td>Jordan</td>
+<td>Success({'id': 605, 'master_id': '2023JOR', 't...</td>
+</tr>
+<tr>
+<th>302</th>
+<td>Cambodia</td>
+<td>Success({'id': 527, 'master_id': '2023KHM', 't...</td>
+</tr>
+<tr>
+<th>303</th>
+<td>United states</td>
+<td>Success({'id': 657, 'master_id': '2023UMI', 't...</td>
+</tr>
+<tr>
+<th>304</th>
+<td>País</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>305</th>
+<td>919/357 jtc bldg, 28th floor, room 357 silom r...</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>306</th>
+<td>Th</td>
+<td>Success({'id': 711, 'master_id': '2023THA', 't...</td>
+</tr>
+<tr>
+<th>307</th>
+<td>Tunisia</td>
+<td>Success({'id': 717, 'master_id': '2023TUN', 't...</td>
+</tr>
+<tr>
+<th>308</th>
+<td>Finland</td>
+<td>Success({'id': 564, 'master_id': '2023FIN', 't...</td>
+</tr>
+<tr>
+<th>309</th>
+<td>Dominican republic</td>
+<td>Success({'id': 553, 'master_id': '2023DOM', 't...</td>
+</tr>
+<tr>
+<th>310</th>
+<td>Jamaica</td>
+<td>Success({'id': 602, 'master_id': '2023JAM', 't...</td>
+</tr>
+<tr>
+<th>311</th>
+<td>Israel</td>
+<td>Success({'id': 599, 'master_id': '2023ISR', 't...</td>
+</tr>
+<tr>
+<th>312</th>
+<td>Trinidad</td>
+<td>Success({'id': 715, 'master_id': '2023TTO', 't...</td>
+</tr>
+<tr>
+<th>313</th>
+<td>Afghanistan</td>
+<td>Success({'id': 493, 'master_id': '2023AFG', 't...</td>
+</tr>
+<tr>
+<th>314</th>
+<td>East timor</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>315</th>
+<td>Scotland</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>316</th>
+<td>Georgia</td>
+<td>Success({'id': 572, 'master_id': '2023GEO', 't...</td>
+</tr>
+<tr>
+<th>317</th>
+<td>Zambia</td>
+<td>Success({'id': 740, 'master_id': '2023ZMB', 't...</td>
+</tr>
+<tr>
+<th>318</th>
+<td>Azerbaijan</td>
+<td>Success({'id': 501, 'master_id': '2023AZE', 't...</td>
+</tr>
+<tr>
+<th>319</th>
+<td>Saint barthelemy</td>
+<td>Success({'id': 678, 'master_id': '2023BLM', 't...</td>
+</tr>
+<tr>
+<th>320</th>
+<td>French guiana</td>
+<td>Success({'id': 567, 'master_id': '2023GUF', 't...</td>
+</tr>
+<tr>
+<th>321</th>
+<td>Gabon</td>
+<td>Success({'id': 571, 'master_id': '2023GAB', 't...</td>
+</tr>
+<tr>
+<th>322</th>
+<td>South africa</td>
+<td>Success({'id': 698, 'master_id': '2023ZAF', 't...</td>
+</tr>
+<tr>
+<th>323</th>
+<td>Turks and caicos islands</td>
+<td>Success({'id': 720, 'master_id': '2023TCA', 't...</td>
+</tr>
+<tr>
+<th>324</th>
+<td>Marshall islands</td>
+<td>Success({'id': 659, 'master_id': '2023MHL', 't...</td>
+</tr>
+<tr>
+<th>325</th>
+<td>Bouvet island</td>
+<td>Success({'id': 516, 'master_id': '2023BVT', 't...</td>
+</tr>
+<tr>
+<th>326</th>
+<td>Eritrea</td>
+<td>Success({'id': 558, 'master_id': '2023ERI', 't...</td>
+</tr>
+<tr>
+<th>327</th>
+<td>Tokelau</td>
+<td>Success({'id': 713, 'master_id': '2023TKL', 't...</td>
+</tr>
+<tr>
+<th>328</th>
+<td>Svalbard and jan mayen islands</td>
+<td>Success({'id': 705, 'master_id': '2023SJM', 't...</td>
+</tr>
+<tr>
+<th>329</th>
+<td>Smaller territories of the uk</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>330</th>
+<td>Falkland islands</td>
+<td>Success({'id': 561, 'master_id': '2023FLK', 't...</td>
+</tr>
+<tr>
+<th>331</th>
+<td>Pitcairn island</td>
+<td>Success({'id': 667, 'master_id': '2023PCN', 't...</td>
+</tr>
+<tr>
+<th>332</th>
+<td>South korea</td>
+<td>Success({'id': 701, 'master_id': '2023SSD', 't...</td>
+</tr>
+<tr>
+<th>333</th>
+<td>United state</td>
+<td>Success({'id': 657, 'master_id': '2023UMI', 't...</td>
+</tr>
+<tr>
+<th>334</th>
+<td>Netherland</td>
+<td>Success({'id': 642, 'master_id': '2023NLD', 't...</td>
+</tr>
+<tr>
+<th>335</th>
+<td>U.s.a.</td>
+<td>Error(masterdata not found)</td>
+</tr>
+<tr>
+<th>336</th>
+<td>Ttc manila part 2</td>
+<td>Error(masterdata not found)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f1200b8f-3c6c-4ce8-b8e8-b96758f72f80">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>

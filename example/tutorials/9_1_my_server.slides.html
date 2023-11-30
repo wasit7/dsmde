@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>6_2_strategic_planning_rural_area slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>9_1_my_server slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7433,211 +7433,71 @@ main {
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="reveal">
-<div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9bc845e0-e211-4b67-80da-720be8c5ffb8">
+<div class="slides"><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=40f251e3-3c92-4398-880f-a20d98a99359">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-Notes-for-Course-4.6:-Data-Analytics-Platform-for-Strategic-Planning-for-City-Governors">Lecture Notes for Course 4.6: Data Analytics Platform for Strategic Planning for City Governors<a class="anchor-link" href="#Lecture-Notes-for-Course-4.6:-Data-Analytics-Platform-for-Strategic-Planning-for-City-Governors">¶</a></h1><h2 id="Hypothetical-Scenario:-Development-of-Rural-Areas-in-Thailand">Hypothetical Scenario: Development of Rural Areas in Thailand<a class="anchor-link" href="#Hypothetical-Scenario:-Development-of-Rural-Areas-in-Thailand">¶</a></h2><p><strong>Key Points:</strong> Identifying challenges, setting objectives, leveraging local data</p>
-<p><strong>Content:</strong> In our hypothetical scenario, we are tasked with developing a strategic plan for the sustainable development of rural areas in Thailand, focusing on improving infrastructure, healthcare, and education while preserving cultural heritage.</p>
-<p><strong>Useful Theories:</strong> Sustainable Development Goals (SDGs) – A collection of 17 global goals set by the United Nations, which provide a blueprint for peace and prosperity.</p>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="c1"># os.system("python -m http.server -d web_for_scraping 8000")</span>
+<span class="n">stream</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="s1">'python -m http.server -d web_for_scraping 8000'</span><span class="p">)</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">stream</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">output</span>
+</pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=05d6060a-2443-423e-9832-fd445658a5a2">
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>127.0.0.1 - - [27/Nov/2023 17:21:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2023 17:21:29] code 404, message File not found
+127.0.0.1 - - [27/Nov/2023 17:21:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [27/Nov/2023 17:21:31] "GET /books.html HTTP/1.1" 304 -
+127.0.0.1 - - [27/Nov/2023 17:21:32] "GET /json/books.json HTTP/1.1" 304 -
+127.0.0.1 - - [27/Nov/2023 17:21:36] "GET /customers.html HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2023 17:21:36] "GET /json/customers.json HTTP/1.1" 304 -
+127.0.0.1 - - [27/Nov/2023 17:21:53] "GET /rentals.html HTTP/1.1" 200 -
+127.0.0.1 - - [27/Nov/2023 17:21:54] "GET /json/rentals.json HTTP/1.1" 304 -
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[1], line 4</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(95,135,135)"># os.system("python -m http.server -d web_for_scraping 8000")</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> stream <span style="color: rgb(98,98,98)">=</span> os<span style="color: rgb(98,98,98)">.</span>popen(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">python -m http.server -d web_for_scraping 8000</span><span style="color: rgb(175,0,0)">'</span>)
+<span class="ansi-green-fg">----&gt; 4</span> output <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">stream</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">read</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> output
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bd2be6cf-a92b-4791-8b3a-8435b9ae0079">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-1:-Introduction-to-Strategic-Planning-Analytics">Section 1: Introduction to Strategic Planning Analytics<a class="anchor-link" href="#Section-1:-Introduction-to-Strategic-Planning-Analytics">¶</a></h2><p><strong>Key Points:</strong> Strategic planning process, data-driven decisions, analytical frameworks
-<strong>Content:</strong> This section introduces the strategic planning process, emphasizing the role of analytics in making informed decisions. We cover how to align projects with long-term goals and measure progress.
-<strong>Useful Theories:</strong> SWOT Analysis – A strategic planning technique used to help identify Strengths, Weaknesses, Opportunities, and Threats related to project planning and competition.</p>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cbddbfd5-f8e6-4892-90a4-84c4752cec33">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="SEction-2:-Understanding-Social-Post-Insights-for-Decision-Making">SEction 2: Understanding Social Post Insights for Decision Making<a class="anchor-link" href="#SEction-2:-Understanding-Social-Post-Insights-for-Decision-Making">¶</a></h2><p><strong>Key Points:</strong> Social media as data source, sentiment analysis, trend spotting
-<strong>Content:</strong> We explore how insights from social media posts can inform policy decisions, with practical examples of sentiment analysis and trend detection that can signal public needs.
-<strong>Useful Theories:</strong> Sentiment Analysis – The use of natural language processing to systematically identify, extract, and quantify affective states and subjective information.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf483ad8-b8e9-4334-94c2-389a797e369c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-3:-Root-Cause-Analysis-with-Large-Language-Models">Section 3: Root Cause Analysis with Large Language Models<a class="anchor-link" href="#Section-3:-Root-Cause-Analysis-with-Large-Language-Models">¶</a></h2><p><strong>Key Points:</strong> Problem-solving, causal inference, language models
-<strong>Content:</strong> Discusses how large language models can assist in identifying the root causes of issues reported by citizens, providing a foundation for effective solution development.
-<strong>Useful Theories:</strong> Causal Inference – Methods to infer causal relationships from data, essential for understanding the underlying reasons for trends and patterns.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c6d802c2-0ccd-4da9-891d-5e93b4ae5cd6">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-4:-Visualizing-Data-for-Impactful-Governance">Section 4: Visualizing Data for Impactful Governance<a class="anchor-link" href="#Section-4:-Visualizing-Data-for-Impactful-Governance">¶</a></h2><p><strong>Key Points:</strong> Data visualization principles, dashboard design, actionable insights
-<strong>Content:</strong> This section delves into the principles of effective data visualization and how it can be used to present data in ways that are both accessible and actionable for decision-makers.
-<strong>Useful Theories:</strong> Data Visualization Theory – The study of visual representation of data to communicate information clearly and efficiently.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=deef9529-fd2b-4d6b-852d-e1f845c56667">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-5:-Introduction-to-Policy-and-Plan-Alignment">Section 5: Introduction to Policy and Plan Alignment<a class="anchor-link" href="#Section-5:-Introduction-to-Policy-and-Plan-Alignment">¶</a></h2><p><strong>Key Points:</strong> Aligning actions with policy, measurement of outcomes, feedback loops
-<strong>Content:</strong> We discuss how to ensure that strategic actions are in alignment with existing policies and how to establish feedback loops for continuous improvement.
-<strong>Useful Theories:</strong> Outcome-Based Evaluation – A theory that focuses on the outcomes and impacts of policies rather than the inputs and processes.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=98167931-efc9-454d-b48a-318f881d350d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-6:-Navigating-the-Strategic-Planning-Platform">Section 6: Navigating the Strategic Planning Platform<a class="anchor-link" href="#Section-6:-Navigating-the-Strategic-Planning-Platform">¶</a></h2><p><strong>Key Points:</strong> Platform features, user engagement, data integration
-<strong>Content:</strong> Provides an overview of the features of a strategic planning platform, including how to navigate, integrate various data sources, and engage with users for collaborative planning.
-<strong>Useful Theories:</strong> Human-Computer Interaction (HCI) – The study of how people interact with computers and to design technologies that let humans interact with computers in novel ways.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3ff2c505-8ad5-454f-8de1-d10e70b8f6e3">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-7:-Case-Study:-City-Development-Insights">Section 7: Case Study: City Development Insights<a class="anchor-link" href="#Section-7:-Case-Study:-City-Development-Insights">¶</a></h2><p><strong>Key Points:</strong> Real-world application, data interpretation, strategic outcomes
-<strong>Content:</strong> An examination of a case study where strategic planning and data analytics led to significant improvements in city development, drawing lessons from real-world applications.
-<strong>Useful Theories:</strong> Case Study Research – A research strategy and an empirical inquiry that investigates a phenomenon within its real-life context.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5bc603a0-ffb7-4761-8b1c-9647d7c07bb4">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-8:-Integrating-Public-Feedback-into-Strategic-Decisions">Section 8: Integrating Public Feedback into Strategic Decisions<a class="anchor-link" href="#Section-8:-Integrating-Public-Feedback-into-Strategic-Decisions">¶</a></h2><p><strong>Key Points:</strong> Community engagement, feedback mechanisms, policy adaptation
-<strong>Content:</strong> Discusses methods for integrating public feedback into strategic decisions, including the use of surveys, town hall meetings, and online platforms.
-<strong>Useful Theories:</strong> Deliberative Democracy – The theory that for a democratic decision to be legitimate, it must be preceded by authentic deliberation, not merely the aggregation of preferences.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=48a11b4d-e867-48cb-8484-172996398f5b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-9:-Workshop:-Analyzing-Social-Issues-through-Data">Section 9: Workshop: Analyzing Social Issues through Data<a class="anchor-link" href="#Section-9:-Workshop:-Analyzing-Social-Issues-through-Data">¶</a></h2><p><strong>Key Points:</strong> Data analysis techniques, identifying patterns, proposing solutions
-<strong>Content:</strong> A practical workshop on analyzing social issues through data, which involves identifying patterns in community data and proposing data-driven solutions.
-<strong>Useful Theories:</strong> Pattern Recognition – The recognition of patterns and regularities in data, which is fundamental in making sense of complex social issues.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ea85363a-6cdb-478d-9d27-6669d4b02d51">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-10:-Collaborative-Tools-for-Policy-Formulation">Section 10: Collaborative Tools for Policy Formulation<a class="anchor-link" href="#Section-10:-Collaborative-Tools-for-Policy-Formulation">¶</a></h2><p><strong>Key Points:</strong> Collaborative platforms, stakeholder engagement, shared decision-making
-<strong>Content:</strong> This section focuses on the collaborative tools available for policy formulation and how they facilitate stakeholder engagement and shared decision-making processes.
-<strong>Useful Theories:</strong> Collective Intelligence – The shared or group intelligence that emerges from the collaboration and competition of many individuals.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7e707266-dc4c-4a1f-b95d-a60a67fa6ebf">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-11:-Scenario-Analysis-and-Strategic-Planning">Section 11: Scenario Analysis and Strategic Planning<a class="anchor-link" href="#Section-11:-Scenario-Analysis-and-Strategic-Planning">¶</a></h2><p><strong>Key Points:</strong> Forecasting, scenario development, contingency planning
-<strong>Content:</strong> Examines the use of scenario analysis in strategic planning to anticipate possible futures and develop plans to navigate them effectively.
-<strong>Useful Theories:</strong> Scenario Planning – A strategic planning method that some organizations use to make flexible long-term plans.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f2773e39-e51f-4428-a2c7-ae0d77854572">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-12:-Project:-Creating-a-Strategic-Plan-for-a-Hypothetical-City">Section 12: Project: Creating a Strategic Plan for a Hypothetical City<a class="anchor-link" href="#Section-12:-Project:-Creating-a-Strategic-Plan-for-a-Hypothetical-City">¶</a></h2><p><strong>Key Points:</strong> Project management, plan development, stakeholder presentation
-<strong>Content:</strong> Outlines a project where students create a comprehensive strategic plan for a hypothetical city, incorporating all the elements covered in previous sections.
-<strong>Useful Theories:</strong> Project-Based Learning – A teaching method in which students gain knowledge and skills by working for an extended period of time to investigate and respond to a complex question, problem, or challenge.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4d7f3169-3ce5-4165-8129-ea2b0c2f4034">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-13:-Discussing-the-Role-of-AI-in-Strategic-Governance">Section 13: Discussing the Role of AI in Strategic Governance<a class="anchor-link" href="#Section-13:-Discussing-the-Role-of-AI-in-Strategic-Governance">¶</a></h2><p><strong>Key Points:</strong> AI applications, ethical considerations, long-term strategies
-<strong>Content:</strong> A discussion on how AI can be integrated into strategic governance, its potential benefits, and the ethical considerations that must be addressed.
-<strong>Useful Theories:</strong> AI Ethics – A set of values, principles, and techniques that employ widely accepted standards of right and wrong to guide moral conduct in the development and use of AI technologies.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bcabcff7-269a-40c2-bfab-51766bcf78ac">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-14:-Advanced-Visualization-Techniques">Section 14: Advanced Visualization Techniques<a class="anchor-link" href="#Section-14:-Advanced-Visualization-Techniques">¶</a></h2><p><strong>Key Points:</strong> Interactive dashboards, geospatial data, predictive analytics
-<strong>Content:</strong> We delve into advanced visualization techniques, including interactive dashboards, the use of geospatial data, and the role of predictive analytics in visual storytelling.
-<strong>Useful Theories:</strong> Geospatial Analysis – The gathering, display, and manipulation of imagery, GPS, satellite photography, and historical data, described explicitly in terms of geographic coordinates or implicitly, in terms of a street address, postal code, or forest stand identifier.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0d88359d-bf41-453a-9c7e-5012e2b1a7e1">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-15:-Closing-Remarks:-Ethical-Considerations-in-Strategic-Planning">Section 15: Closing Remarks: Ethical Considerations in Strategic Planning<a class="anchor-link" href="#Section-15:-Closing-Remarks:-Ethical-Considerations-in-Strategic-Planning">¶</a></h2><p><strong>Key Points:</strong> Ethical frameworks, accountability, public trust
-<strong>Content:</strong> Closing the course, we discuss the importance of ethical considerations in strategic planning, ensuring accountability, and maintaining public trust.
-<strong>Useful Theories:</strong> Normative Ethics – The study of ethical action and defines what is moral or ethical as standards that govern the conduct of a person belonging to a group or society.</p>
 </div>
 </div>
 </div>

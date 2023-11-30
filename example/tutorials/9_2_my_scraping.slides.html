@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>7_knowledge_graph slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>9_2_my_scraping slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7434,457 +7434,670 @@ main {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0f5a52c6-05df-4872-a232-c64fd36c3ed9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f91708fb-5918-4a79-93f2-8517710877ca">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Course-7:-Knowledge-Graph-Network-Models-for-Data-Analysts">Course 7: Knowledge Graph Network Models for Data Analysts<a class="anchor-link" href="#Course-7:-Knowledge-Graph-Network-Models-for-Data-Analysts">¶</a></h1><p><strong>Course Description:</strong>
-The Dynamic world of Knowledge Graph Network Models focus on their creation, analysis, and application in data science. It's tailored for data analysts and covers everything from the basics of graph theory to advanced techniques in knowledge graph reasoning and embedding.</p>
-<p><strong>Course Objectives:</strong></p>
-<ul>
-<li>Understand the fundamentals of knowledge graphs and graph theory.</li>
-<li>Learn to extract SPO triples and construct knowledge graphs from textual data.</li>
-<li>Master knowledge graph embedding and visualization techniques.</li>
-<li>Develop skills in data integration, querying, and graph reasoning.</li>
-<li>Apply knowledge graph concepts in real-world scenarios, specifically in data governance and strategic planning.</li>
-</ul>
+<h1 id="Book-List">Book List<a class="anchor-link" href="#Book-List">¶</a></h1><p>url: <a href="http://localhost:8000/books.html">http://localhost:8000/books.html</a></p>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bc48de6d-aac3-4ee9-be7d-c4fdb9a27eeb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=67e2c5e9-9298-4ebc-9810-c0e431a1d71a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">playwright.async_api</span> <span class="kn">import</span> <span class="n">async_playwright</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="n">pw</span> <span class="o">=</span> <span class="k">await</span> <span class="n">async_playwright</span><span class="p">()</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">browser</span> <span class="o">=</span> <span class="k">await</span> <span class="n">pw</span><span class="o">.</span><span class="n">chromium</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">headless</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">page</span> <span class="o">=</span> <span class="k">await</span> <span class="n">browser</span><span class="o">.</span><span class="n">new_page</span><span class="p">()</span>
+<span class="c1"># url=f'http://localhost:8000/books.html'</span>
+<span class="n">_</span> <span class="o">=</span> <span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="s1">'http://localhost:8000/books.html'</span><span class="p">)</span>
+<span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">wait_for_selector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span>
+
+<span class="n">selector</span> <span class="o">=</span> <span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">query_selector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span>
+<span class="n">html</span> <span class="o">=</span> <span class="k">await</span> <span class="n">selector</span><span class="o">.</span><span class="n">inner_html</span><span class="p">()</span>
+<span class="k">await</span> <span class="n">browser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">'html.parser'</span><span class="p">)</span>
+<span class="n">soup</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>
+&lt;h1 class="text-3xl font-bold underline"&gt;Book List&lt;/h1&gt;
+&lt;div id="books-container"&gt;&lt;div class="my-book-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6 bg-slate-50 p-2"&gt;
+&lt;div class="book_tile"&gt;&lt;b&gt;1984&lt;/b&gt;&lt;/div&gt;
+                by
+                &lt;div class="author"&gt;George Orwell&lt;/div&gt;
+&lt;div class="book_id text-right"&gt;1&lt;/div&gt;&lt;/div&gt;&lt;div class="my-book-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6 bg-slate-50 p-2"&gt;
+&lt;div class="book_tile"&gt;&lt;b&gt;To Kill a Mockingbird&lt;/b&gt;&lt;/div&gt;
+                by
+                &lt;div class="author"&gt;Harper Lee&lt;/div&gt;
+&lt;div class="book_id text-right"&gt;2&lt;/div&gt;&lt;/div&gt;&lt;div class="my-book-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6 bg-slate-50 p-2"&gt;
+&lt;div class="book_tile"&gt;&lt;b&gt;The Great Gatsby&lt;/b&gt;&lt;/div&gt;
+                by
+                &lt;div class="author"&gt;F. Scott Fitzgerald&lt;/div&gt;
+&lt;div class="book_id text-right"&gt;3&lt;/div&gt;&lt;/div&gt;&lt;div class="my-book-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6 bg-slate-50 p-2"&gt;
+&lt;div class="book_tile"&gt;&lt;b&gt;Pride and Prejudice&lt;/b&gt;&lt;/div&gt;
+                by
+                &lt;div class="author"&gt;Jane Austen&lt;/div&gt;
+&lt;div class="book_id text-right"&gt;4&lt;/div&gt;&lt;/div&gt;&lt;div class="my-book-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6 bg-slate-50 p-2"&gt;
+&lt;div class="book_tile"&gt;&lt;b&gt;The Catcher in the Rye&lt;/b&gt;&lt;/div&gt;
+                by
+                &lt;div class="author"&gt;J.D. Salinger&lt;/div&gt;
+&lt;div class="book_id text-right"&gt;5&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=be66fedf-6e50-46e1-97a8-54273c3a49c5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">books</span> <span class="o">=</span>  <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s2">"my-book-container"</span><span class="p">)</span>
+<span class="n">books</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;div class="my-book-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6 bg-slate-50 p-2"&gt;
+&lt;div class="book_tile"&gt;&lt;b&gt;1984&lt;/b&gt;&lt;/div&gt;
+                by
+                &lt;div class="author"&gt;George Orwell&lt;/div&gt;
+&lt;div class="book_id text-right"&gt;1&lt;/div&gt;&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fa1d7e9a-ba06-4a8a-9c12-d8922c731b46">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+    <span class="n">title</span><span class="o">=</span><span class="n">book</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"book_tile"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">author</span><span class="o">=</span><span class="n">book</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"author"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">book_id</span><span class="o">=</span><span class="n">book</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"book_id"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">d</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">'book_id'</span><span class="p">:</span><span class="n">book_id</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">:</span><span class="n">title</span><span class="p">,</span> <span class="s2">"author"</span><span class="p">:</span><span class="n">author</span><span class="p">})</span>
+<span class="n">d</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>[{'book_id': '1', 'title': '1984', 'author': 'George Orwell'},
+ {'book_id': '2', 'title': 'To Kill a Mockingbird', 'author': 'Harper Lee'},
+ {'book_id': '3',
+  'title': 'The Great Gatsby',
+  'author': 'F. Scott Fitzgerald'},
+ {'book_id': '4', 'title': 'Pride and Prejudice', 'author': 'Jane Austen'},
+ {'book_id': '5',
+  'title': 'The Catcher in the Rye',
+  'author': 'J.D. Salinger'}]</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=25e5e1d4-a696-425d-89f0-1b4191570594">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>book_id</th>
+<th>title</th>
+<th>author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>1984</td>
+<td>George Orwell</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2</td>
+<td>To Kill a Mockingbird</td>
+<td>Harper Lee</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>The Great Gatsby</td>
+<td>F. Scott Fitzgerald</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>Pride and Prejudice</td>
+<td>Jane Austen</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>The Catcher in the Rye</td>
+<td>J.D. Salinger</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f15852bd-c9f6-402b-a566-aa73e4c1b139">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-1:-Hypothetical-Scenario-in-Thailand">Section 1: Hypothetical Scenario in Thailand<a class="anchor-link" href="#Section-1:-Hypothetical-Scenario-in-Thailand">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Developing a Knowledge Graph for Thailand's tourism sector.</li>
-<li>Identifying connections between tourist sites, local businesses, and cultural events.</li>
-<li>Improving recommendation systems for travelers.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Imagine we're tasked to enhance the experience of tourists in Thailand. We'll develop a knowledge graph that interlinks tourist sites, nearby accommodations, local cuisines, cultural events, and transportation options. This graph will serve as the backbone for a recommendation system tailored for international visitors.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Graph Theory: Understanding nodes and edges representing entities and their relationships.</li>
-<li>Recommendation Systems: How graph data can power personalized suggestions.</li>
-</ul>
-</li>
-</ul>
+<h1 id="Customer-List">Customer List<a class="anchor-link" href="#Customer-List">¶</a></h1><p>url: <a href="http://localhost:8000/customers.html">http://localhost:8000/customers.html</a></p>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5fec859f-05c9-482b-a05a-e2cb47159f5b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7c544510-71e8-4925-add3-bc5e06b7ac91">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">playwright.async_api</span> <span class="kn">import</span> <span class="n">async_playwright</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="n">pw</span> <span class="o">=</span> <span class="k">await</span> <span class="n">async_playwright</span><span class="p">()</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">browser</span> <span class="o">=</span> <span class="k">await</span> <span class="n">pw</span><span class="o">.</span><span class="n">chromium</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">headless</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">page</span> <span class="o">=</span> <span class="k">await</span> <span class="n">browser</span><span class="o">.</span><span class="n">new_page</span><span class="p">()</span>
+<span class="c1"># url=f'http://localhost:8000/books.html'</span>
+<span class="n">_</span> <span class="o">=</span> <span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="s1">'http://localhost:8000/customers.html'</span><span class="p">)</span>
+<span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">wait_for_selector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span>
+
+<span class="c1">### page 1</span>
+<span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">"#page1"</span><span class="p">);</span>
+<span class="n">selector</span> <span class="o">=</span> <span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">query_selector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span>
+<span class="n">html_page1</span> <span class="o">=</span> <span class="k">await</span> <span class="n">selector</span><span class="o">.</span><span class="n">inner_html</span><span class="p">()</span>
+
+<span class="c1">### page 2</span>
+<span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">click</span><span class="p">(</span><span class="s2">"#page2"</span><span class="p">);</span>
+<span class="n">selector</span> <span class="o">=</span> <span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">query_selector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span>
+<span class="n">html_page2</span> <span class="o">=</span> <span class="k">await</span> <span class="n">selector</span><span class="o">.</span><span class="n">inner_html</span><span class="p">()</span>
+
+<span class="k">await</span> <span class="n">browser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">soup_page1</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_page1</span><span class="p">,</span> <span class="s1">'html.parser'</span><span class="p">)</span>
+<span class="n">soup_page2</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_page2</span><span class="p">,</span> <span class="s1">'html.parser'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5e03e009-032e-44ff-80b7-503fc533280e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">customers</span> <span class="o">=</span>  <span class="n">soup_page1</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s2">"my-customer-container"</span><span class="p">)</span> <span class="o">+</span> <span class="n">soup_page2</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s2">"my-customer-container"</span><span class="p">)</span>
+<span class="n">customers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;div class="my-customer-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6"&gt;&lt;div class="customer_id bg-slate-50 p-2"&gt;1&lt;/div&gt;&lt;div class="customer_name bg-slate-50 p-2"&gt;Alice Smith&lt;/div&gt;&lt;div class="customer_email bg-slate-50 p-2"&gt;alice@example.com&lt;/div&gt;&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=64cb0d44-3dca-4c7d-a261-cba0d7ba28bc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">customer</span> <span class="ow">in</span> <span class="n">customers</span><span class="p">:</span>
+    <span class="n">customer_id</span><span class="o">=</span><span class="n">customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"customer_id"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">name</span><span class="o">=</span><span class="n">customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"customer_name"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">email</span><span class="o">=</span><span class="n">customer</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"customer_email"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">d</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">'customer_id'</span><span class="p">:</span><span class="n">customer_id</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">:</span><span class="n">name</span><span class="p">,</span> <span class="s2">"email"</span><span class="p">:</span><span class="n">email</span><span class="p">})</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>customer_id</th>
+<th>name</th>
+<th>email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>Alice Smith</td>
+<td>alice@example.com</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2</td>
+<td>Bob Johnson</td>
+<td>bob@example.com</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>Carol White</td>
+<td>carol@example.com</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>David Brown</td>
+<td>david@example.com</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>Eve Davis</td>
+<td>eve@example.com</td>
+</tr>
+<tr>
+<th>5</th>
+<td>6</td>
+<td>Frank Miller</td>
+<td>frank@example.com</td>
+</tr>
+<tr>
+<th>6</th>
+<td>7</td>
+<td>Grace Lee</td>
+<td>grace@example.com</td>
+</tr>
+<tr>
+<th>7</th>
+<td>8</td>
+<td>Henry Wilson</td>
+<td>henry@example.com</td>
+</tr>
+<tr>
+<th>8</th>
+<td>9</td>
+<td>Irene Taylor</td>
+<td>irene@example.com</td>
+</tr>
+<tr>
+<th>9</th>
+<td>10</td>
+<td>Jake Moore</td>
+<td>jake@example.com</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bb969ed8-cea2-4545-8a80-d2f63c9491e5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-2:-Introduction-to-Knowledge-Graphs">Section 2: Introduction to Knowledge Graphs<a class="anchor-link" href="#Section-2:-Introduction-to-Knowledge-Graphs">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Definition and components of a knowledge graph.</li>
-<li>Importance in structuring data and extracting insights.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Knowledge graphs organize data in a way that highlights the interconnectivity between different entities. They consist of nodes (entities) and edges (relationships), providing a structured form of data that's intuitive for both humans and AI systems to understand and use.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Semantic Web: Describes the relationships between data in a way that computers can understand.</li>
-<li>Ontologies: Frameworks for representing knowledge.</li>
-</ul>
-</li>
-</ul>
+<h1 id="Rental-List">Rental List<a class="anchor-link" href="#Rental-List">¶</a></h1><p>url: <a href="http://localhost:8000/rentals.html">http://localhost:8000/rentals.html</a></p>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=77f579ee-7e78-4282-bfc8-9b66cc15f731">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dc5777c9-380a-40bd-a24c-4e1adbcd5a69">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-3:-Extracting-SPO-Triples-from-Textual-Data">Section 3: Extracting SPO Triples from Textual Data<a class="anchor-link" href="#Section-3:-Extracting-SPO-Triples-from-Textual-Data">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Identifying Subject-Predicate-Object (SPO) triples in Thai language texts.</li>
-<li>Techniques for natural language processing in Thai.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-SPO extraction is the process of identifying subjects, predicates, and objects in sentences, which are critical for populating a knowledge graph. In the Thai language, this may involve specific challenges due to its script and grammar.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Syntactic Parsing: Analyzing sentence structure to understand grammar and relationships.</li>
-<li>Named Entity Recognition: Identifying and classifying key information in text.</li>
-</ul>
-</li>
-</ul>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">playwright.async_api</span> <span class="kn">import</span> <span class="n">async_playwright</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="n">pw</span> <span class="o">=</span> <span class="k">await</span> <span class="n">async_playwright</span><span class="p">()</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="n">browser</span> <span class="o">=</span> <span class="k">await</span> <span class="n">pw</span><span class="o">.</span><span class="n">chromium</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">headless</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">page</span> <span class="o">=</span> <span class="k">await</span> <span class="n">browser</span><span class="o">.</span><span class="n">new_page</span><span class="p">()</span>
+<span class="c1"># url=f'http://localhost:8000/books.html'</span>
+<span class="n">_</span> <span class="o">=</span> <span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="s1">'http://localhost:8000/rentals.html'</span><span class="p">)</span>
+
+<span class="c1"># await page.wait_for_selector('body')</span>
+<span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">wait_for_function</span><span class="p">(</span><span class="s2">"() =&gt; document.getElementById('footer').innerText == 'Loading complete'"</span><span class="p">)</span>
+
+<span class="n">selector</span> <span class="o">=</span> <span class="k">await</span> <span class="n">page</span><span class="o">.</span><span class="n">query_selector</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span>
+<span class="n">html</span> <span class="o">=</span> <span class="k">await</span> <span class="n">selector</span><span class="o">.</span><span class="n">inner_html</span><span class="p">()</span>
+
+<span class="k">await</span> <span class="n">browser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7e6bc4a8-4f3e-479b-8cc7-65493f2f1e3a">
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=00b63e1e-eb89-4b93-a3b4-1618c0071bfe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-4:-Exploring-Knowledge-Graph-Embedding-Techniques">Section 4: Exploring Knowledge Graph Embedding Techniques<a class="anchor-link" href="#Section-4:-Exploring-Knowledge-Graph-Embedding-Techniques">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Understanding embeddings in the context of knowledge graphs.</li>
-<li>Comparing different embedding models.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Embedding techniques translate high-dimensional information into lower-dimensional space while preserving relationships, facilitating operations like similarity search and link prediction in knowledge graphs.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Vector Space Models: Mathematical modeling of textual information.</li>
-<li>Translational Models: Approaches like TransE that interpret relationships as translations in the embedding space.</li>
-</ul>
-</li>
-</ul>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">'html.parser'</span><span class="p">)</span>
+<span class="n">rentals</span> <span class="o">=</span>  <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="s2">"my-rent-container"</span><span class="p">)</span>
+<span class="n">rentals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cde79f13-a818-4c64-8bcc-0b3e80aaaa19">
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;div class="my-rent-container max-w-sm b rounded overflow-hidden shadow-lg ml-6 mt-6 bg-slate-50 p-2"&gt;
+&lt;div class="grid grid-cols-2 divide-x"&gt;
+&lt;div class="text-right p-1"&gt;Rent ID :&lt;/div&gt;
+&lt;div class="text-left p-1 rent-id"&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid grid-cols-2 divide-x"&gt;
+&lt;div class="text-right p-1"&gt;BOOK ID :&lt;/div&gt;
+&lt;div class="text-left p-1 book-id"&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid grid-cols-2 divide-x"&gt;
+&lt;div class="text-right p-1"&gt;Customer ID :&lt;/div&gt;
+&lt;div class="text-left p-1 customer-id"&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid grid-cols-2 divide-x"&gt;
+&lt;div class="text-right p-1"&gt;Rent Date :&lt;/div&gt;
+&lt;div class="text-left p-1 return-date"&gt;2023-01-01&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid grid-cols-2 divide-x"&gt;
+&lt;div class="text-right p-1"&gt;Return Date :&lt;/div&gt;
+&lt;div class="text-left p-1 rent-date"&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1838177c-1a4a-497e-910d-fd969179bb70">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-5:-Utilizing-KGE-and-UMAP-for-Graph-Analysis">Section 5: Utilizing KGE and UMAP for Graph Analysis<a class="anchor-link" href="#Section-5:-Utilizing-KGE-and-UMAP-for-Graph-Analysis">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Applying Knowledge Graph Embeddings (KGE) for graph analysis.</li>
-<li>Using Uniform Manifold Approximation and Projection (UMAP) for visualization.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-KGE helps uncover hidden patterns within graphs, while UMAP provides a way to visualize these high-dimensional structures in a 2D or 3D space, making it easier to interpret the complex relationships.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Manifold Learning: Understanding the framework for high-dimensional data projection.</li>
-<li>Dimensionality Reduction: Techniques to reduce the number of random variables.</li>
-</ul>
-</li>
-</ul>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">rent</span> <span class="ow">in</span> <span class="n">rentals</span><span class="p">:</span>
+    <span class="n">rent_id</span> <span class="o">=</span> <span class="n">rent</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"rent-id"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">book_id</span> <span class="o">=</span> <span class="n">rent</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"book-id"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">customer_id</span> <span class="o">=</span> <span class="n">rent</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"customer-id"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">rent_date</span> <span class="o">=</span> <span class="n">rent</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"rent-date"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">return_date</span> <span class="o">=</span> <span class="n">rent</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s2">"return-date"</span><span class="p">)</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">d</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">'rent_id'</span><span class="p">:</span><span class="n">rent_id</span><span class="p">,</span><span class="s1">'book_id'</span><span class="p">:</span><span class="n">book_id</span><span class="p">,</span><span class="s1">'customer_id'</span><span class="p">:</span><span class="n">customer_id</span><span class="p">,</span> <span class="s1">'rent_date'</span><span class="p">:</span><span class="n">rent_date</span><span class="p">,</span> <span class="s1">'return_date'</span><span class="p">:</span><span class="n">return_date</span><span class="p">})</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1ce753eb-94bd-42c1-9248-9d76d5f0d093">
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>rent_id</th>
+<th>book_id</th>
+<th>customer_id</th>
+<th>rent_date</th>
+<th>return_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2023-01-01</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2023-01-05</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>2023-01-10</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2023-01-15</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>2023-01-20</td>
+</tr>
+<tr>
+<th>5</th>
+<td>6</td>
+<td>1</td>
+<td>6</td>
+<td>6</td>
+<td>2023-02-01</td>
+</tr>
+<tr>
+<th>6</th>
+<td>7</td>
+<td>2</td>
+<td>7</td>
+<td>7</td>
+<td>2023-02-05</td>
+</tr>
+<tr>
+<th>7</th>
+<td>8</td>
+<td>3</td>
+<td>8</td>
+<td>8</td>
+<td>2023-02-10</td>
+</tr>
+<tr>
+<th>8</th>
+<td>9</td>
+<td>4</td>
+<td>9</td>
+<td>9</td>
+<td>2023-02-15</td>
+</tr>
+<tr>
+<th>9</th>
+<td>10</td>
+<td>5</td>
+<td>10</td>
+<td>10</td>
+<td>2023-02-20</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6eca3145-5a60-4b0f-8bc5-7f2335f40648">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-6:-Knowledge-Graph-Reasoning:-Principles-and-Applications">Section 6: Knowledge Graph Reasoning: Principles and Applications<a class="anchor-link" href="#Section-6:-Knowledge-Graph-Reasoning:-Principles-and-Applications">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Principles behind reasoning over knowledge graphs.</li>
-<li>Applications in real-world problem-solving.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Knowledge graph reasoning allows us to infer new knowledge from existing data, such as predicting missing links or answering complex queries. This becomes instrumental in applications like fraud detection or personalized content recommendations.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Inductive Logic: Deriving general principles from specific examples.</li>
-<li>Deductive Reasoning: Drawing specific conclusions from general knowledge.</li>
-</ul>
-</li>
-</ul>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=148a0323-2346-42e1-835a-09ca54831422">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-7:-Building-a-Knowledge-Graph:-Step-by-Step">Section 7: Building a Knowledge Graph: Step-by-Step<a class="anchor-link" href="#Section-7:-Building-a-Knowledge-Graph:-Step-by-Step">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Defining the scope and scale of the graph.</li>
-<li>Steps in the data collection, cleaning, integration, and graph construction.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Building a knowledge graph entails a series of meticulous steps, starting from data collection and curation to the integration and modeling of data within a graph structure, ensuring accuracy and consistency throughout the process.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Data Modeling: Structuring data according to a certain schema.</li>
-<li>Graph Databases: Storing and querying data in graph form.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=369cf874-4f19-495c-80bd-e6edeae0f0f8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-8:-Tools-and-Platforms-for-Knowledge-Graph-Exploration">Section 8: Tools and Platforms for Knowledge Graph Exploration<a class="anchor-link" href="#Section-8:-Tools-and-Platforms-for-Knowledge-Graph-Exploration">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Overview of tools like Neo4j, GraphDB, and Stardog.</li>
-<li>Platform selection criteria based on the project's needs.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-The selection of tools for knowledge graph construction and exploration is critical. Popular platforms offer different features</p>
-</li>
-</ul>
-<p>and capabilities, ranging from powerful querying languages to user-friendly interfaces for non-technical users.</p>
-<ul>
-<li><strong>Useful Theories:</strong><ul>
-<li>Database Management Systems (DBMS): Software for creating and managing databases.</li>
-<li>Query Languages: Languages like SPARQL for retrieving and manipulating data.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8e06f712-42eb-4b6a-82b8-6e66883ebdad">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-9:-Case-Study:-Building-a-Graph-for-a-News-Corpus">Section 9: Case Study: Building a Graph for a News Corpus<a class="anchor-link" href="#Section-9:-Case-Study:-Building-a-Graph-for-a-News-Corpus">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Applying knowledge graph techniques to a Thai news dataset.</li>
-<li>Insights gained from graph analysis of news data.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-We examine a case where a knowledge graph is developed from a corpus of Thai news articles, revealing not just the news events but also the interrelated factors like key personalities, locations, and organizational entities involved.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Content Analysis: Examining words, phrases, and concepts within texts.</li>
-<li>Social Network Analysis: Analyzing the relationships between actors in social networks.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67f90362-254c-4801-b31f-b770bbcaa102">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-10:-Data-Integration-and-Interoperability-in-Graphs">Section 10: Data Integration and Interoperability in Graphs<a class="anchor-link" href="#Section-10:-Data-Integration-and-Interoperability-in-Graphs">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Combining diverse data sources into a unified graph.</li>
-<li>Ensuring interoperability among different datasets.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Integrating various datasets into a single knowledge graph requires attention to the harmonization of data formats, schemas, and ontologies, allowing seamless interoperability and querying across the combined dataset.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Ontology Alignment: Aligning different ontological structures to each other.</li>
-<li>Schema Mapping: Techniques for mapping between different data models.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=af100a77-e19c-4c2d-8492-9e8ff02b53e9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-11:-Visualizing-and-Interacting-with-Knowledge-Graphs">Section 11: Visualizing and Interacting with Knowledge Graphs<a class="anchor-link" href="#Section-11:-Visualizing-and-Interacting-with-Knowledge-Graphs">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Tools and methods for graph visualization.</li>
-<li>Interactive exploration of knowledge graphs.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Visualizing a knowledge graph can provide immediate, intuitive insights into the structure and distribution of data. Interactive tools also allow users to explore and manipulate the graph in real-time, providing a dynamic way to engage with the data.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Information Visualization: The study of visual representation of data.</li>
-<li>Human-Computer Interaction (HCI): Designing interactive systems that are user-friendly.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=719b4083-e291-461b-b68d-a42daeed630d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-12:-Hands-On-Project:-Creating-a-Knowledge-Graph-from-Scratch">Section 12: Hands-On Project: Creating a Knowledge Graph from Scratch<a class="anchor-link" href="#Section-12:-Hands-On-Project:-Creating-a-Knowledge-Graph-from-Scratch">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Step-by-step project guide.</li>
-<li>Best practices for hands-on knowledge graph creation.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-This section would involve a practical project where students construct a knowledge graph from scratch, applying the theories and tools they've learned to a dataset relevant to Thailand's socio-economic context.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Project Management: Organizing and managing resources efficiently.</li>
-<li>Agile Development: Iterative and incremental project management.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=232e7299-a227-477a-9aeb-1d6eeff4e51d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-13:-Advanced-Querying-and-Reasoning-over-Knowledge-Graph-Models">Section 13: Advanced Querying and Reasoning over Knowledge Graph Models<a class="anchor-link" href="#Section-13:-Advanced-Querying-and-Reasoning-over-Knowledge-Graph-Models">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Techniques for complex queries in graph databases.</li>
-<li>Reasoning strategies for extracting deep insights.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Advanced querying involves not just retrieving data but also performing operations that can deduce new information or patterns. Reasoning over a graph involves complex algorithms that can infer additional information not explicitly stored in the graph.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Logical Inference: Drawing conclusions based on premises and rules.</li>
-<li>Query Optimization: Techniques to improve the efficiency of data retrieval.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0a7fae18-de38-41e8-9871-ee505a08f10c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-14:-Best-Practices-in-Knowledge-Graph-Management">Section 14: Best Practices in Knowledge Graph Management<a class="anchor-link" href="#Section-14:-Best-Practices-in-Knowledge-Graph-Management">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Maintenance and updating of knowledge graphs.</li>
-<li>Ensuring quality and relevance of graph data over time.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-Good knowledge graph management ensures that the graph remains accurate, relevant, and reflective of the real world. This involves regular updates, validation of information, and adherence to best practices in data governance.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Data Governance: The overall management of data availability, usability, and security.</li>
-<li>Data Lifecycle Management: Strategies for managing the flow of data throughout its lifecycle.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1e4c56b8-ced5-42c9-b792-6bb896599c48">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-15:-Peer-to-Peer-Review:-Knowledge-Graph-Case-Studies">Section 15: Peer-to-Peer Review: Knowledge Graph Case Studies<a class="anchor-link" href="#Section-15:-Peer-to-Peer-Review:-Knowledge-Graph-Case-Studies">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Sharing and reviewing knowledge graph projects among peers.</li>
-<li>Learning from real-world implementations.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-In this final section, students will engage in a peer-to-peer review process, showcasing their own projects and learning from the experiences of others. This collaborative effort will help solidify their understanding and provide diverse perspectives on knowledge graph applications.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-<ul>
-<li>Peer Review: A method of self-regulation by qualified members of a profession.</li>
-<li>Case Study Methodology: A research strategy involving an empirical investigation.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b244a72e-dc5c-4328-8180-b497d45a6afd">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Section-16:-Final-Thoughts-and-Continuing-Education-in-Knowledge-Graphs">Section 16: Final Thoughts and Continuing Education in Knowledge Graphs<a class="anchor-link" href="#Section-16:-Final-Thoughts-and-Continuing-Education-in-Knowledge-Graphs">¶</a></h2><ul>
-<li><p><strong>Key Points:</strong></p>
-<ul>
-<li>Reflection on the course content.</li>
-<li>Pathways for further education and specialization.</li>
-</ul>
-</li>
-<li><p><strong>Text Content:</strong>
-This concluding section would encourage students to reflect on what they've learned, how it can be applied in real-world scenarios, and what additional resources or pathways they can pursue to further deepen their understanding and proficiency in knowledge graphs.</p>
-</li>
-<li><p><strong>Useful Theories:</strong></p>
-</li>
-<li><p>Lifelong Learning: The ongoing, voluntary, and self-motivated pursuit of knowledge.</p>
-</li>
-<li><p>Specialization Courses: Focused studies to gain advanced skills in a specific area of knowledge graphs.</p>
-</li>
-</ul>
 </div>
 </div>
 </div>

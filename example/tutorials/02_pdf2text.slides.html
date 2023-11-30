@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>1_social_media slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>02_pdf2text slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7434,298 +7434,269 @@ main {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=668b2b25-3ad4-4a37-bf3f-9eed25b476f5">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9fd64c54-4f80-4f87-af48-1862f99a4b0e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-Notes-for-Course-4.1:-Data-Collection-from-the-Internet-and-Social-Media-for-Data-Analysts">Lecture Notes for Course 4.1: Data Collection from the Internet and Social Media for Data Analysts<a class="anchor-link" href="#Lecture-Notes-for-Course-4.1:-Data-Collection-from-the-Internet-and-Social-Media-for-Data-Analysts">¶</a></h1><h2 id="Hypothetical-Scenario:">Hypothetical Scenario:<a class="anchor-link" href="#Hypothetical-Scenario:">¶</a></h2><p>We're tasked with collecting and analyzing data from social media platforms to identify emerging trends related to environmental activism. We'll need to scrape data, handle various data types, and respect legal boundaries while aiming to provide actionable insights for a non-profit organization looking to boost its campaigns' effectiveness.</p>
+<h1 id="Course-2:-Document-File-Conversion-to-Text-for-Data-Analysts">Course 2: Document File Conversion to Text for Data Analysts<a class="anchor-link" href="#Course-2:-Document-File-Conversion-to-Text-for-Data-Analysts">¶</a></h1><h2 id="Hypothetical-Scenario:">Hypothetical Scenario:<a class="anchor-link" href="#Hypothetical-Scenario:">¶</a></h2><p>Imagine you are a data analyst working with a team that's tasked to digitize decades of government documents from the Thai Ministry of Education. These documents are only available in PDF format, and they contain vital statistics about school performance that need to be analyzed and reported. The challenge is to convert thousands of pages of PDF documents into a text format that can be ingested into a database for analysis.</p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f8434cd-1e7c-4cc9-a1a3-c7921e6d38f4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=198b0add-6db3-496c-8d07-b7787e9fe80b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-1:-Introduction-to-Web-Scraping-and-API-Fetching">Section 1: Introduction to Web Scraping and API Fetching<a class="anchor-link" href="#Section-1:-Introduction-to-Web-Scraping-and-API-Fetching">¶</a></h3><p><strong>Text Content:</strong>
-Web scraping and API fetching are cornerstone techniques for data collection. Web scraping involves programmatically gathering data from websites, while API fetching is the process of using an application programming interface (API) to retrieve data.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code to perform a simple web scraping using requests</span>
+<h3 id="Section-1:-Overview-of-Document-Conversion-Challenges">Section 1: Overview of Document Conversion Challenges<a class="anchor-link" href="#Section-1:-Overview-of-Document-Conversion-Challenges">¶</a></h3><p><strong>Content</strong>: Document conversion is a necessary step in data analysis when dealing with various sources of data. Challenges include maintaining the integrity of the data, dealing with different file formats, handling encoding issues, and automating the conversion process for large datasets.</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3a254379-6829-478d-bf13-c8a2ab232e9f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-2:-Introduction-to-PDF-to-Text-Conversion-Techniques">Section 2: Introduction to PDF-to-Text Conversion Techniques<a class="anchor-link" href="#Section-2:-Introduction-to-PDF-to-Text-Conversion-Techniques">¶</a></h3><p><strong>Content</strong>: PDF-to-text conversion can be done through several methods including using OCR (Optical Character Recognition) for scanned documents or extracting text from digital PDFs.</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=378aafb3-d369-4379-ab05-26faa0607bed">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-3:-Working-with-Python-PDF-Libraries-(e.g.,-PyPDF2)">Section 3: Working with Python PDF Libraries (e.g., PyPDF2)<a class="anchor-link" href="#Section-3:-Working-with-Python-PDF-Libraries-(e.g.,-PyPDF2)">¶</a></h3><p><strong>Content</strong>: PyPDF2 is a library in Python that allows you to perform many operations on PDFs, including extracting text.</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PyPDF2</span> <span class="kn">import</span> <span class="n">PdfFileReader</span>
+
+<span class="c1"># Open the PDF file</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'example.pdf'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">PdfFileReader</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="n">page</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">extractText</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9c3dab11-7df9-420f-ac46-09fa926e1280">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-4:-Regular-Expressions-for-Text-Cleaning">Section 4: Regular Expressions for Text Cleaning<a class="anchor-link" href="#Section-4:-Regular-Expressions-for-Text-Cleaning">¶</a></h3><p><strong>Content</strong>: Regular expressions are used to identify patterns in text, which is helpful for cleaning and organizing data extracted from PDFs.</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s2">"Sample text with some numbers 1234 and symbols #%&amp;!"</span>
+<span class="n">cleaned_text</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'[^A-Za-z0-9ก-๙\s]'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>  <span class="c1"># Assuming Thai and English text</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cleaned_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=52100aae-f226-4b40-8269-62cd86b6e968">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-5:-Addressing-Encoding-Issues-in-Thai-Articles">Section 5: Addressing Encoding Issues in Thai Articles<a class="anchor-link" href="#Section-5:-Addressing-Encoding-Issues-in-Thai-Articles">¶</a></h3><p><strong>Content</strong>: Thai language characters may not be correctly encoded, leading to gibberish text. Proper encoding handling is essential.</p>
+<div class="highlight"><pre><span></span><span class="n">original_text</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">'</span><span class="se">\xca\xfe</span><span class="s1">'</span>  <span class="c1"># Example bytes that represent Thai characters incorrectly encoded</span>
+<span class="n">correct_encoding</span> <span class="o">=</span> <span class="n">original_text</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'tis-620'</span><span class="p">)</span>  <span class="c1"># Decoding with the correct encoding for Thai</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">correct_encoding</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f86b6d7-718e-4a6b-a423-63778a71836a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-6:-Introduction-to-the-RU02-API-Service">Section 6: Introduction to the RU02 API Service<a class="anchor-link" href="#Section-6:-Introduction-to-the-RU02-API-Service">¶</a></h3><p><strong>Content</strong>: RU02 API service may provide an API for converting PDF documents into text. It handles different encoding and document layouts internally.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Pseudocode for API interaction</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s1">'http://example.com'</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">'html.parser'</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">'https://ru02api.service/convert'</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s1">'file'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'example.pdf'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)})</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6b060d41-8ba4-49b3-8421-773447c6ee47">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-7:-Automating-PDF-to-Text-Conversion">Section 7: Automating PDF to Text Conversion<a class="anchor-link" href="#Section-7:-Automating-PDF-to-Text-Conversion">¶</a></h3><p><strong>Content</strong>: Automation of PDF conversion can be done using scripts that interact with conversion libraries or APIs.</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">PyPDF2</span> <span class="kn">import</span> <span class="n">PdfFileReader</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">prettify</span><span class="p">())</span>  <span class="c1"># Prints the structured HTML of the page</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9e859a3b-b417-46ad-bc03-a8a3a11335c7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-2:-Setting-up-Python-and-Playwright-Environment">Section 2: Setting up Python and Playwright Environment<a class="anchor-link" href="#Section-2:-Setting-up-Python-and-Playwright-Environment">¶</a></h3><p><strong>Text Content:</strong>
-Setting up a proper environment with Python and Playwright is essential for reliable scraping. Playwright is a Python library for browser automation.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Installation commands (run in terminal)</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">playwright</span>
-<span class="n">playwright</span> <span class="n">install</span>
+<span class="c1"># Directory with PDF files</span>
+<span class="n">pdf_dir</span> <span class="o">=</span> <span class="s1">'/path/to/pdf_files/'</span>
+<span class="n">text_dir</span> <span class="o">=</span> <span class="s1">'/path/to/text_output/'</span>
 
-<span class="c1"># Sample code to open a webpage with Playwright</span>
-<span class="kn">from</span> <span class="nn">playwright.sync_api</span> <span class="kn">import</span> <span class="n">sync_playwright</span>
+<span class="k">for</span> <span class="n">pdf_file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">pdf_dir</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">pdf_file</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.pdf'</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pdf_dir</span><span class="p">,</span> <span class="n">pdf_file</span><span class="p">),</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+            <span class="n">reader</span> <span class="o">=</span> <span class="n">PdfFileReader</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+            <span class="n">text_content</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">page_num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">reader</span><span class="o">.</span><span class="n">numPages</span><span class="p">):</span>
+                <span class="n">text_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reader</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="n">page_num</span><span class="p">)</span><span class="o">.</span><span class="n">extractText</span><span class="p">())</span>
+            
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">text_dir</span><span class="p">,</span> <span class="n">pdf_file</span> <span class="o">+</span> <span class="s1">'.txt'</span><span class="p">),</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">text_file</span><span class="p">:</span>
+                <span class="n">text_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">text_content</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7208ea2b-2f13-45ab-ae02-2be7f7042ba5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-8:-Quality-Assurance-for-Converted-Texts">Section 8: Quality Assurance for Converted Texts<a class="anchor-link" href="#Section-8:-Quality-Assurance-for-Converted-Texts">¶</a></h3><p><strong>Content</strong>: Quality assurance involves checking the converted text against the original document to ensure accuracy.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Pseudocode for quality check</span>
+<span class="k">def</span> <span class="nf">quality_check</span><span class="p">(</span><span class="n">original_pdf</span><span class="p">,</span> <span class="n">converted_text</span><span class="p">):</span>
+    <span class="c1"># Implement comparison logic here</span>
+    <span class="k">pass</span>
 
-<span class="k">with</span> <span class="n">sync_playwright</span><span class="p">()</span> <span class="k">as</span> <span class="n">p</span><span class="p">:</span>
-    <span class="n">browser</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">chromium</span><span class="o">.</span><span class="n">launch</span><span class="p">(</span><span class="n">headless</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">page</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">new_page</span><span class="p">()</span>
-    <span class="n">page</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="s1">'http://example.com'</span><span class="p">)</span>
-    <span class="n">browser</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="c1"># Use this function to compare PDF and text</span>
+<span class="n">quality_check</span><span class="p">(</span><span class="s1">'original.pdf'</span><span class="p">,</span> <span class="s1">'converted_text.txt'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4855fade-56b0-47e5-a6e1-a5cbb1ca07dc">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5c404c50-d8c9-492e-aade-e6588e156ff8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-3:-Basic-Concepts-of-HTML,-CSS,-and-JavaScript-for-Scraping">Section 3: Basic Concepts of HTML, CSS, and JavaScript for Scraping<a class="anchor-link" href="#Section-3:-Basic-Concepts-of-HTML,-CSS,-and-JavaScript-for-Scraping">¶</a></h3><p><strong>Text Content:</strong>
-Understanding the structure of web pages using HTML, styling with CSS, and dynamic content manipulation with JavaScript is crucial for effective scraping.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code to select an element by its ID</span>
-<span class="n">element</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">'elementId'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>  <span class="c1"># Prints the text within the selected element</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1cd6ace9-404d-4ebb-a0bf-e858c5dfbc93">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-4:-Introduction-to-Python-Requests-and-APIs">Section 4: Introduction to Python Requests and APIs<a class="anchor-link" href="#Section-4:-Introduction-to-Python-Requests-and-APIs">¶</a></h3><p><strong>Text Content:</strong>
-The Python requests library is simple yet powerful, ideal for making HTTP requests to APIs.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code to make a GET request to an API</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=303b62af-d3e7-44ee-9879-8d60614bf47b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-5:-Authentication-and-Handling-API-Limits">Section 5: Authentication and Handling API Limits<a class="anchor-link" href="#Section-5:-Authentication-and-Handling-API-Limits">¶</a></h3><p><strong>Text Content:</strong>
-Many APIs require authentication and have rate limits to control access.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code for authenticated API request</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">'Authorization'</span><span class="p">:</span> <span class="s1">'Bearer YOUR_ACCESS_TOKEN'</span>
-<span class="p">}</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'https://api.example.com/protected-data'</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1cc6f352-48fc-49f6-bd06-f52a2a6142c0">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-6:-Data-Collection-from-Social-Media-Platforms">Section 6: Data Collection from Social Media Platforms<a class="anchor-link" href="#Section-6:-Data-Collection-from-Social-Media-Platforms">¶</a></h3><p><strong>Text Content:</strong>
-Social media platforms offer APIs for data collection, often providing rich datasets.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample Twitter API request using Tweepy</span>
-<span class="kn">import</span> <span class="nn">tweepy</span>
+<h3 id="Section-9:-Real-World-Application:-Extracting-Data-from-Academic-Papers">Section 9: Real-World Application: Extracting Data from Academic Papers<a class="anchor-link" href="#Section-9:-Real-World-Application:-Extracting-Data-from-Academic-Papers">¶</a></h3><p><strong>Content</strong>: Data extraction from academic papers requires recognizing the structure of the document to extract elements like titles, authors, and content.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Pseudocode for structured extraction</span>
+<span class="k">def</span> <span class="nf">extract_academic_data</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Implement logic to identify and extract different sections</span>
+    <span class="k">pass</span>
 
-<span class="n">client</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">bearer_token</span><span class="o">=</span><span class="s1">'YOUR_BEARER_TOKEN'</span><span class="p">)</span>
-<span class="n">tweets</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">search_recent_tweets</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s1">'environmental activism'</span><span class="p">,</span> <span class="n">max_results</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="c1"># Use this function to process extracted text</span>
+<span class="n">extract_academic_data</span><span class="p">(</span><span class="n">converted_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=74c91a40-4f3f-41e4-b198-5c032f76f13b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-10:-Advanced-Text-Cleaning-and-Preprocessing-Techniques">Section 10: Advanced Text Cleaning and Preprocessing Techniques<a class="anchor-link" href="#Section-10:-Advanced-Text-Cleaning-and-Preprocessing-Techniques">¶</a></h3><p><strong>Content</strong>: Advanced techniques involve using natural language processing to further clean and preprocess the text.</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span>
 
-<span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">tweets</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">tweet</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=33ecf9bd-ed6a-4d8f-ac0b-9dff92ddbfe0">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-7:-Cleaning-and-Preprocessing-Scraped-Data">Section 7: Cleaning and Preprocessing Scraped Data<a class="anchor-link" href="#Section-7:-Cleaning-and-Preprocessing-Scraped-Data">¶</a></h3><p><strong>Text Content:</strong>
-Raw data needs cleaning and preprocessing to be useful for analysis.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+ <span class="n">word_tokenize</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
 
-<span class="c1"># Assume 'raw_data' is a list of dictionaries fetched from social media</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">raw_data</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">'clean_text'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'text'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'[^a-zA-Z ]'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>  <span class="c1"># Removes non-alphabetic characters</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b61258fe-ef3a-4348-b74c-aea677e67d84">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-8:-Storing-and-Organizing-Collected-Data">Section 8: Storing and Organizing Collected Data<a class="anchor-link" href="#Section-8:-Storing-and-Organizing-Collected-Data">¶</a></h3><p><strong>Text Content:</strong>
-Efficient data storage and organization are key for handling large datasets.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code to store data in a CSV file using Pandas</span>
-<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'collected_data.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3955db01-bc0f-4e29-be25-fcc7a90e21c3">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-9:-Ethical-Considerations-and-Legalities-of-Data-Scraping">Section 9: Ethical Considerations and Legalities of Data Scraping<a class="anchor-link" href="#Section-9:-Ethical-Considerations-and-Legalities-of-Data-Scraping">¶</a></h3><p><strong>Text Content:</strong>
-Ethical scraping involves respecting user privacy and website terms, as well as adhering to legal constraints like the GDPR.</p>
-<p><strong>Python Code:</strong>
-No code for this section, as it focuses on legal theory and best practices.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6ee8ebea-0d5e-44b4-961c-082379a8f856">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-10:-Rate-Limiting-and-Making-Scalable-Requests">Section 10: Rate Limiting and Making Scalable Requests<a class="anchor-link" href="#Section-10:-Rate-Limiting-and-Making-Scalable-Requests">¶</a></h3><p><strong>Text Content:</strong>
-Handling rate limits and designing scalable data requests ensure robust data collection processes.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code to handle rate limits using time.sleep</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">'punkt'</span><span class="p">)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">'stopwords'</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">safe_request</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">requests</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">"An example sentence that needs to be cleaned."</span>
+<span class="n">tokens</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="n">tokens_without_sw</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokens</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">()]</span>
 
-<span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RateLimitException</span><span class="p">:</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">safe_request</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tokens_without_sw</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cb27a8ce-66a9-4fc2-8faa-3baf8206981d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-11:-Best-Practices-for-Document-Conversion-Workflows">Section 11: Best Practices for Document Conversion Workflows<a class="anchor-link" href="#Section-11:-Best-Practices-for-Document-Conversion-Workflows">¶</a></h3><p><strong>Content</strong>: Discussing best practices such as document version control, testing conversion processes, and regular updates to conversion scripts.</p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9df851ac-ec38-4b29-ab18-cc082d214e63">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Section-12:-Case-Study:-Legal-Document-Analysis">Section 12: Case Study: Legal Document Analysis<a class="anchor-link" href="#Section-12:-Case-Study:-Legal-Document-Analysis">¶</a></h3><p><strong>Content</strong>: Legal documents often have a specific jargon and format. Analysis of these documents requires an understanding of legal terminology and the structure of legal texts.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Pseudocode for legal terminology extraction</span>
+<span class="k">def</span> <span class="nf">extract_legal_terms</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Implement logic for identifying legal terms</span>
+    <span class="k">pass</span>
 
-<span class="n">response</span> <span class="o">=</span> <span class="n">safe_request</span><span class="p">(</span><span class="s1">'https://api.example.com/data'</span><span class="p">)</span>
+<span class="c1"># Use this function to process legal documents</span>
+<span class="n">extract_legal_terms</span><span class="p">(</span><span class="n">converted_text</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a63c9c64-9c95-4941-b69b-9f9a4dca9603">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9260a250-11f4-4e99-93d1-603c97f94688">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-11:-Hands-on-Project:-Scraping-Social-Media-for-Trend-Analysis">Section 11: Hands-on Project: Scraping Social Media for Trend Analysis<a class="anchor-link" href="#Section-11:-Hands-on-Project:-Scraping-Social-Media-for-Trend-Analysis">¶</a></h3><p><strong>Text Content:</strong>
-A project that guides students through scraping social media to analyze environmental activism trends.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Pseudocode for a trend analysis project</span>
-<span class="c1"># 1. Define the search parameters for the social media API</span>
-<span class="c1"># 2. Fetch the data using the defined parameters</span>
-<span class="c1"># 3. Clean and preprocess the data</span>
-<span class="c1"># 4. Analyze the data to identify trends</span>
-<span class="c1"># 5. Visualize the trends using matplotlib or seaborn</span>
+<h3 id="Section-13:-Course-Project:-Building-a-Document-Conversion-Pipeline">Section 13: Course Project: Building a Document Conversion Pipeline<a class="anchor-link" href="#Section-13:-Course-Project:-Building-a-Document-Conversion-Pipeline">¶</a></h3><p><strong>Content</strong>: For the course project, students will build a complete pipeline to convert PDFs into text, clean the text, and prepare it for analysis.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Pseudocode for pipeline</span>
+<span class="k">def</span> <span class="nf">document_conversion_pipeline</span><span class="p">(</span><span class="n">pdf_file_path</span><span class="p">):</span>
+    <span class="c1"># Implement the pipeline steps here</span>
+    <span class="k">pass</span>
+
+<span class="c1"># Execute the pipeline for a document</span>
+<span class="n">document_conversion_pipeline</span><span class="p">(</span><span class="s1">'example.pdf'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bd978117-a037-430f-b837-a9faba8c6b99">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0cf9954d-1622-4be9-9bf2-077a5acedd5e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-12:-Using-RU01-Data-Services-for-Analysis">Section 12: Using RU01 Data Services for Analysis<a class="anchor-link" href="#Section-12:-Using-RU01-Data-Services-for-Analysis">¶</a></h3><p><strong>Text Content:</strong>
-RU01 Data Services provide an API for easy integration with existing data analysis tools.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code to fetch data from RU01 Data Services</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'https://ru01.example.com/data'</span><span class="p">)</span>
-<span class="n">data_service_output</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<span class="c1"># Process and analyze the data_service_output as needed</span>
-</pre></div>
+<h3 id="Section-14:-Course-Review-and-Additional-Resources">Section 14: Course Review and Additional Resources<a class="anchor-link" href="#Section-14:-Course-Review-and-Additional-Resources">¶</a></h3><p><strong>Content</strong>: Review of the key topics covered in the course and discussion of additional resources for further learning.</p>
 </div>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0a55a5dc-964e-4376-ba25-300fd8dd7d18">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=163c46e5-ed4e-4ef2-b498-7b757fe51639">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-13:-Integration-with-Data-Analysis-Tools">Section 13: Integration with Data Analysis Tools<a class="anchor-link" href="#Section-13:-Integration-with-Data-Analysis-Tools">¶</a></h3><p><strong>Text Content:</strong>
-Seamless integration with data analysis tools like Pandas, NumPy, and SciPy is crucial for a streamlined workflow.</p>
-<p><strong>Python Code:</strong></p>
-<div class="highlight"><pre><span></span><span class="c1"># Sample code showing integration with Pandas</span>
-<span class="n">data_frame</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'https://ru01.example.com/data'</span><span class="p">)</span>
-<span class="c1"># Perform data analysis using Pandas functions</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aa52c03a-1ac9-4522-a444-aa913ab14039">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-14:-Case-Study:-Social-Media-Data-in-Market-Research">Section 14: Case Study: Social Media Data in Market Research<a class="anchor-link" href="#Section-14:-Case-Study:-Social-Media-Data-in-Market-Research">¶</a></h3><p><strong>Text Content:</strong>
-Exploring a case study where social media data was pivotal in understanding market trends and consumer behavior.</p>
-<p><strong>Python Code:</strong>
-No specific code; this section would detail the process and findings from the case study.</p>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=720b97d7-808f-48a8-ad40-e93f28d0e79b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Section-15:-Course-Wrap-up-and-Best-Practices">Section 15: Course Wrap-up and Best Practices<a class="anchor-link" href="#Section-15:-Course-Wrap-up-and-Best-Practices">¶</a></h3><p><strong>Text Content:</strong>
-Review of best practices in web scraping and API fetching, and how to continue advancing in the field.</p>
-<p><strong>Python Code:</strong>
-No code for this section; focus on summarizing key takeaways and providing resources for further learning.</p>
+<h3 id="Section-15:-Final-Assessment-and-Next-Steps">Section 15: Final Assessment and Next Steps<a class="anchor-link" href="#Section-15:-Final-Assessment-and-Next-Steps">¶</a></h3><p><strong>Content</strong>: The final assessment might involve converting a set of PDFs, ensuring quality, and demonstrating understanding of the process. Next steps include exploring further applications of document conversion in data analysis.</p>
 </div>
 </div>
 </div>
